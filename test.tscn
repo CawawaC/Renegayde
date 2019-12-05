@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+[node name="Control" type="Label"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 80.0
+margin_top = 30.0
+margin_right = -444.0
+margin_bottom = -437.0
+size_flags_horizontal = 9
+size_flags_vertical = 3
+custom_styles/normal = SubResource( 1 )
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus dictum neque, sit amet pellentesque lorem hendrerit in. Aliquam scelerisque porttitor turpis. Donec fringilla sit amet tellus in tincidunt. Sed iaculis sapien a neque fringilla, nec tempus augue condimentum. Vestibulum elit quam, pretium a ex at, bibendum fringilla nisl. Phasellus eu purus dui. In vel luctus dui. Vestibulum quis odio non ligula laoreet lobortis nec vel sapien. Sed dignissim tortor iaculis dui porttitor posuere. Aliquam eget metus id massa dictum hendrerit nec in augue."
+autowrap = true

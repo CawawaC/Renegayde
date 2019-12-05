@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://dialogues/SceneA1 Jessie x Horace.tscn" type="PackedScene" id=2]
+
+[node name="main" type="Node2D"]
+script = ExtResource( 1 )
+starting_scene = ExtResource( 2 )
+
+[node name="scenes" type="Node2D" parent="."]
+
+[node name="main menu" type="VBoxContainer" parent="."]
+anchor_left = 0.3
+anchor_right = 0.7
+anchor_bottom = 1.0
+margin_left = 380.0
+margin_right = 960.0
+margin_bottom = 720.0
+alignment = 1
+
+[node name="start" type="Button" parent="main menu"]
+margin_right = 580.0
+margin_bottom = 720.0
+size_flags_vertical = 3
+text = "Start"
+[connection signal="pressed" from="main menu/start" to="." method="_on_start_pressed"]

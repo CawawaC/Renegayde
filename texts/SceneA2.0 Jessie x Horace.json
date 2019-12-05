@@ -1,0 +1,302 @@
+{
+  "passages": [
+    {
+      "text": "//As soon as dawn breaks, you and Horace are off and just a few hours later you arrive in the bustling streets of Purple Town. You've never seen so many people in one place, save for the annual fair, and you have a hard time keeping from staring at the many shapes and colors. Horace moves confidently through the crowded mainstreet and your heart beats faster as you dismount in front of the  famous Bar Mans Bar & Shag. There are a number of robotic and organic steeds tied near the entrance of the saloon, and you hear music coming from inside.//\n\n[[\"Hesitate\" ->MaybeIShould]]\n\n[[\"Tie Horace to the other horses.\" -> bondageJoke]]",
+      "links": [
+        {
+          "name": "\"Hesitate\" ",
+          "link": "MaybeIShould",
+          "pid": "6"
+        },
+        {
+          "name": "\"Tie Horace to the other horses.\" ",
+          "link": " bondageJoke",
+          "pid": "3"
+        }
+      ],
+      "name": "Start",
+      "pid": "1",
+      "position": {
+        "x": "751",
+        "y": "244"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "Rip of the bandaid Jessie, just go for it!\n\n[[\"Right! ->Let'sDoThis!]]",
+      "links": [
+        {
+          "name": "\"Right! ",
+          "link": "Let'sDoThis!",
+          "pid": "7"
+        }
+      ],
+      "name": "hesitate1",
+      "pid": "2",
+      "position": {
+        "x": "603",
+        "y": "510"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Alright... I guess I'll tie you down outside?\n\n[[Continue. ->BondageJokePayoff]]\n",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "BondageJokePayoff",
+          "pid": "9"
+        }
+      ],
+      "name": " bondageJoke",
+      "pid": "3",
+      "position": {
+        "x": "820",
+        "y": "388"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You can't help but blush.// I'm, eh.. that's not what I meant!\n\n[[Continue. ->HoraceAdvice]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HoraceAdvice",
+          "pid": "10"
+        }
+      ],
+      "name": "NotWhatIMeant",
+      "pid": "4",
+      "position": {
+        "x": "804",
+        "y": "713"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You try to play it off your embarassment// \"Hah, ehm, yeah... I'm full of surprises!\n\n[[Continue. ->HoraceDoesn'tBuyIt]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HoraceDoesn'tBuyIt",
+          "pid": "12"
+        }
+      ],
+      "name": "PlayingItCool",
+      "pid": "5",
+      "position": {
+        "x": "984",
+        "y": "712"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Maybe... maybe I shouldn't go right in? Can't we walk around a little more?\n\n[[Continue. ->hesitate1]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "hesitate1",
+          "pid": "2"
+        }
+      ],
+      "name": "MaybeIShould",
+      "pid": "6",
+      "position": {
+        "x": "601",
+        "y": "397"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "You'r right, let's do this!\n\n[[Continue. ->GoInside]]\n",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "GoInside",
+          "pid": "8"
+        }
+      ],
+      "name": "Let'sDoThis!",
+      "pid": "7",
+      "position": {
+        "x": "599",
+        "y": "625"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You go inside//\n\nMOAR DESCRIPTION TO FOLLOW\n\n{SceneA2.1 Jessie}",
+      "name": "GoInside",
+      "pid": "8",
+      "position": {
+        "x": "600",
+        "y": "1100"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//Horace chuckles and moves past the tied down steeds towards an open window of the saloon.//\n\nI didn't know you were into that, Jessie.\n\n[[\"Not what I meant!\" ->NotWhatIMeant]]\n[[\"I'm full of surprises!\" ->PlayingItCool]]",
+      "links": [
+        {
+          "name": "\"Not what I meant!\" ",
+          "link": "NotWhatIMeant",
+          "pid": "4"
+        },
+        {
+          "name": "\"I'm full of surprises!\" ",
+          "link": "PlayingItCool",
+          "pid": "5"
+        }
+      ],
+      "name": "BondageJokePayoff",
+      "pid": "9",
+      "position": {
+        "x": "870",
+        "y": "554"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Oh, they are going to love you in there, Jessie.\n\n[[\"If you say so.\" ->IfYouSaySo]] ",
+      "links": [
+        {
+          "name": "\"If you say so.\" ",
+          "link": "IfYouSaySo",
+          "pid": "11"
+        }
+      ],
+      "name": "HoraceAdvice",
+      "pid": "10",
+      "position": {
+        "x": "804",
+        "y": "863"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "\"If you say so. I mean, why wouldn't they?\"\n\n[[Go in. ->GoInside]] ",
+      "links": [
+        {
+          "name": "Go in. ",
+          "link": "GoInside",
+          "pid": "8"
+        }
+      ],
+      "name": "IfYouSaySo",
+      "pid": "11",
+      "position": {
+        "x": "796",
+        "y": "1000"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Yeaaaah. Careful with that, if you act tough, you'll be played rough.\n\n[[\"I can take it.\" ->ICanTakeIt]]\n\n[[\"I'll be careful.\" ->IWillBeCareful]]",
+      "links": [
+        {
+          "name": "\"I can take it.\" ",
+          "link": "ICanTakeIt",
+          "pid": "13"
+        },
+        {
+          "name": "\"I'll be careful.\" ",
+          "link": "IWillBeCareful",
+          "pid": "15"
+        }
+      ],
+      "name": "HoraceDoesn'tBuyIt",
+      "pid": "12",
+      "position": {
+        "x": "984",
+        "y": "862"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "I can take it!\n\n[[Continue. ->HoraceCantBelieve]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HoraceCantBelieve",
+          "pid": "14"
+        }
+      ],
+      "name": "ICanTakeIt",
+      "pid": "13",
+      "position": {
+        "x": "970",
+        "y": "985"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//Horace can't keep from grinning.//\n\nAlright //Cowboy.// Have fun in there.\n\n[[Go in. ->GoInside]] ",
+      "links": [
+        {
+          "name": "Go in. ",
+          "link": "GoInside",
+          "pid": "8"
+        }
+      ],
+      "name": "HoraceCantBelieve",
+      "pid": "14",
+      "position": {
+        "x": "937",
+        "y": "1112"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Alright, I'll be careful.\n\n[[Go in. ->GoInside]] ",
+      "links": [
+        {
+          "name": "Go in. ",
+          "link": "GoInside",
+          "pid": "8"
+        }
+      ],
+      "name": "IWillBeCareful",
+      "pid": "15",
+      "position": {
+        "x": "1076",
+        "y": "1277"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    }
+  ],
+  "name": "SceneA2.0 Jessie x Horace",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.4",
+  "ifid": "0F473604-2D22-47BE-BF67-7EE30B4349E0"
+}

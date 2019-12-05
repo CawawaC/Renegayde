@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://dialogues/fonts/default.tres" type="DynamicFont" id=1]
+[ext_resource path="res://dialogues/_general/next episode.gd" type="Script" id=2]
+
+[node name="episode" type="Button"]
+margin_right = 167.0
+margin_bottom = 33.0
+size_flags_horizontal = 9
+custom_fonts/font = ExtResource( 1 )
+text = "next scene"
+align = 0
+script = ExtResource( 2 )
+[connection signal="pressed" from="." to="." method="_on_episode_pressed"]

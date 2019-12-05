@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://dialogues/_general/dialogue main.gd" type="Script" id=1]
+[ext_resource path="res://dialogues/_general/dialogue texts.gd" type="Script" id=2]
+[ext_resource path="res://dialogues/_general/answer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://dialogues/_general/next.tscn" type="PackedScene" id=4]
+[ext_resource path="res://dialogues/_general/next episode.tscn" type="PackedScene" id=5]
+
+[node name="dialogue" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="text" type="CanvasLayer" parent="."]
+script = ExtResource( 2 )
+dialogue_name = "sceneA1"
+answer_template = ExtResource( 3 )
+next_template = ExtResource( 4 )
+next_episode_template = ExtResource( 5 )
+passages_v_padding = 1
+anchor_offset = 0.2
+
+[node name="passages" type="Control" parent="text"]
+anchor_left = 0.02
+anchor_top = 0.5
+anchor_right = 0.98
+anchor_bottom = 0.9
+margin_left = -0.48
+margin_right = -0.52002
+
+[node name="answers" type="VBoxContainer" parent="text"]
+anchor_left = 0.1
+anchor_top = 0.9
+anchor_right = 0.9
+anchor_bottom = 1.0
+
+[node name="characters" type="Node2D" parent="."]
+
+[node name="jessie" type="Node2D" parent="characters"]
+[connection signal="line_speaker" from="text" to="." method="bring_characters_forward"]
+[connection signal="new_episode" from="text" to="." method="_on_text_new_episode"]
