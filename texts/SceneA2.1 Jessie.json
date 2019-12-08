@@ -1,0 +1,435 @@
+{
+  "passages": [
+    {
+      "text": "//As you step into the Saloon, you are struck by how empty it is, compared to the street outside. The windows are dimmed and smoke and vapor cling to the low ceiling. Only one window is open, but not letting in much light. As you look around, you see Horace poke in his head through the window, looking around. \n\nA small humanoid dressed in fur and cloth sits at the bar, gazing deep into their drink. Behind the bar, a burly woman with a contraption providing mechanical hands strapped to her back is cleaning glasses and checking bottles. She looks at you briefly as you enter.\n\nAt a table with two holographic cowgirls sits an androgynous figure in plain clothing. They concentrating on the poker game and don't notice you.\n\n[[Approach the bar. ->ApproachBar]]\n\n[[Stride over to the bar. ->ApproachBarPumped]]\n\n[[Approach the table. ->ApproachNona]]\n\n[[Walk to the poker table and say hello. ->ApproachNonaPumped]]\n\n[[Approach Horace ->ApproachHorace]]\n\n[[Stand around, unsure of yourself. ->StillAshamed]]\n\n[[Wait around. ->SebastianEnters]]\n\n",
+      "links": [
+        {
+          "name": "Approach the bar. ",
+          "link": "ApproachBar",
+          "pid": "2"
+        },
+        {
+          "name": "Stride over to the bar. ",
+          "link": "ApproachBarPumped",
+          "pid": "8"
+        },
+        {
+          "name": "Approach the table. ",
+          "link": "ApproachNona",
+          "pid": "3"
+        },
+        {
+          "name": "Walk to the poker table and say hello. ",
+          "link": "ApproachNonaPumped",
+          "pid": "9"
+        },
+        {
+          "name": "Approach Horace ",
+          "link": "ApproachHorace",
+          "pid": "4"
+        },
+        {
+          "name": "Stand around, unsure of yourself. ",
+          "link": "StillAshamed",
+          "pid": "5"
+        },
+        {
+          "name": "Wait around. ",
+          "link": "SebastianEnters",
+          "pid": "12"
+        }
+      ],
+      "name": "EnteringTheSaloon",
+      "pid": "1",
+      "position": {
+        "x": "589",
+        "y": "86"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//You approach the bar, doing your best to look like this isn't your first time, ever, doing this.//\n\n{SceneA2.2 Jessie x Berta}\n\n\n\n",
+      "name": "ApproachBar",
+      "pid": "2",
+      "position": {
+        "x": "818",
+        "y": "434"
+      },
+      "tags": [
+        "Description",
+        "Berta:NotTalked"
+      ]
+    },
+    {
+      "text": "//You approach the poker table.//\n\n{SceneA2.3 Jessie x Nona}",
+      "name": "ApproachNona",
+      "pid": "3",
+      "position": {
+        "x": "989",
+        "y": "429"
+      },
+      "tags": [
+        ":fine",
+        ":pumped",
+        ":bruised",
+        "Description"
+      ]
+    },
+    {
+      "text": "//You walk over to Horace.//\n\n[[Continue. ->WhatAreYouDoing]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "WhatAreYouDoing",
+          "pid": "10"
+        }
+      ],
+      "name": "ApproachHorace",
+      "pid": "4",
+      "position": {
+        "x": "1152",
+        "y": "429"
+      },
+      "tags": [
+        ":fine",
+        ":bruised",
+        "Description"
+      ]
+    },
+    {
+      "text": "//You stand near the entrance for a few minutes, trying to muster up the courage to approach the bar, or maybe the poker table. Horace tries to make eye contact with you, but fails. The longer you wait, the worse it gets.//\n\n[[Push yourself to approach the bar. ->ApproachBarAshamed]]\n\n[[Take a few steps towards the poker table. ->ApproachNonaAshamed]]\n\n[[Linger and avoid eye-contact. ->SebastianEnters]] ",
+      "links": [
+        {
+          "name": "Push yourself to approach the bar. ",
+          "link": "ApproachBarAshamed",
+          "pid": "6"
+        },
+        {
+          "name": "Take a few steps towards the poker table. ",
+          "link": "ApproachNonaAshamed",
+          "pid": "7"
+        },
+        {
+          "name": "Linger and avoid eye-contact. ",
+          "link": "SebastianEnters",
+          "pid": "12"
+        }
+      ],
+      "name": "StillAshamed",
+      "pid": "5",
+      "position": {
+        "x": "265",
+        "y": "151"
+      },
+      "tags": [
+        "Description",
+        "Jessie:ashamed"
+      ]
+    },
+    {
+      "text": "//You slowly make your way to the bar.//\n\n\n{SceneA2.2 Jessie x Berta}\n\n\n",
+      "name": "ApproachBarAshamed",
+      "pid": "6",
+      "position": {
+        "x": "103",
+        "y": "531"
+      },
+      "tags": [
+        "Description",
+        "Jessie:ashamed",
+        "Berta:NotTalked"
+      ]
+    },
+    {
+      "text": "//You slowly approach the poker table.//\n\n{SceneA2.3 Jessie x Nona}",
+      "name": "ApproachNonaAshamed",
+      "pid": "7",
+      "position": {
+        "x": "255",
+        "y": "533"
+      },
+      "tags": [
+        "Description",
+        "Jessie:ashamed",
+        "Nona:NotTalked"
+      ]
+    },
+    {
+      "text": "//You swagger over to the bar.//\n\n{SceneA2.2 Jessie x Berta}",
+      "name": "ApproachBarPumped",
+      "pid": "8",
+      "position": {
+        "x": "480",
+        "y": "294"
+      },
+      "tags": [
+        "Description",
+        "Jessie:pumped",
+        "Berta:NotTalked"
+      ]
+    },
+    {
+      "text": "//You walk confidently over tot he poker table.//\n\n{SceneA2.3 Jessie x Nona}",
+      "name": "ApproachNonaPumped",
+      "pid": "9",
+      "position": {
+        "x": "610",
+        "y": "303"
+      },
+      "tags": [
+        "Jessie:pumped",
+        "Description",
+        "Nona:NotTalked"
+      ]
+    },
+    {
+      "text": "//Horace looks at you confused.//\n\nWhat are you doing, Jessie? Go talk to the bartender, or maybe chat with that interesting young human at the poker table. They look cute.\n\n[[\"Uh, okay.\" ->OkayHorace]]",
+      "links": [
+        {
+          "name": "\"Uh, okay.\" ",
+          "link": "OkayHorace",
+          "pid": "11"
+        }
+      ],
+      "name": "WhatAreYouDoing",
+      "pid": "10",
+      "position": {
+        "x": "1152",
+        "y": "579"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Uhm, okay, Horace.\n\n[[Approach the Bar. ->ApproachBar]] \n\n[[Approach the poker table. ->ApproachNona]] ",
+      "links": [
+        {
+          "name": "Approach the Bar. ",
+          "link": "ApproachBar",
+          "pid": "2"
+        },
+        {
+          "name": "Approach the poker table. ",
+          "link": "ApproachNona",
+          "pid": "3"
+        }
+      ],
+      "name": "OkayHorace",
+      "pid": "11",
+      "position": {
+        "x": "1116",
+        "y": "125"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//A few people come in to have a quick chat with Berta, but not much happens until a young man in a beautiful red dress comes down the stairs. He moves with graceful, quick steps over to the Bartender, leaning over the counter to give her a peck on the cheek. She gives him a slight smile, before directing his attention over to you and talking to him a little.//\n\n[[Smile at him. ->SmileAtSeb]]\n\n[[Tip your hat. ->TipHatAtSeb]]\n\n[[Quickly look away when he looks over. ->AvoidSebEye]]",
+      "links": [
+        {
+          "name": "Smile at him. ",
+          "link": "SmileAtSeb",
+          "pid": "15"
+        },
+        {
+          "name": "Tip your hat. ",
+          "link": "TipHatAtSeb",
+          "pid": "13"
+        },
+        {
+          "name": "Quickly look away when he looks over. ",
+          "link": "AvoidSebEye",
+          "pid": "14"
+        }
+      ],
+      "name": "SebastianEnters",
+      "pid": "12",
+      "position": {
+        "x": "590",
+        "y": "534"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//You tip your hat the young man, and give him a roguish smile. He smiles back, before looking you up and down, smiling a little wider afterwards.//\n\n[[Continue.->SebComesTrueInfo]]\n\n[[Continue.->SebComesBadInfo]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "SebComesTrueInfo",
+          "pid": "16"
+        },
+        {
+          "name": "Continue.",
+          "link": "SebComesBadInfo",
+          "pid": "19"
+        }
+      ],
+      "name": "TipHatAtSeb",
+      "pid": "13",
+      "position": {
+        "x": "584",
+        "y": "678"
+      },
+      "tags": [
+        "Jessie:pumped",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You qickly look away when you see him looking over, and focus all your attention on your fingernails.//\n\n[[Continue. ->SebAvoidbadInfo]] \n\n[[Continue. ->SebAvoidTrueInfo]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "SebAvoidbadInfo",
+          "pid": "18"
+        },
+        {
+          "name": "Continue. ",
+          "link": "SebAvoidTrueInfo",
+          "pid": "17"
+        }
+      ],
+      "name": "AvoidSebEye",
+      "pid": "14",
+      "position": {
+        "x": "760",
+        "y": "684"
+      },
+      "tags": [
+        "Jessie:ashamed",
+        "Jessie:flustered",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You smile at him, and blush when he smiles back.//\n\n[[Continue. ->SebComesTrueInfo]]\n\n[[Continue. ->SebComesBadInfo]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "SebComesTrueInfo",
+          "pid": "16"
+        },
+        {
+          "name": "Continue. ",
+          "link": "SebComesBadInfo",
+          "pid": "19"
+        }
+      ],
+      "name": "SmileAtSeb",
+      "pid": "15",
+      "position": {
+        "x": "417",
+        "y": "684"
+      },
+      "tags": [
+        "Jessie:bruised",
+        "Jessie:fine",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//He saunters over to you.//\n\nHello there, cowboy.\n\n[[The end. -> Ending]]",
+      "links": [
+        {
+          "name": "The end. ",
+          "link": " Ending",
+          "pid": "20"
+        }
+      ],
+      "name": "SebComesTrueInfo",
+      "pid": "16",
+      "position": {
+        "x": "392",
+        "y": "924"
+      },
+      "tags": [
+        "Description",
+        "Sebastian:trueInfo"
+      ]
+    },
+    {
+      "text": "//He comes over to, looking at you quizzically.//\n\nHow did you get to this point? There shouldn't be a way to get the true Information to me, while also staying ashamed. Weird. \n\n[[The end. -> Ending]] ",
+      "links": [
+        {
+          "name": "The end. ",
+          "link": " Ending",
+          "pid": "20"
+        }
+      ],
+      "name": "SebAvoidTrueInfo",
+      "pid": "17",
+      "position": {
+        "x": "735",
+        "y": "907"
+      },
+      "tags": [
+        "Sebastian:trueInfo",
+        "Description"
+      ]
+    },
+    {
+      "text": "Hey... you okay?\n\n//You look up to see the young man standing next to you, giving you sympathetic smile.//\n\n[[The end. -> Ending]] ",
+      "links": [
+        {
+          "name": "The end. ",
+          "link": " Ending",
+          "pid": "20"
+        }
+      ],
+      "name": "SebAvoidbadInfo",
+      "pid": "18",
+      "position": {
+        "x": "881",
+        "y": "898"
+      },
+      "tags": [
+        "Sebastian:misinformed",
+        "Description"
+      ]
+    },
+    {
+      "text": "//He walks over to you, tilting his head a little as he takes you in.//\n\nWell, I'm not sure most of our patrons would be into it, but I think it's cute.\n\n[[The End-> Ending]] ",
+      "links": [
+        {
+          "name": "The End",
+          "link": " Ending",
+          "pid": "20"
+        }
+      ],
+      "name": "SebComesBadInfo",
+      "pid": "19",
+      "position": {
+        "x": "558",
+        "y": "902"
+      },
+      "tags": [
+        "Sebastian:misinformed",
+        "Description"
+      ]
+    },
+    {
+      "text": "{Epilogue}",
+      "name": " Ending",
+      "pid": "20",
+      "position": {
+        "x": "616",
+        "y": "1189"
+      },
+      "tags": [
+        "Description",
+        "Jessie:ending"
+      ]
+    }
+  ],
+  "name": "SceneA2.1 Jessie",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.4",
+  "ifid": "CD67666F-1275-4A0C-B22D-D21A55F071FD"
+}

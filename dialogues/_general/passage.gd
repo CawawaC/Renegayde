@@ -4,6 +4,8 @@ export (float) var revelation_speed = 75 # characters per second
 
 var time_elapsed = 0
 var auto_reveal = true
+
+var resized = false
 #var height setget ,get_height
 
 signal passage_added
@@ -11,10 +13,14 @@ signal passage_added
 func _ready():
 	yield(get_tree(), "idle_frame")
 	rect_size.y = get_v_scroll().max_value
+	if rect_size.y > get_parent().rect_size.y:
+		rect_size.y = get_parent().rect_size.y - 100
+	
 #	rect_size.y = get_content_height()
 	emit_signal("passage_added", self)
+	resized = false
 
-func _process(delta):
+func _process(delta):	
 	if auto_reveal and percent_visible < 100:
 		time_elapsed += delta
 		visible_characters = revelation_speed * time_elapsed
@@ -31,6 +37,36 @@ func start_revelating():
 	percent_visible = 0
 	time_elapsed = 0
 	auto_reveal = true
+
+func set_text(data):
+	bbcode_text = strip_passage_text(data)
+
+func strip_passage_text(data):
+	var i = data.find("[[")
+	var text = ""
+	if i < 0:
+		text = data
+	else:
+		text = data.left(i)
+	
+	while text.ends_with("\n"):
+		text = text.rstrip("\n")
+	while text.begins_with("\n"):
+		text = text.lstrip("\n")
+	
+	var ss = text.split("//")
+	var count = 0
+	text = ""
+	for s in ss:
+		if count+1 == ss.size():
+			text = str(text, s)
+		elif count % 2 == 0:
+			text = str(text, s, "[i]")
+		else:
+			text = str(text, s, "[/i]")
+		count += 1
+	
+	return text
 
 func move_up(shift_height, duration):
 	var target_height = rect_position.y - shift_height

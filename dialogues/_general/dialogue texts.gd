@@ -13,11 +13,12 @@ export var anchor_offset = 0.5
 var dialogue
 var player_name = Game.player_name
 
-onready var passage = $"passage"
-onready var tween = $"tween"
+var passage
+#onready var tween = $"tween"
 
 signal line_speaker
 signal new_episode
+signal emotion_change
 
 func _ready():
 	var file = File.new()
@@ -27,6 +28,7 @@ func _ready():
 	
 	dialogue = json_result.result
 	
+func start():
 	set_passage(get_starting_passage())
 
 func get_starting_passage():
@@ -44,7 +46,8 @@ func set_passage(passage_data):
 #		print(previous_passage.bbcode_text)
 	
 	var passage = Game.text_boxes[speaker].instance()
-	passage.bbcode_text = strip_passage_text(passage_data.text)
+	passage.set_text(passage_data.text)
+	
 	passage.connect("passage_added", self, "on_passage_added")
 	position_passage(passage, speaker)
 	
@@ -52,13 +55,11 @@ func set_passage(passage_data):
 	
 	emit_signal("line_speaker", [speaker])
 	
-#	var emotion = get_imperative_emotion(tags)
-#	print(emotion)
-
+	apply_emotions(get_emotion_applications(tags))
 	
 	remove_answers()
 	if passage_data.has("links"):
-		print(passage_data.links)
+		print_debug(passage_data.links)
 		add_answers(passage, passage_data)
 	else:
 		add_button_to_next_episode(passage_data)
@@ -68,13 +69,20 @@ func set_passage(passage_data):
 func add_answers(passage, passage_data):
 	if links_to_player(passage_data.links): # links to PC lines
 		for i in range(0, passage_data.links.size()):
+			
 			var link = passage_data.links[i]
-			var answer = answer_template.instance()
-			answer.text = link.name
-			answer.link_id = link.pid
-			answer.connect("on_answer_pressed", self, "on_answer_pressed")
-			$answers.add_child(answer)
-			print(answer)
+			
+			var target_passage = find_passage_data(link.pid)
+			var conditions = get_emotion_conditions(target_passage.tags)
+			var passage_available = is_passage_available(conditions)
+			
+			if passage_available:
+				var answer = answer_template.instance()
+				answer.text = link.name
+				answer.link_id = link.pid
+				answer.connect("on_answer_pressed", self, "on_answer_pressed")
+				$answers.add_child(answer)
+				print_debug(answer)
 	elif passage_data.links.size() == 1: # links to a NPC line
 #		on_answer_pressed(passage_data.links[0].pid)
 		var answer = next_template.instance()
@@ -83,18 +91,20 @@ func add_answers(passage, passage_data):
 		answer.connect("on_answer_pressed", self, "on_answer_pressed")
 		$answers.add_child(answer)
 	else:
-		print("hoho")
+		print_debug("hoho")
 
 func add_button_to_next_episode(data):
 	var instance = next_episode_template.instance()
 	
 	var next_episode = extract_next_episode_name(data.text)
+	print_debug(next_episode)
 	
 	instance.next_episode = next_episode
 	instance.connect("episode_pressed", self, "on_episode_pressed")
 	$answers.add_child(instance)
 
 func on_episode_pressed(episode):
+	print_debug("next episode")
 	emit_signal("new_episode", episode)
 
 func extract_next_episode_name(text):
@@ -102,37 +112,17 @@ func extract_next_episode_name(text):
 	var episode_name = ss[1].split("}")[0]
 	return episode_name
 
-func strip_passage_text(passage):
-	var i = passage.find("[[")
-	var text = ""
-	if i < 0:
-		text = passage
-	else:
-		text = passage.left(i)
-	
-	var ss = text.split("//")
-	var count = 0
-	text = ""
-	for s in ss:
-		if count+1 == ss.size():
-			text = str(text, s)
-		elif count % 2 == 0:
-			text = str(text, s, "[i]")
-		else:
-			text = str(text, s, "[/i]")
-		count += 1
-	
-	return text
 
 func extract_destination(text):
 	return text
 
 func links_to_player(links):	
 	var passage_data = find_passage_data(links[0].pid)
-	print(passage_data.tags)
+	print_debug(passage_data.tags)
+	
 	if !passage_data.has("tags"):
 		return false
-	if get_speaker(passage_data.tags) == Game.player_name.to_lower() or get_speaker(passage_data.tags) == "radio":
+	if get_speaker(passage_data.tags) == Game.player_name.to_lower() or get_speaker(passage_data.tags) == "radio" or get_speaker(passage_data.tags) == "description":
 		return true
 	else:
 		return false
@@ -146,21 +136,68 @@ func get_speaker(tags):
 		if Game.characters.has(t.to_lower()):
 			return t.to_lower()
 
-func get_conditional_emotion(tags):
-	if tags.has("LOVE"):
-		return "LOVE"
-	elif tags.has("HATE"):
-		return "HATE"
-	else:
-		return ""
+func get_emotion_applications(tags):
+	var es = []
+	for t in tags:
+		if t.find("+") >= 0:
+			es.push_back(t)
+	return es
 
-func get_imperative_emotion(tags):
-	if tags.has("LOVE"):
-		return "LOVE"
-	elif tags.has("HATE"):
-		return "HATE"
-	else:
-		return ""
+func is_passage_available(tags):
+	var available = true
+	print_debug("Checking passage availability")
+	for t in tags:
+		var ss = t.split(":")
+		
+		var character = ""
+		if ss.size() < 1 or ss[0] == "":
+			character = "jessie"
+		else:
+			character = ss[0].to_lower()
+			
+		var emotion = ss[1].to_lower()
+		
+		print_debug(str("Emotional check: ", character, " : ", emotion, " : "))
+		if Game.char_emotions[character] != emotion.to_lower():
+			available = false
+			print_debug("failed")
+			break
+		else:
+			print_debug("passed")
+	return available
+
+func get_emotion_conditions(tags):
+	var es = []
+	for t in tags:
+		if t.find(":") >= 0:
+			es.push_back(t)
+	return es
+
+func apply_emotions(emotional_tags):
+	for t in emotional_tags:
+		var ss = t.split("+")
+		
+		var character = ""
+		if ss.size() < 1 or ss[0] == "":
+			character = "jessie"
+		else:
+			character = ss[0].to_lower()
+			
+		var emotion = ss[1].to_lower()
+		
+		print_debug(str(character, " --> ", emotion))
+		Game.char_emotions[character] = emotion.to_lower()
+		
+		print_debug(str("Emotional change: ", character, " --> ", emotion))
+		emit_signal("emotion_change", [character, emotion])
+
+func get_emotions(tags):
+	var es = []
+	for t in tags:
+		if Game.emotions.has(t.to_lower()):
+			es.push_back(t.to_lower())
+	return es
+
 
 func on_answer_pressed(link_id):
 	var passage_data = find_passage_data(link_id)
@@ -183,7 +220,7 @@ func move_passages_up(shift_height, exclude_current_passage):
 			child.modulate.a = (child.rect_position.y + child.rect_size.y + 100) / ($passages.rect_size.y)
 
 func position_passage(passage, speaker):
-	passage.rect_position.y = 300
+	passage.rect_position.y = 280
 #	passage.rect_global_position.y = $answers.rect_global_position.y - passage.rect_size.y
 
 	match speaker:

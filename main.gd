@@ -5,7 +5,7 @@ export (PackedScene) var starting_scene
 onready var scenes = $scenes
 
 func _ready():
-	pass # Replace with function body.
+	initialize()
 
 func hide_main_menu():
 	$"main menu".hide()
@@ -29,3 +29,6 @@ func remove_current_scene():
 func add_scene(scene):
 	scenes.add_child(scene)
 	scene.connect("new_episode", self, "load_scene")
+
+func initialize():
+	Game.init_char_emotions()

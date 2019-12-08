@@ -1,0 +1,91 @@
+{
+  "passages": [
+    {
+      "text": "Game Over.\n\n[[Next. ->FrozenEnding]]\n\n[[Next. ->DrunkenEnding]]\n\n[[Next. ->DiscouragedEnding]]\n\n[[Next. ->CurrentEnding]]\n",
+      "links": [
+        {
+          "name": "Next. ",
+          "link": "FrozenEnding",
+          "pid": "2"
+        },
+        {
+          "name": "Next. ",
+          "link": "DrunkenEnding",
+          "pid": "3"
+        },
+        {
+          "name": "Next. ",
+          "link": "DiscouragedEnding",
+          "pid": "4"
+        },
+        {
+          "name": "Next. ",
+          "link": "CurrentEnding",
+          "pid": "5"
+        }
+      ],
+      "name": "Epilogue",
+      "pid": "1",
+      "position": {
+        "x": "376",
+        "y": "307"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//Jessie wakes much later in unfamiliar surroundings. He's cold and feels sick, but alive. It takes him weeks to recuperate, during which he learns his way around Purple Town. In dire need for money to pay for the room and board, not to mention the doctors visit, he ends up working as a waiter in a nearby diner. His dream of being a cowboy falls along the wayside, crushed by the weight of reality.\n\nHorace stays with him for weeks, trying to cheer him up and helping him get back on his feet. As time passes however, Horace has to move on; even a horse has expenses.//",
+      "name": "FrozenEnding",
+      "pid": "2",
+      "position": {
+        "x": "226",
+        "y": "457"
+      },
+      "tags": [
+        "Jessie:frozen"
+      ]
+    },
+    {
+      "text": "//Jessie wakes much later in a dirty room. He feels sick, his clothing is ruined, and he is informed that he owes the bar a decent chunk of money. With a hangover from hell, he goes looking for work, but noone wants to hire him. He ends up working as a waiter in a nearby restaurant, too ashamed to go home, his dream of being a cowboy having been crushed by reality.\n\nHorace sticks with him for a while, offering himself up as a steed for potential gigs. But as time passes, Jessie and him drift apart, and he ends up leaving the town. //",
+      "name": "DrunkenEnding",
+      "pid": "3",
+      "position": {
+        "x": "376",
+        "y": "457"
+      },
+      "tags": [
+        ":foolish"
+      ]
+    },
+    {
+      "text": "//His dream abandoned, Jessie stays in the town only as long as he needs to to get home again. Working on the farm, he accepts his lot in life, only sometimes looking into the distance wistfully.\n\nHorace helps him get back to thef arm, but doesn't stay long. Contact with the outside world revived some spark in the old horse, and before long he found a cowgirl to work with.//",
+      "name": "DiscouragedEnding",
+      "pid": "4",
+      "position": {
+        "x": "526",
+        "y": "457"
+      },
+      "tags": [
+        ":discouraged"
+      ]
+    },
+    {
+      "text": "You have reached the current end of the game. \n\nIf you enjoyed the story and haven't done so already, you might want to play it again and make different choices (especially in front of the saloon).\n\nThank you for playing!",
+      "name": "CurrentEnding",
+      "pid": "5",
+      "position": {
+        "x": "699",
+        "y": "400"
+      },
+      "tags": [
+        "Jessie:ending"
+      ]
+    }
+  ],
+  "name": "Epilogue",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.4",
+  "ifid": "F6812421-2936-4565-ACCE-0433802B965E"
+}

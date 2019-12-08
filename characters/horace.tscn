@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://characters/_general/character template.tscn" type="PackedScene" id=1]
+[ext_resource path="res://characters/assets/horace_03.png" type="Texture" id=2]
+[ext_resource path="res://characters/assets/horace_02.png" type="Texture" id=3]
+[ext_resource path="res://characters/assets/horace_04.png" type="Texture" id=4]
+[ext_resource path="res://characters/assets/horace_01.png" type="Texture" id=5]
+
+[node name="horace" index="0" instance=ExtResource( 1 )]
+position = Vector2( 150, 298.25 )
+texture = ExtResource( 2 )
+default = ExtResource( 2 )
+ashamed = ExtResource( 3 )
+pumped = ExtResource( 4 )
+bruised = ExtResource( 3 )
+fine = ExtResource( 5 )
+misinformed = ExtResource( 4 )
+trueInfo = ExtResource( 5 )
+impressed = ExtResource( 4 )
+unimpressed = ExtResource( 2 )
+foolish = ExtResource( 4 )

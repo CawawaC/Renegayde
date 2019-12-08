@@ -1,15 +1,15 @@
 {
   "passages": [
     {
-      "text": "//As soon as dawn breaks, you and Horace are off and just a few hours later you arrive in the bustling streets of Purple Town. You've never seen so many people in one place, save for the annual fair, and you have a hard time keeping from staring at the many shapes and colors. Horace moves confidently through the crowded mainstreet and your heart beats faster as you dismount in front of the  famous Bar Mans Bar & Shag. There are a number of robotic and organic steeds tied near the entrance of the saloon, and you hear music coming from inside.//\n\n[[\"Hesitate\" ->MaybeIShould]]\n\n[[\"Tie Horace to the other horses.\" -> bondageJoke]]",
+      "text": "//As soon as dawn breaks, you and Horace are off and just a few hours later you arrive in the bustling streets of Purple Town. You've never seen so many people in one place, save for the annual fair, and you have a hard time keeping from staring at the many shapes and colors. Horace moves confidently through the crowded mainstreet and your heart beats faster as you dismount in front of the  famous Bar Mans Bar & Shag. There are a small number of robotic and organic steeds tied near the entrance of the saloon.//\n\n[[\"Maybe I should explore more first?\" ->MaybeIShould]]\n\n[[\"Should I tie you to the other steeds?\" -> bondageJoke]]",
       "links": [
         {
-          "name": "\"Hesitate\" ",
+          "name": "\"Maybe I should explore more first?\" ",
           "link": "MaybeIShould",
           "pid": "6"
         },
         {
-          "name": "\"Tie Horace to the other horses.\" ",
+          "name": "\"Should I tie you to the other steeds?\" ",
           "link": " bondageJoke",
           "pid": "3"
         }
@@ -17,18 +17,25 @@
       "name": "Start",
       "pid": "1",
       "position": {
-        "x": "751",
-        "y": "244"
+        "x": "1250",
+        "y": "300"
       },
       "tags": [
-        "Description"
+        "Description",
+        "Berta+NotTalked",
+        "Nona+NotTalked"
       ]
     },
     {
-      "text": "Rip of the bandaid Jessie, just go for it!\n\n[[\"Right! ->Let'sDoThis!]]",
+      "text": "Rip of the bandaid Jesse, just go for it!\n\n[[\"I don't know if I'm ready.\"->HesitateMore]]\n\n[[\"Right!\" ->Let'sDoThis!]]",
       "links": [
         {
-          "name": "\"Right! ",
+          "name": "\"I don't know if I'm ready.\"",
+          "link": "HesitateMore",
+          "pid": "16"
+        },
+        {
+          "name": "\"Right!\" ",
           "link": "Let'sDoThis!",
           "pid": "7"
         }
@@ -36,15 +43,15 @@
       "name": "hesitate1",
       "pid": "2",
       "position": {
-        "x": "603",
-        "y": "510"
+        "x": "1350",
+        "y": "750"
       },
       "tags": [
         "Horace"
       ]
     },
     {
-      "text": "Alright... I guess I'll tie you down outside?\n\n[[Continue. ->BondageJokePayoff]]\n",
+      "text": "Alright... I guess I'll tie you to the other horses?\n\n[[Continue. ->BondageJokePayoff]]\n",
       "links": [
         {
           "name": "Continue. ",
@@ -55,8 +62,8 @@
       "name": " bondageJoke",
       "pid": "3",
       "position": {
-        "x": "820",
-        "y": "388"
+        "x": "1675",
+        "y": "575"
       },
       "tags": [
         "Jessie"
@@ -74,8 +81,8 @@
       "name": "NotWhatIMeant",
       "pid": "4",
       "position": {
-        "x": "804",
-        "y": "713"
+        "x": "1625",
+        "y": "900"
       },
       "tags": [
         "Jessie"
@@ -93,8 +100,8 @@
       "name": "PlayingItCool",
       "pid": "5",
       "position": {
-        "x": "984",
-        "y": "712"
+        "x": "1800",
+        "y": "900"
       },
       "tags": [
         "Jessie"
@@ -112,8 +119,8 @@
       "name": "MaybeIShould",
       "pid": "6",
       "position": {
-        "x": "601",
-        "y": "397"
+        "x": "1350",
+        "y": "600"
       },
       "tags": [
         "Jessie"
@@ -131,27 +138,27 @@
       "name": "Let'sDoThis!",
       "pid": "7",
       "position": {
-        "x": "599",
-        "y": "625"
+        "x": "1350",
+        "y": "875"
       },
       "tags": [
         "Jessie"
       ]
     },
     {
-      "text": "//You go inside//\n\nMOAR DESCRIPTION TO FOLLOW\n\n{SceneA2.1 Jessie}",
+      "text": "//You go into the saloon.//\n\n{SceneA2.1 Jessie}",
       "name": "GoInside",
       "pid": "8",
       "position": {
-        "x": "600",
-        "y": "1100"
+        "x": "1200",
+        "y": "2450"
       },
       "tags": [
         "Description"
       ]
     },
     {
-      "text": "//Horace chuckles and moves past the tied down steeds towards an open window of the saloon.//\n\nI didn't know you were into that, Jessie.\n\n[[\"Not what I meant!\" ->NotWhatIMeant]]\n[[\"I'm full of surprises!\" ->PlayingItCool]]",
+      "text": "//Horace chuckles and moves past the tied down steeds towards an open window of the saloon.//\n\nI didn't know you were into that, Jesse.\n\n[[\"Not what I meant!\" ->NotWhatIMeant]]\n[[\"I'm full of surprises!\" ->PlayingItCool]]",
       "links": [
         {
           "name": "\"Not what I meant!\" ",
@@ -167,15 +174,15 @@
       "name": "BondageJokePayoff",
       "pid": "9",
       "position": {
-        "x": "870",
-        "y": "554"
+        "x": "1675",
+        "y": "725"
       },
       "tags": [
         "Horace"
       ]
     },
     {
-      "text": "Oh, they are going to love you in there, Jessie.\n\n[[\"If you say so.\" ->IfYouSaySo]] ",
+      "text": "Oh, they are going to love you in there, Jesse.\n\n[[\"If you say so.\" ->IfYouSaySo]] ",
       "links": [
         {
           "name": "\"If you say so.\" ",
@@ -186,8 +193,8 @@
       "name": "HoraceAdvice",
       "pid": "10",
       "position": {
-        "x": "804",
-        "y": "863"
+        "x": "1625",
+        "y": "1050"
       },
       "tags": [
         "Horace"
@@ -205,8 +212,8 @@
       "name": "IfYouSaySo",
       "pid": "11",
       "position": {
-        "x": "796",
-        "y": "1000"
+        "x": "1625",
+        "y": "1175"
       },
       "tags": [
         "Jessie"
@@ -229,8 +236,8 @@
       "name": "HoraceDoesn'tBuyIt",
       "pid": "12",
       "position": {
-        "x": "984",
-        "y": "862"
+        "x": "1800",
+        "y": "1050"
       },
       "tags": [
         "Horace"
@@ -248,8 +255,8 @@
       "name": "ICanTakeIt",
       "pid": "13",
       "position": {
-        "x": "970",
-        "y": "985"
+        "x": "1775",
+        "y": "1175"
       },
       "tags": [
         "Jessie"
@@ -267,11 +274,12 @@
       "name": "HoraceCantBelieve",
       "pid": "14",
       "position": {
-        "x": "937",
-        "y": "1112"
+        "x": "1750",
+        "y": "1300"
       },
       "tags": [
-        "Horace"
+        "Horace",
+        "Horace+amused"
       ]
     },
     {
@@ -286,11 +294,1034 @@
       "name": "IWillBeCareful",
       "pid": "15",
       "position": {
-        "x": "1076",
-        "y": "1277"
+        "x": "1900",
+        "y": "1450"
       },
       "tags": [
         "Jessie"
+      ]
+    },
+    {
+      "text": "//You look around you. The busy morning street is filled with people, moving purposfully. Everything seems to grow, the sounds, colors, people. You feel very small. Looking at your feet, you are about to turn to Horace, when a tall black-clad cowgirl with two noses leaves the saloon, almost bumping into you. Her hand immediatly moves towards the gun at her hip, but then she seizes you up and smirks, before tipping her hat.//\n\n\n[[Continue. ->MightyCute]]\n\n",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "MightyCute",
+          "pid": "60"
+        }
+      ],
+      "name": "HesitateMore",
+      "pid": "16",
+      "position": {
+        "x": "1125",
+        "y": "700"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//You blush at the attention, but something in her tone sets you off.//\n\n\"I'm -not- playing dressup, I'm a cowboy! I can wrangle a buggalo just as well as you!\"\n\n[[\"I'll be the greatest cowboy!\"->HOYPE]]\n\n[[\"And you and your pea-shooter can keep walking!\"->Dismiss]]\n\n[[Say nothing else.->CowGirlAnger]]",
+      "links": [
+        {
+          "name": "\"I'll be the greatest cowboy!\"",
+          "link": "HOYPE",
+          "pid": "19"
+        },
+        {
+          "name": "\"And you and your pea-shooter can keep walking!\"",
+          "link": "Dismiss",
+          "pid": "50"
+        },
+        {
+          "name": "Say nothing else.",
+          "link": "CowGirlAnger",
+          "pid": "61"
+        }
+      ],
+      "name": "protest",
+      "pid": "17",
+      "position": {
+        "x": "675",
+        "y": "850"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You feel embarrassed and can feel your cheeks getting hot.//\n\n\"Uhm, Th-Thank you.\"\n\n\n[[\"I like your hat.\" ->Appeasement]]\n\n[[\"But this isn't a costume\" ->NotACostume]]\n\n[[\"Say nothing and hope she goes away.\" ->SayNothing]]",
+      "links": [
+        {
+          "name": "\"I like your hat.\" ",
+          "link": "Appeasement",
+          "pid": "20"
+        },
+        {
+          "name": "\"But this isn't a costume\" ",
+          "link": "NotACostume",
+          "pid": "21"
+        },
+        {
+          "name": "\"Say nothing and hope she goes away.\" ",
+          "link": "SayNothing",
+          "pid": "22"
+        }
+      ],
+      "name": "ThankYou",
+      "pid": "18",
+      "position": {
+        "x": "1075",
+        "y": "900"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//The surprised look on her face only fuels your indignation//\n\nAnd I'm not just any cowboy. My name's Jessie and going to be the greatest cowboy in the history of the world! \n\nAnd you better remember my name, because that's the only \"Sweetcheeks\" I'll let you get away with, you hear?\n\n[[Stare her down.->CowGirlAnger]]\n\n[[Leave her in your dust and walk into the saloon.->GoInPumped]]",
+      "links": [
+        {
+          "name": "Stare her down.",
+          "link": "CowGirlAnger",
+          "pid": "61"
+        },
+        {
+          "name": "Leave her in your dust and walk into the saloon.",
+          "link": "GoInPumped",
+          "pid": "24"
+        }
+      ],
+      "name": "HOYPE",
+      "pid": "19",
+      "position": {
+        "x": "525",
+        "y": "975"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You give her a little smile.//\n\nI like your hat.\n\n\n[[Continue. ->AndILikeYours]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "AndILikeYours",
+          "pid": "54"
+        }
+      ],
+      "name": "Appeasement",
+      "pid": "20",
+      "position": {
+        "x": "950",
+        "y": "1025"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "It's not a costume though... I'm going to be a cowboy.\n\n[[Continue. ->OnlyCowboysInBed]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "OnlyCowboysInBed",
+          "pid": "58"
+        }
+      ],
+      "name": "NotACostume",
+      "pid": "21",
+      "position": {
+        "x": "1075",
+        "y": "1025"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You feel your face flush and say nothing, looking at your feet.//\n\n[[Continue. ->ILikeEmShy]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "ILikeEmShy",
+          "pid": "51"
+        }
+      ],
+      "name": "SayNothing",
+      "pid": "22",
+      "position": {
+        "x": "1200",
+        "y": "1025"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "\n\nListen, Sweetcheeks, you'r lucky my Mom taught me not to hit boys. And you'll soon learn that the only cowboys in this town are found in bed, when I -let- them go for a ride.\n\n[[\"Continue staring her down.\" ->StareHerDownV2]]\n\n[[\"As if anyone wants to ride you!\" ->Burnnn]]\n\n[[\"Yeah, whatever!\" You back away. ->BackDown]]",
+      "links": [
+        {
+          "name": "\"Continue staring her down.\" ",
+          "link": "StareHerDownV2",
+          "pid": "25"
+        },
+        {
+          "name": "\"As if anyone wants to ride you!\" ",
+          "link": "Burnnn",
+          "pid": "26"
+        },
+        {
+          "name": "\"Yeah, whatever!\" You back away. ",
+          "link": "BackDown",
+          "pid": "27"
+        }
+      ],
+      "name": "FIGHT",
+      "pid": "23",
+      "position": {
+        "x": "225",
+        "y": "1175"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "//Feeling like you can take on the whole world, you go into the saloon.//\n\n{SceneA2.1 Jessie}",
+      "name": "GoInPumped",
+      "pid": "24",
+      "position": {
+        "x": "1075",
+        "y": "2450"
+      },
+      "tags": [
+        "Description",
+        "Jessie+pumped"
+      ]
+    },
+    {
+      "text": "//You keep her gaze, staring her down. The moment feels stretched oput, like a very sticky mass of mashed potatos dripping from a fork.  You manage not to distract yourself with silly thoughts like that, and she breaks eye contact first, spitting to the side and walking past you.//\n\n\n[[\"Let out a breath of relief.\" ->Relief&Horace]]\n\n[[\"Shout something after her.\" ->CantLetItGoCanYou]]\n\n[[\"What a twat, right Horace?\" ->WhatATwat]]\n",
+      "links": [
+        {
+          "name": "\"Let out a breath of relief.\" ",
+          "link": "Relief&Horace"
+        },
+        {
+          "name": "\"Shout something after her.\" ",
+          "link": "CantLetItGoCanYou",
+          "pid": "29"
+        },
+        {
+          "name": "\"What a twat, right Horace?\" ",
+          "link": "WhatATwat",
+          "pid": "30"
+        }
+      ],
+      "name": "StareHerDownV2",
+      "pid": "25",
+      "position": {
+        "x": "100",
+        "y": "1325"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "As if anyone would even want to ride you!\n\n[[\"With noses like yours, you have to pay for a hug!\"->ContinueTaunting]]\n\n[[\"Not even your dad would give ya' a kiss!\" ->ContinueTaunting]]\n\n[[\"I've seen buggalo with better looks than you!\" ->ContinueTaunting]]\"\n\n[[Stare her down. ->StareHerDownV2]] ",
+      "links": [
+        {
+          "name": "\"With noses like yours, you have to pay for a hug!\"",
+          "link": "ContinueTaunting",
+          "pid": "36"
+        },
+        {
+          "name": "\"Not even your dad would give ya' a kiss!\" ",
+          "link": "ContinueTaunting",
+          "pid": "36"
+        },
+        {
+          "name": "\"I've seen buggalo with better looks than you!\" ",
+          "link": "ContinueTaunting",
+          "pid": "36"
+        },
+        {
+          "name": "Stare her down. ",
+          "link": "StareHerDownV2",
+          "pid": "25"
+        }
+      ],
+      "name": "Burnnn",
+      "pid": "26",
+      "position": {
+        "x": "225",
+        "y": "1325"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Yeah whatever, I'll show you...\n\n//You mumble and grumble, moving back a little.//\n\n[[Continue. ->ConsidersItAWin]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "ConsidersItAWin",
+          "pid": "43"
+        }
+      ],
+      "name": "BackDown",
+      "pid": "27",
+      "position": {
+        "x": "375",
+        "y": "1325"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You breath out and turn to look at Horace. He gives you a pretty impressed nod that you know he uses in place of giving thumbs up, what with his lack of thumbs and all.//\n\nWow, Jessie. I didn't think you had that in you.\n\n[[\"Thanks Horace.\" You go inside. ->GoInPumped]] ",
+      "links": [
+        {
+          "name": "\"Thanks Horace.\" You go inside. ",
+          "link": "GoInPumped",
+          "pid": "24"
+        }
+      ],
+      "name": "Relief&Horace",
+      "pid": "28",
+      "position": {
+        "x": "0",
+        "y": "1475"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "//You can't keep yourself from turning around and shouting after her.//\n\n\"Yeah, you better run, coward!\"\n\n[[Go inside the Saloon before she has time to respond. ->GoInPumped]] \n\n[[Continue. ->PieceOfShit]]",
+      "links": [
+        {
+          "name": "Go inside the Saloon before she has time to respond. ",
+          "link": "GoInPumped",
+          "pid": "24"
+        },
+        {
+          "name": "Continue. ",
+          "link": "PieceOfShit",
+          "pid": "31"
+        }
+      ],
+      "name": "CantLetItGoCanYou",
+      "pid": "29",
+      "position": {
+        "x": "100",
+        "y": "1475"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "What a twat, right Horace?\n\n[[Continue. ->HoraceTalk]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HoraceTalk",
+          "pid": "33"
+        }
+      ],
+      "name": "WhatATwat",
+      "pid": "30",
+      "position": {
+        "x": "225",
+        "y": "1475"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "You little piece of shit!\n\n[[Continue. ->OhShitGetShot]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "OhShitGetShot",
+          "pid": "62"
+        }
+      ],
+      "name": "PieceOfShit",
+      "pid": "31",
+      "position": {
+        "x": "100",
+        "y": "1625"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "The end.\n\n{Epilogue}",
+      "name": "GameOverUnconcsiouss",
+      "pid": "32",
+      "position": {
+        "x": "50",
+        "y": "2075"
+      },
+      "tags": [
+        "Description",
+        "Jessie+unconscious"
+      ]
+    },
+    {
+      "text": "//Horace looks at you like he sees you for the first time.//\n\nDamn, Jessie! You know who that was, right? That was Frida the Freezer!\n\n[[\"Ah, eh.. sure!\"->PlayItCool]]\n\n[[\"Oh heck, really?!->OhHeck]]",
+      "links": [
+        {
+          "name": "\"Ah, eh.. sure!\"",
+          "link": "PlayItCool",
+          "pid": "34"
+        },
+        {
+          "name": "\"Oh heck, really?!",
+          "link": "OhHeck",
+          "pid": "35"
+        }
+      ],
+      "name": "HoraceTalk",
+      "pid": "33",
+      "position": {
+        "x": "225",
+        "y": "1625"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "//You laugh nervously and try to play it off.//\n\nHah, yeah, of course I knew that! \n\n[[You feel pretty pumped and go inside with a swagger. ->GoInPumped]] ",
+      "links": [
+        {
+          "name": "You feel pretty pumped and go inside with a swagger. ",
+          "link": "GoInPumped",
+          "pid": "24"
+        }
+      ],
+      "name": "PlayItCool",
+      "pid": "34",
+      "position": {
+        "x": "150",
+        "y": "1875"
+      },
+      "tags": [
+        "Jessie",
+        "Horace+impressed"
+      ]
+    },
+    {
+      "text": "Oh wow, oh heck, wow...\n\n//You shake a little, realizing how close you came to actually get into a fight with one of the most infamous gunslingers in the eastern Reaches.//\n\n[[Take a moment to gather yourself, before going inside.->GoInside]]\n",
+      "links": [
+        {
+          "name": "Take a moment to gather yourself, before going inside.",
+          "link": "GoInside",
+          "pid": "8"
+        }
+      ],
+      "name": "OhHeck",
+      "pid": "35",
+      "position": {
+        "x": "250",
+        "y": "1800"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You open your mouth to let another awesome zinger fly, as her right clocks you in the jaw and you stumble down. You taste blood and everything is spinning.//\n\n[[Get up. ->GetUp]]",
+      "links": [
+        {
+          "name": "Get up. ",
+          "link": "GetUp",
+          "pid": "37"
+        }
+      ],
+      "name": "ContinueTaunting",
+      "pid": "36",
+      "position": {
+        "x": "400",
+        "y": "1575"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "//You get up slowly, leaning on Horace who has moved between you and the Cowgirl. Shaking your head a little to clear the stars, you feel tears in your eyes. You hear Horace and the Cowgirl exchange bad words, before she finally leaves.//\n\n[[\"Sorry, Horace.\" ->SorryHorace]]\n\n[[\"Thank you, Horace.\"->ThankYouHorace]]\n\n[[Say nothing.->SayNothingPostFight]]",
+      "links": [
+        {
+          "name": "\"Sorry, Horace.\" ",
+          "link": "SorryHorace",
+          "pid": "38"
+        },
+        {
+          "name": "\"Thank you, Horace.\"",
+          "link": "ThankYouHorace",
+          "pid": "39"
+        },
+        {
+          "name": "Say nothing.",
+          "link": "SayNothingPostFight",
+          "pid": "40"
+        }
+      ],
+      "name": "GetUp",
+      "pid": "37",
+      "position": {
+        "x": "400",
+        "y": "1775"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "Sorry, Horace. I..\n\n[[Horace interrupts you. ->NothingToBeSorryFor]]",
+      "links": [
+        {
+          "name": "Horace interrupts you. ",
+          "link": "NothingToBeSorryFor",
+          "pid": "41"
+        }
+      ],
+      "name": "SorryHorace",
+      "pid": "38",
+      "position": {
+        "x": "225",
+        "y": "1975"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Thanks, Horace. \n\n[[Continue. ->NincsMit]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "NincsMit",
+          "pid": "44"
+        }
+      ],
+      "name": "ThankYouHorace",
+      "pid": "39",
+      "position": {
+        "x": "550",
+        "y": "1900"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You say nothing and hide your face behind your hair, leaning against Horace.//\n\n[[Continue. ->HoraceComfortsYou]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HoraceComfortsYou",
+          "pid": "45"
+        }
+      ],
+      "name": "SayNothingPostFight",
+      "pid": "40",
+      "position": {
+        "x": "400",
+        "y": "1950"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "You've got nothing to be sorry for Jessie! That woman was a straight up asshole, you did right to stand up for yourself! Just, maybe next time try not to push it too far. \n\nNow dust yourself off and get in there, don't let her win!\n\n[[You thank your friend, dust yourself off, and go inside ->GoInPummeled]]",
+      "links": [
+        {
+          "name": "You thank your friend, dust yourself off, and go inside ",
+          "link": "GoInPummeled",
+          "pid": "42"
+        }
+      ],
+      "name": "NothingToBeSorryFor",
+      "pid": "41",
+      "position": {
+        "x": "225",
+        "y": "2125"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "//Rubbing your bruised cheek, you gather your courage and go into the saloon.//\n\n{SceneA2.1 Jessie}",
+      "name": "GoInPummeled",
+      "pid": "42",
+      "position": {
+        "x": "1025",
+        "y": "2600"
+      },
+      "tags": [
+        "Description",
+        "Jessie+bruised"
+      ]
+    },
+    {
+      "text": "//She gives you a mean smirk and moves past you, obviously considering herself the victor off this little stand-off.//\n\n[[\"What a twat, right Horace? ->WhatATwat]] \n\n[[Shout something after her. ->CantLetItGoCanYou]] \n\n[[Let her leave and go inside. ->GoInside]] ",
+      "links": [
+        {
+          "name": "\"What a twat, right Horace? ",
+          "link": "WhatATwat",
+          "pid": "30"
+        },
+        {
+          "name": "Shout something after her. ",
+          "link": "CantLetItGoCanYou",
+          "pid": "29"
+        },
+        {
+          "name": "Let her leave and go inside. ",
+          "link": "GoInside",
+          "pid": "8"
+        }
+      ],
+      "name": "ConsidersItAWin",
+      "pid": "43",
+      "position": {
+        "x": "550",
+        "y": "1425"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "Don't thank me, Jessie, I should have stepped in sooner. That woman was a straight up asshole. You did right to stand up for yourself! Just, maybe next time try not to push it too far. \n\nNow dust yourself off and get in there. Can't let her win!\n\n[[You thank your friend, dust yourself off, and go inside ->GoInPummeled]]",
+      "links": [
+        {
+          "name": "You thank your friend, dust yourself off, and go inside ",
+          "link": "GoInPummeled",
+          "pid": "42"
+        }
+      ],
+      "name": "NincsMit",
+      "pid": "44",
+      "position": {
+        "x": "550",
+        "y": "2050"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Hey, hey, it's okay. That woman was an asshole, don't let her get to you.\nIt's a rough town, Jessie. It's good that you stood up for yourself, okay?\n\n[[\"Maybe it's too rough for me... ->MaybeItsTooRough]]\n\n[[\"Okay, thank you Horace.->NincsMit2]]",
+      "links": [
+        {
+          "name": "\"Maybe it's too rough for me... ",
+          "link": "MaybeItsTooRough",
+          "pid": "46"
+        },
+        {
+          "name": "\"Okay, thank you Horace.",
+          "link": "NincsMit2",
+          "pid": "47"
+        }
+      ],
+      "name": "HoraceComfortsYou",
+      "pid": "45",
+      "position": {
+        "x": "400",
+        "y": "2100"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Maybe it's too rough for me, Horace. I thought I could do this but I'm not sure anymore.\n\n[[Continue. ->HonestHorace]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HonestHorace",
+          "pid": "48"
+        }
+      ],
+      "name": "MaybeItsTooRough",
+      "pid": "46",
+      "position": {
+        "x": "275",
+        "y": "2300"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Don't thank me, Jessie, I should have stepped in sooner.\n\nNow dust yourself off and get in there. Can't let her win!\n\n[[You thank your friend, dust yourself off, and go inside ->GoInPummeled]]",
+      "links": [
+        {
+          "name": "You thank your friend, dust yourself off, and go inside ",
+          "link": "GoInPummeled",
+          "pid": "42"
+        }
+      ],
+      "name": "NincsMit2",
+      "pid": "47",
+      "position": {
+        "x": "500",
+        "y": "2250"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Look, Jessie, I'll be honest. There are a lot of people like her, and a lot that are worse. I think you've got what it takes, otherwise I wouldn't have agreed to even bring you here, but in the end it's you who has to decide.\n\n[[\"Thank you Horace. I'll show them.\"->GoInPummeled]]\n\n[[\"I don't think I can do this.\" ->GameOverDiscoruaged]]",
+      "links": [
+        {
+          "name": "\"Thank you Horace. I'll show them.\"",
+          "link": "GoInPummeled",
+          "pid": "42"
+        },
+        {
+          "name": "\"I don't think I can do this.\" ",
+          "link": "GameOverDiscoruaged",
+          "pid": "49"
+        }
+      ],
+      "name": "HonestHorace",
+      "pid": "48",
+      "position": {
+        "x": "275",
+        "y": "2450"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "//You abandon your dream.//\n\n{Epilogue}",
+      "name": "GameOverDiscoruaged",
+      "pid": "49",
+      "position": {
+        "x": "275",
+        "y": "2600"
+      },
+      "tags": [
+        "Description",
+        "Jessie+discouraged"
+      ]
+    },
+    {
+      "text": "And you and your pea-shooter can just keep walking, \"Sweetcheeks\".\n\n[[Leave her eating your dust and go inside. ->GoInPumped]] \n\n[[Stare her down. ->StareHerDownV2]] ",
+      "links": [
+        {
+          "name": "Leave her eating your dust and go inside. ",
+          "link": "GoInPumped",
+          "pid": "24"
+        },
+        {
+          "name": "Stare her down. ",
+          "link": "StareHerDownV2",
+          "pid": "25"
+        }
+      ],
+      "name": "Dismiss",
+      "pid": "50",
+      "position": {
+        "x": "675",
+        "y": "1125"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Aw, pretty boy like you got no reason to be shy with a face. Maybe I'll see you around later, go for a ride, eh?\n\n//She moves past you and you feel the tension leaving your body. It's right back when she pinches your butt. She saunters off laughing.//\n\n\n[[\"Hecking heck, I knew I couldn't do this.\" ->HeckingHeck]]\n\n[[Say nothing. ->HonestHoraceNoFight]]",
+      "links": [
+        {
+          "name": "\"Hecking heck, I knew I couldn't do this.\" ",
+          "link": "HeckingHeck",
+          "pid": "52"
+        },
+        {
+          "name": "Say nothing. ",
+          "link": "HonestHoraceNoFight",
+          "pid": "53"
+        }
+      ],
+      "name": "ILikeEmShy",
+      "pid": "51",
+      "position": {
+        "x": "1225",
+        "y": "1200"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "Oh god damn, hecking heck! Why do I let them walk over me like that!\n\n//You feel tears welling up in your eyes.]]\n\n[[Continue. ->HonestHoraceNoFight]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HonestHoraceNoFight",
+          "pid": "53"
+        }
+      ],
+      "name": "HeckingHeck",
+      "pid": "52",
+      "position": {
+        "x": "1125",
+        "y": "1425"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//Horace gives you sympathetic udge.//\n\nAw, Jessie. Look, I'll be honest. There are a lot of people like her, and a lot that are worse. I think you've got what it takes, otherwise I wouldn't have agreed to even bring you here, but in the end it's you who has to decide.\n\n[[\"Thank you Horace, you'r right. I can do this.\"->GoInside]]\n\n[[\"I don't think I can do this.\" ->GameOverDiscoruaged]]",
+      "links": [
+        {
+          "name": "\"Thank you Horace, you'r right. I can do this.\"",
+          "link": "GoInside",
+          "pid": "8"
+        },
+        {
+          "name": "\"I don't think I can do this.\" ",
+          "link": "GameOverDiscoruaged",
+          "pid": "49"
+        }
+      ],
+      "name": "HonestHoraceNoFight",
+      "pid": "53",
+      "position": {
+        "x": "1300",
+        "y": "1350"
+      },
+      "tags": [
+        "Horace",
+        "Horace+worried"
+      ]
+    },
+    {
+      "text": "And I like yours, sweetcheeks. Though you probably look better without it, or anything for that matter. //She winks at you with a dirty grin.//\n\n[[Say nothing. ->SayNothing]] \n\n[[Force a giggle. ->AppeasementCont.]]",
+      "links": [
+        {
+          "name": "Say nothing. ",
+          "link": "SayNothing",
+          "pid": "22"
+        },
+        {
+          "name": "Force a giggle. ",
+          "link": "AppeasementCont.",
+          "pid": "55"
+        }
+      ],
+      "name": "AndILikeYours",
+      "pid": "54",
+      "position": {
+        "x": "900",
+        "y": "1175"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "Hihi, I guess so.\n\n[[Continue. ->MeetUpLater]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "MeetUpLater",
+          "pid": "56"
+        }
+      ],
+      "name": "AppeasementCont.",
+      "pid": "55",
+      "position": {
+        "x": "900",
+        "y": "1325"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Maybe we meet up later, find out, eh Sweetcheeks? Got to run now though. I've got a room in the Shag, so just ask the bartender for Fridas.\n\n//She winks again, and moves past you, not without pinching your butt though.//\n\n[[Avoid looking Horace in the eye and go inside.->GoInsideAshamed]]\n\n[[\"Hecking heck, why did I let her do this to me!\" ->HeckingHeck]] ",
+      "links": [
+        {
+          "name": "Avoid looking Horace in the eye and go inside.",
+          "link": "GoInsideAshamed",
+          "pid": "57"
+        },
+        {
+          "name": "\"Hecking heck, why did I let her do this to me!\" ",
+          "link": "HeckingHeck",
+          "pid": "52"
+        }
+      ],
+      "name": "MeetUpLater",
+      "pid": "56",
+      "position": {
+        "x": "925",
+        "y": "1600"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "//Feeling ashamed, you slink into the saloon//\n\n{SceneA2.1 Jessie}",
+      "name": "GoInsideAshamed",
+      "pid": "57",
+      "position": {
+        "x": "1350",
+        "y": "2500"
+      },
+      "tags": [
+        "Description",
+        "Jessie+ashamed"
+      ]
+    },
+    {
+      "text": "Oh yeah? The only cowboys I ever meet are the ones in bed, when I let 'em go for a ride. \n\n[[Say nothing. ->SayNothing]] \n\n[[Giggle a little. ->AppeasementCont.]] \n\n[[\"Well, I'm not one of those.\" ->ProtestWeakly]]\n",
+      "links": [
+        {
+          "name": "Say nothing. ",
+          "link": "SayNothing",
+          "pid": "22"
+        },
+        {
+          "name": "Giggle a little. ",
+          "link": "AppeasementCont.",
+          "pid": "55"
+        },
+        {
+          "name": "\"Well, I'm not one of those.\" ",
+          "link": "ProtestWeakly",
+          "pid": "59"
+        }
+      ],
+      "name": "OnlyCowboysInBed",
+      "pid": "58",
+      "position": {
+        "x": "1050",
+        "y": "1175"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "Well, I'm not one of those... \n\n[[Continue. ->MeetUpLater]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "MeetUpLater",
+          "pid": "56"
+        }
+      ],
+      "name": "ProtestWeakly",
+      "pid": "59",
+      "position": {
+        "x": "1050",
+        "y": "1300"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Sorry about that sweetcheeks. I like your dressup, you look mighty cute.\n\n[[\"It's not a dressup, I'm a cowboy!\"->protest]]\n\n[[\"Uhm, thanks.\"->ThankYou]]",
+      "links": [
+        {
+          "name": "\"It's not a dressup, I'm a cowboy!\"",
+          "link": "protest",
+          "pid": "17"
+        },
+        {
+          "name": "\"Uhm, thanks.\"",
+          "link": "ThankYou",
+          "pid": "18"
+        }
+      ],
+      "name": "MightyCute",
+      "pid": "60",
+      "position": {
+        "x": "925",
+        "y": "775"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "//Her faces goes from surprise, to disbelieve, to anger. She steps up to you, building her self up to her full height. You realize she is a bit taller than you and that those muscles probably aren't just for show.//\n\n[[Continue. ->FIGHT]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "FIGHT",
+          "pid": "23"
+        }
+      ],
+      "name": "CowGirlAnger",
+      "pid": "61",
+      "position": {
+        "x": "300",
+        "y": "1025"
+      },
+      "tags": [
+        "Cowgirl-NPC"
+      ]
+    },
+    {
+      "text": "//She turns around shouting at you, and draws her gun. You feel ice grip your heart, literally and figurativly. Coldness is spreading from your chest, where her Freeze-A-Ton-2000s hit you. Horace shouts as you fall down and slip into unconsciousness, and the last thing you hear is the Cowgirls sneering voice.//\n\n[[Continue. ->TeachYou]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "TeachYou",
+          "pid": "63"
+        }
+      ],
+      "name": "OhShitGetShot",
+      "pid": "62",
+      "position": {
+        "x": "25",
+        "y": "1775"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "That'll teach you, Sweetcheeks.\n\n[[The end. ->GameOverUnconcsiouss]]",
+      "links": [
+        {
+          "name": "The end. ",
+          "link": "GameOverUnconcsiouss",
+          "pid": "32"
+        }
+      ],
+      "name": "TeachYou",
+      "pid": "63",
+      "position": {
+        "x": "25",
+        "y": "1925"
+      },
+      "tags": [
+        "Cowgirl-NPC"
       ]
     }
   ],

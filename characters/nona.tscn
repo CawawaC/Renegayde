@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://characters/_general/character template.tscn" type="PackedScene" id=1]
+[ext_resource path="res://characters/assets/Nona.png" type="Texture" id=2]
+
+[node name="nona" index="0" instance=ExtResource( 1 )]
+texture = ExtResource( 2 )
+default = ExtResource( 2 )
+ashamed = ExtResource( 2 )
+pumped = ExtResource( 2 )
+bruised = ExtResource( 2 )
+fine = ExtResource( 2 )
+misinformed = ExtResource( 2 )
+trueInfo = ExtResource( 2 )
+impressed = ExtResource( 2 )
+unimpressed = ExtResource( 2 )
+foolish = ExtResource( 2 )

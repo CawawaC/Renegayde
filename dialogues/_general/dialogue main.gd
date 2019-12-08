@@ -4,11 +4,19 @@ onready var character_portraits = $characters.get_children()
 
 signal new_episode
 
+func _ready():
+	Game.init_missing_characters()
+	
+	$text.start()
+
 func bring_characters_forward(character_names):
-	print(str("character forwards: ", character_names))
-	return
-	for c in character_names:
-		var portrait = find_portrait(c)
+	print_debug(str("character forwards: ", character_names))
+	
+	for c in character_portraits:
+		if character_names.has(c.name):
+			c.modulate = Color.white
+		else:
+			c.modulate = Color("#474747")
 
 func find_portrait(c_name):
 	for p in character_portraits:
@@ -17,3 +25,7 @@ func find_portrait(c_name):
 
 func _on_text_new_episode(episode):
 	emit_signal("new_episode", episode)
+
+func _on_text_emotion_change(char_emo):
+	var p = find_portrait(char_emo[0])
+	p.apply_emotion(char_emo[1])

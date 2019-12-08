@@ -33,7 +33,5 @@ anchor_right = 0.9
 anchor_bottom = 1.0
 
 [node name="characters" type="Node2D" parent="."]
-
-[node name="jessie" type="Node2D" parent="characters"]
 [connection signal="line_speaker" from="text" to="." method="bring_characters_forward"]
 [connection signal="new_episode" from="text" to="." method="_on_text_new_episode"]

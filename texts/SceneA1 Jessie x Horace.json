@@ -688,15 +688,15 @@
       ]
     },
     {
-      "text": "If you do meet her, or any other Cowgirl you heard of... try not to be just so much -you-, okay? Play it cool.[[I'm cool! -> FinishBitMiffed]]\n\n[[I'll try. ->Fanboy]]",
+      "text": "\"If you do meet her, or any other Cowgirl you heard of... try not to be just so much -you-, okay? Play it cool.\"\n\n[[\"I'm cool! -> FinishBitMiffed]]\n\n[[\"I'll try. ->Fanboy]]",
       "links": [
         {
-          "name": "I'm cool! ",
+          "name": "\"I'm cool! ",
           "link": " FinishBitMiffed",
           "pid": "12"
         },
         {
-          "name": "I'll try. ",
+          "name": "\"I'll try. ",
           "link": "Fanboy",
           "pid": "38"
         }

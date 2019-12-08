@@ -1,0 +1,1306 @@
+{
+  "passages": [
+    {
+      "text": "//The bartenders hands are constantly in motion. Polishing the bar, cleaning glasses, topping off the small furry person at the end of the bar. Only one hand seems to never leave her coatpocket. She raises an eyebrow at you, but says nothing.// \n\n\n[[\"The strongest drink you have!\" ->StrongestDrink]]\n\n[[\"What's good?\" ->WhatsGood?]]\n\n[[\"Uhm, a drink please?\" ->DrinkPlease]]\n\n[[Say Nothing. ->AwkwardWaiting]]\n\n",
+      "links": [
+        {
+          "name": "\"The strongest drink you have!\" ",
+          "link": "StrongestDrink",
+          "pid": "2"
+        },
+        {
+          "name": "\"What's good?\" ",
+          "link": "WhatsGood?",
+          "pid": "3"
+        },
+        {
+          "name": "\"Uhm, a drink please?\" ",
+          "link": "DrinkPlease",
+          "pid": "4"
+        },
+        {
+          "name": "Say Nothing. ",
+          "link": "AwkwardWaiting",
+          "pid": "5"
+        }
+      ],
+      "name": "BarApproached",
+      "pid": "1",
+      "position": {
+        "x": "743",
+        "y": "490"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "One glass of the strongest stuff you have, please!\n\n[[Continue. ->StrongStuff]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "StrongStuff",
+          "pid": "6"
+        }
+      ],
+      "name": "StrongestDrink",
+      "pid": "2",
+      "position": {
+        "x": "518",
+        "y": "640"
+      },
+      "tags": [
+        "Jessie",
+        "Jessie:pumped"
+      ]
+    },
+    {
+      "text": "What do you recommend?\n\n[[Continue.->ForYouBruised]]\n\n[[Continue.->ForYou]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "ForYouBruised",
+          "pid": "45"
+        },
+        {
+          "name": "Continue.",
+          "link": "ForYou",
+          "pid": "44"
+        }
+      ],
+      "name": "WhatsGood?",
+      "pid": "3",
+      "position": {
+        "x": "867",
+        "y": "662"
+      },
+      "tags": [
+        "Jessie:pumped",
+        "Jessie:fine",
+        "Jessie:bruised",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Uhm, I'd like a drink please.\n\n[[Continue. ->WeakDrink]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "WeakDrink",
+          "pid": "52"
+        }
+      ],
+      "name": "DrinkPlease",
+      "pid": "4",
+      "position": {
+        "x": "1301",
+        "y": "654"
+      },
+      "tags": [
+        "Jessie",
+        "Jessie:ashamed"
+      ]
+    },
+    {
+      "text": "//You stand at the bar, awkwardly avoiding eye contact with the bartender by fiddling around with your hands.//\n\n[[Continue. ->YouGoingTo]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "YouGoingTo",
+          "pid": "7"
+        }
+      ],
+      "name": "AwkwardWaiting",
+      "pid": "5",
+      "position": {
+        "x": "1450",
+        "y": "622"
+      },
+      "tags": [
+        "Description",
+        "Jessie:ashamed"
+      ]
+    },
+    {
+      "text": "//The bartender nods and grabs a black bottle from the highest shelf. She pours a greenish liquid into metal cup, where it fizzles and steams as it settles down. \n\nShe puts the cup in front of you.//\n\n[[\"Down the hatch!\" ->DownTheHatch]]\n\n[[Toast her and take a sip. ->SipSip]]\n\n[[\"Huh. What is this?\" ->WhatIsThis?]]",
+      "links": [
+        {
+          "name": "\"Down the hatch!\" ",
+          "link": "DownTheHatch",
+          "pid": "8"
+        },
+        {
+          "name": "Toast her and take a sip. ",
+          "link": "SipSip",
+          "pid": "9"
+        },
+        {
+          "name": "\"Huh. What is this?\" ",
+          "link": "WhatIsThis?",
+          "pid": "10"
+        }
+      ],
+      "name": "StrongStuff",
+      "pid": "6",
+      "position": {
+        "x": "518",
+        "y": "790"
+      },
+      "tags": [
+        "Description",
+        "Berta"
+      ]
+    },
+    {
+      "text": "Do you want something to drink or do you just want to stand around? \n\n[[\"Uhm, yeah, a drink please.\" ->WeakDrink]]\n",
+      "links": [
+        {
+          "name": "\"Uhm, yeah, a drink please.\" ",
+          "link": "WeakDrink",
+          "pid": "52"
+        }
+      ],
+      "name": "YouGoingTo",
+      "pid": "7",
+      "position": {
+        "x": "1459",
+        "y": "765"
+      },
+      "tags": [
+        "Berta",
+        "Berta+unimpressed"
+      ]
+    },
+    {
+      "text": "Down the hatch!\n\n//You empty the cup in one swift motion. The liquid burns as it travels down your throat and for a moment, you'r worried that it's some sort of plant-killer. You cough for a bit, and wipe away tears, feeling warmth spreading through your body.//\n\n[[\"Pretty good, another!\"->AnotherStrongOne]]\n\n[[\"That's some good stuff.\"->GoodStuff]]",
+      "links": [
+        {
+          "name": "\"Pretty good, another!\"",
+          "link": "AnotherStrongOne",
+          "pid": "11"
+        },
+        {
+          "name": "\"That's some good stuff.\"",
+          "link": "GoodStuff",
+          "pid": "12"
+        }
+      ],
+      "name": "DownTheHatch",
+      "pid": "8",
+      "position": {
+        "x": "309",
+        "y": "938"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You take a sip, and the liquid burns your throat. You manage not to cough however. After a moment, you take another, and slowly start to enjoy the burning sensation. //\n\n[[\"I like it.\" ->PrettyNice]]",
+      "links": [
+        {
+          "name": "\"I like it.\" ",
+          "link": "PrettyNice",
+          "pid": "33"
+        }
+      ],
+      "name": "SipSip",
+      "pid": "9",
+      "position": {
+        "x": "518",
+        "y": "940"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Ah, what is this? It looks dangerous.\n\n[[Continue. ->YouWanted]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "YouWanted",
+          "pid": "35"
+        }
+      ],
+      "name": "WhatIsThis?",
+      "pid": "10",
+      "position": {
+        "x": "668",
+        "y": "940"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//The bartender gives you a long look, before filling the cup again.\n\nYou throw it back, pounding your chest afterwards.//\n\n[[\"Damn, that's good. Another!\" ->ANOTHER]]\n\n",
+      "links": [
+        {
+          "name": "\"Damn, that's good. Another!\" ",
+          "link": "ANOTHER",
+          "pid": "13"
+        }
+      ],
+      "name": "AnotherStrongOne",
+      "pid": "11",
+      "position": {
+        "x": "234",
+        "y": "1088"
+      },
+      "tags": [
+        "+foolish",
+        "Description"
+      ]
+    },
+    {
+      "text": "That's some good stuff! \n\n[[Continue.->Unexpected]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "Unexpected",
+          "pid": "16"
+        }
+      ],
+      "name": "GoodStuff",
+      "pid": "12",
+      "position": {
+        "x": "384",
+        "y": "1088"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Anotherl one, ish you'd be s'kind!\n\n[[Continue.->FOOL]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "FOOL",
+          "pid": "14"
+        }
+      ],
+      "name": "ANOTHER",
+      "pid": "13",
+      "position": {
+        "x": "234",
+        "y": "1238"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//She fills the cup again, but as you lift it up it slips between your fingers. The cup clanks down and the liquid sprays over the counter and yourself. It sizzles as it burns holes into your clothing. Your head is spinning and you have a hard time holding yourself upright.//\n\n[[Continue. ->Ending]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "Ending",
+          "pid": "15"
+        }
+      ],
+      "name": "FOOL",
+      "pid": "14",
+      "position": {
+        "x": "234",
+        "y": "1388"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//The bartender cleans up your mess, and you somehow manage to book a room, before falling asleep.//\n\n{Epilogue}",
+      "name": "Ending",
+      "pid": "15",
+      "position": {
+        "x": "234",
+        "y": "1538"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "Wouldn't have expected you to like that.\n\n[[\"I'm tougher than I look.\"->TougherThanILook]]\n",
+      "links": [
+        {
+          "name": "\"I'm tougher than I look.\"",
+          "link": "TougherThanILook",
+          "pid": "17"
+        }
+      ],
+      "name": "Unexpected",
+      "pid": "16",
+      "position": {
+        "x": "384",
+        "y": "1238"
+      },
+      "tags": [
+        "Berta",
+        "Berta+impressed"
+      ]
+    },
+    {
+      "text": "I'm tougher than I look!\n\n[[I'm a cowboy. ->I'mCowboy]]\n\n[[So, hows business?->Business?]]",
+      "links": [
+        {
+          "name": "I'm a cowboy. ",
+          "link": "I'mCowboy",
+          "pid": "18"
+        },
+        {
+          "name": "So, hows business?",
+          "link": "Business?",
+          "pid": "19"
+        }
+      ],
+      "name": "TougherThanILook",
+      "pid": "17",
+      "position": {
+        "x": "378",
+        "y": "1386"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "I'm a cowboy, the names Jessie.\n\n[[Continue. ->BertaSerious]]\n\n[[Continue. ->BertaDisbelieve]]\n\n[[Continue. ->BertaLaughs]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "BertaSerious",
+          "pid": "20"
+        },
+        {
+          "name": "Continue. ",
+          "link": "BertaDisbelieve",
+          "pid": "21"
+        },
+        {
+          "name": "Continue. ",
+          "link": "BertaLaughs",
+          "pid": "37"
+        }
+      ],
+      "name": "I'mCowboy",
+      "pid": "18",
+      "position": {
+        "x": "1055",
+        "y": "1183"
+      },
+      "tags": [
+        "Jessie",
+        "Jessie:pumped",
+        "Jessie:bruised",
+        "Jessie:fine"
+      ]
+    },
+    {
+      "text": "So, how's business? Bar seems kind off empty.\n\n[[Continue. ->EveryonesScared]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "EveryonesScared",
+          "pid": "23"
+        }
+      ],
+      "name": "Business?",
+      "pid": "19",
+      "position": {
+        "x": "474",
+        "y": "1543"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "A cowboy, eh?  //She looks you up and down, then nods approvingly.// You look the part.\n\nI'm Berta.\n\n[[\"I'm looking for work.\"->LookingForWork]]",
+      "links": [
+        {
+          "name": "\"I'm looking for work.\"",
+          "link": "LookingForWork",
+          "pid": "22"
+        }
+      ],
+      "name": "BertaSerious",
+      "pid": "20",
+      "position": {
+        "x": "998",
+        "y": "1336"
+      },
+      "tags": [
+        "Berta:impressed",
+        "Berta"
+      ]
+    },
+    {
+      "text": "//The bartender looks you once over, and raises an eyebrow.//\n\nAlright. \n\n[[\"No, I'm serious!\"->NoReally]] \n\n[[\"I'm looking for work.\" ->MisInfoWork]]",
+      "links": [
+        {
+          "name": "\"No, I'm serious!\"",
+          "link": "NoReally",
+          "pid": "38"
+        },
+        {
+          "name": "\"I'm looking for work.\" ",
+          "link": "MisInfoWork",
+          "pid": "50"
+        }
+      ],
+      "name": "BertaDisbelieve",
+      "pid": "21",
+      "position": {
+        "x": "1143",
+        "y": "1334"
+      },
+      "tags": [
+        "Jessie:flustered",
+        "Jessie:ashamed",
+        "Jessie:fine",
+        "Berta"
+      ]
+    },
+    {
+      "text": "I'm looking for work, by the way.\n\n[[Continue. ->Don'tKnowSeb]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "Don'tKnowSeb",
+          "pid": "30"
+        }
+      ],
+      "name": "LookingForWork",
+      "pid": "22",
+      "position": {
+        "x": "980",
+        "y": "1483"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Yep. Whole towns 'voidin this place today. You haven't heard?\n\n[[\"Heard what?\" ->Heard What?]]\n\n[[\"Oh yeah, of course.\" ->OhYeaaah]]",
+      "links": [
+        {
+          "name": "\"Heard what?\" ",
+          "link": "Heard What?",
+          "pid": "24"
+        },
+        {
+          "name": "\"Oh yeah, of course.\" ",
+          "link": "OhYeaaah",
+          "pid": "25"
+        }
+      ],
+      "name": "EveryonesScared",
+      "pid": "23",
+      "position": {
+        "x": "474",
+        "y": "1693"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "Heard what?\n\n[[Continue. ->ThereWillBe]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "ThereWillBe",
+          "pid": "26"
+        }
+      ],
+      "name": "Heard What?",
+      "pid": "24",
+      "position": {
+        "x": "399",
+        "y": "1843"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Oh yeah, sure I heard! \n\n[[Quickly switch the topic. ->TopicSwitch]]",
+      "links": [
+        {
+          "name": "Quickly switch the topic. ",
+          "link": "TopicSwitch",
+          "pid": "34"
+        }
+      ],
+      "name": "OhYeaaah",
+      "pid": "25",
+      "position": {
+        "x": "549",
+        "y": "1843"
+      },
+      "tags": [
+        "Jessie+flustered",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "There's gonna be a duel tomorrow, and today's when the troublemakers goin' arrive in town. And they will come here, they always do.\n\n[[\"A duel?!\" ->ADuel?]]",
+      "links": [
+        {
+          "name": "\"A duel?!\" ",
+          "link": "ADuel?",
+          "pid": "27"
+        }
+      ],
+      "name": "ThereWillBe",
+      "pid": "26",
+      "position": {
+        "x": "399",
+        "y": "1993"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "A duel? Wow! Between who?\n\n[[Continue. ->BillyAndJane]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "BillyAndJane",
+          "pid": "28"
+        }
+      ],
+      "name": "ADuel?",
+      "pid": "27",
+      "position": {
+        "x": "399",
+        "y": "2143"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Between Billy and Jane, who else? You' been livin' under a rock?\n\n\n[[\"Oh wow, Billy and Jane?!\"->OhWow]]",
+      "links": [
+        {
+          "name": "\"Oh wow, Billy and Jane?!\"",
+          "link": "OhWow",
+          "pid": "29"
+        }
+      ],
+      "name": "BillyAndJane",
+      "pid": "28",
+      "position": {
+        "x": "399",
+        "y": "2293"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "Oh wow, Billy the Tit AND Jane Hicks Adams?! I hadn't heard. It's actually my first time in town.\n\n[[\"I'm a cowboy\" ->I'mCowboy]] ",
+      "links": [
+        {
+          "name": "\"I'm a cowboy\" ",
+          "link": "I'mCowboy",
+          "pid": "18"
+        }
+      ],
+      "name": "OhWow",
+      "pid": "29",
+      "position": {
+        "x": "474",
+        "y": "2443"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Sorry, not much going on at the moment. \n\n[[Continue.->BackToWork]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "BackToWork",
+          "pid": "31"
+        }
+      ],
+      "name": "Don'tKnowSeb",
+      "pid": "30",
+      "position": {
+        "x": "980",
+        "y": "1633"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "//She gives you a long look.//\n\nYou know, Sebastian might have something for ya, and if he doesn't, he probably knows someone who could use some help.\n\nHe's bound to come down soon, I'll send him your way.\n\n[[Thanks! ->ThankYou!]]",
+      "links": [
+        {
+          "name": "Thanks! ",
+          "link": "ThankYou!",
+          "pid": "32"
+        }
+      ],
+      "name": "BackToWork",
+      "pid": "31",
+      "position": {
+        "x": "976",
+        "y": "1772"
+      },
+      "tags": [
+        "Berta:impressed",
+        "Sebastian+trueInfo",
+        "Berta"
+      ]
+    },
+    {
+      "text": "Thank you! \n\n[[Continue. ->EndOfConversation]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "EndOfConversation",
+          "pid": "43"
+        }
+      ],
+      "name": "ThankYou!",
+      "pid": "32",
+      "position": {
+        "x": "1043",
+        "y": "1898"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "That's pretty good, I like it.\n\n[[Continue. ->Unexpected]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "Unexpected",
+          "pid": "16"
+        }
+      ],
+      "name": "PrettyNice",
+      "pid": "33",
+      "position": {
+        "x": "518",
+        "y": "1090"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "I'm a cowboy, by the way. The name's Jessie.\n\n[[Continue. ->BertaSerious]] \n\n[[Continue. ->BertaDisbelieve]] \n\n[[Continue. ->BertaLaughs]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "BertaSerious",
+          "pid": "20"
+        },
+        {
+          "name": "Continue. ",
+          "link": "BertaDisbelieve",
+          "pid": "21"
+        },
+        {
+          "name": "Continue. ",
+          "link": "BertaLaughs",
+          "pid": "37"
+        }
+      ],
+      "name": "TopicSwitch",
+      "pid": "34",
+      "position": {
+        "x": "549",
+        "y": "1993"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "You wanted the strongest drink we have.\n\n[[True. ->True]]",
+      "links": [
+        {
+          "name": "True. ",
+          "link": "True",
+          "pid": "36"
+        }
+      ],
+      "name": "YouWanted",
+      "pid": "35",
+      "position": {
+        "x": "668",
+        "y": "1090"
+      },
+      "tags": [
+        "Berta",
+        "Berta+unimpressed"
+      ]
+    },
+    {
+      "text": "True.\n\n//You surrepticiously move the cup away from you.//\n\n[[\"So... how's business?\" ->Business?]]\n\n[[\"I'm a cowboy, by the way.\" ->TopicSwitch]] ",
+      "links": [
+        {
+          "name": "\"So... how's business?\" ",
+          "link": "Business?",
+          "pid": "19"
+        },
+        {
+          "name": "\"I'm a cowboy, by the way.\" ",
+          "link": "TopicSwitch",
+          "pid": "34"
+        }
+      ],
+      "name": "True",
+      "pid": "36",
+      "position": {
+        "x": "668",
+        "y": "1240"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//A soon as you finish the sentence, the bartenders until now so stoic visage cracks, and she let's out a little laugh.//\n\nGood one!\n\n[[No, really!->NoReally]]",
+      "links": [
+        {
+          "name": "No, really!",
+          "link": "NoReally",
+          "pid": "38"
+        }
+      ],
+      "name": "BertaLaughs",
+      "pid": "37",
+      "position": {
+        "x": "854",
+        "y": "1336"
+      },
+      "tags": [
+        "Berta:unimpressed",
+        "Berta"
+      ]
+    },
+    {
+      "text": "No really! I am!\n\n[[Continue. ->Somehow]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "Somehow",
+          "pid": "39"
+        }
+      ],
+      "name": "NoReally",
+      "pid": "38",
+      "position": {
+        "x": "854",
+        "y": "1486"
+      },
+      "tags": [
+        "Jessie",
+        "Jessie+ashamed"
+      ]
+    },
+    {
+      "text": "//The more you protest, the more she doesn't take you seriously. After a little bit of back and forth, you simply go quiet, eyeing your drink.//\n\n[[Give up trying to convince her. ->LookIGetIt]]",
+      "links": [
+        {
+          "name": "Give up trying to convince her. ",
+          "link": "LookIGetIt",
+          "pid": "40"
+        }
+      ],
+      "name": "Somehow",
+      "pid": "39",
+      "position": {
+        "x": "854",
+        "y": "1636"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "Look, I get it. I mean, I don't get why you commit to it so hard, but I get that times are hard, boys need to, yeah, put themselves apart. But you overdo it a little.\n\n[[Continue.->ListenILike]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "ListenILike",
+          "pid": "41"
+        }
+      ],
+      "name": "LookIGetIt",
+      "pid": "40",
+      "position": {
+        "x": "854",
+        "y": "1786"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "Listen, kid, I like you. Once Sebastian comes down here, I'll send him to you, okay? He knows his way around the town, and can probably help you out some, getting the hang of it. You do have the body for it, so don't worry too much.\n\n[[ ->ThanksIGuess]]",
+      "links": [
+        {
+          "name": " ",
+          "link": "ThanksIGuess",
+          "pid": "42"
+        }
+      ],
+      "name": "ListenILike",
+      "pid": "41",
+      "position": {
+        "x": "854",
+        "y": "1936"
+      },
+      "tags": [
+        "Berta",
+        "Sebastian+misinformed"
+      ]
+    },
+    {
+      "text": "Thanks, I guess.\n\n[[Continue. ->EndOfConversation]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "EndOfConversation",
+          "pid": "43"
+        }
+      ],
+      "name": "ThanksIGuess",
+      "pid": "42",
+      "position": {
+        "x": "854",
+        "y": "2086"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "{SceneA2.1 Jessie}",
+      "name": "EndOfConversation",
+      "pid": "43",
+      "position": {
+        "x": "1630",
+        "y": "1865"
+      },
+      "tags": [
+        "SceneChange"
+      ]
+    },
+    {
+      "text": "//She pours you a glass of pale yellow liquid.//\n\nBeer.\n\n[[\"Looks good.\" ->Beer]]",
+      "links": [
+        {
+          "name": "\"Looks good.\" ",
+          "link": "Beer",
+          "pid": "46"
+        }
+      ],
+      "name": "ForYou",
+      "pid": "44",
+      "position": {
+        "x": "809",
+        "y": "829"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "//She looks you once over, lingeirng on your bruised face. Then she gets out a bottle from under the counter and pours you a small glass of amber liquid.//\n\nIt's strong, but you look like you might appreciate it.\n\n[[Take a sip. ->SipOfWhiskey]]\n\n[[\"Down the hatch!\" ->WhiskeyFail]]",
+      "links": [
+        {
+          "name": "Take a sip. ",
+          "link": "SipOfWhiskey",
+          "pid": "47"
+        },
+        {
+          "name": "\"Down the hatch!\" ",
+          "link": "WhiskeyFail",
+          "pid": "48"
+        }
+      ],
+      "name": "ForYouBruised",
+      "pid": "45",
+      "position": {
+        "x": "987",
+        "y": "812"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "//You haven't reallyd rank anything stronger than tea before, so you are not quite sure what to expect. It doesn't taste well, but you try not to let the bartender notice that.//\n\n[[\"So, hows business?\" ->Business?]] \n\n[[\"I'm a cowboy.\" ->I'mCowboy]] ",
+      "links": [
+        {
+          "name": "\"So, hows business?\" ",
+          "link": "Business?",
+          "pid": "19"
+        },
+        {
+          "name": "\"I'm a cowboy.\" ",
+          "link": "I'mCowboy",
+          "pid": "18"
+        }
+      ],
+      "name": "Beer",
+      "pid": "46",
+      "position": {
+        "x": "809",
+        "y": "979"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You take a sip of the liquid. It burns a little and has a smokey afterflavour, but not entirely unpleasant.//\n\n[[\"Not bad.\" ->WhiskeyIsOk]]",
+      "links": [
+        {
+          "name": "\"Not bad.\" ",
+          "link": "WhiskeyIsOk",
+          "pid": "49"
+        }
+      ],
+      "name": "SipOfWhiskey",
+      "pid": "47",
+      "position": {
+        "x": "990",
+        "y": "969"
+      },
+      "tags": [
+        "Jessie",
+        "Description"
+      ]
+    },
+    {
+      "text": "//The liquid burns and you can't stop from coughing a little. Pretty quickly, you feel warmth spread thorugh your body. The bartender gives you a disapproving look.//\n\n\n[[\"So, how's business?\" ->Business?]] \n\n[[\"I'm a cowboy.\" ->I'mCowboy]] ",
+      "links": [
+        {
+          "name": "\"So, how's business?\" ",
+          "link": "Business?",
+          "pid": "19"
+        },
+        {
+          "name": "\"I'm a cowboy.\" ",
+          "link": "I'mCowboy",
+          "pid": "18"
+        }
+      ],
+      "name": "WhiskeyFail",
+      "pid": "48",
+      "position": {
+        "x": "1140",
+        "y": "925"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//The bartender gives you a little nod. You choose to interpret it as a sign of respect.//\n\n[[\"So, how's business?\" ->Business?]] \n\n[[\"I'm a cowboy.\" ->I'mCowboy]] ",
+      "links": [
+        {
+          "name": "\"So, how's business?\" ",
+          "link": "Business?",
+          "pid": "19"
+        },
+        {
+          "name": "\"I'm a cowboy.\" ",
+          "link": "I'mCowboy",
+          "pid": "18"
+        }
+      ],
+      "name": "WhiskeyIsOk",
+      "pid": "49",
+      "position": {
+        "x": "882",
+        "y": "1137"
+      },
+      "tags": [
+        "Berta",
+        "Berta+impressed"
+      ]
+    },
+    {
+      "text": "Yeah, and I'm looking for work.\n\n[[Continue. ->BertaMisunderstands]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "BertaMisunderstands",
+          "pid": "51"
+        }
+      ],
+      "name": "MisInfoWork",
+      "pid": "50",
+      "position": {
+        "x": "1130",
+        "y": "1483"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//The bartender tips against the side of her nose with one of her mechanic arms.//\n\nI hear ya'. \n\nSebastian can probably help you out, I'll send him your way when he comes downstairs. Shouldn't be long.\n\n[[\"Thanks?\" ->ThanksIGuess]] ",
+      "links": [
+        {
+          "name": "\"Thanks?\" ",
+          "link": "ThanksIGuess",
+          "pid": "42"
+        }
+      ],
+      "name": "BertaMisunderstands",
+      "pid": "51",
+      "position": {
+        "x": "1130",
+        "y": "1633"
+      },
+      "tags": [
+        "Berta",
+        "Sebastian+misinformed"
+      ]
+    },
+    {
+      "text": "//The bartender looks you over once, before putting down a glass of bubbly water in front of you.//\n\n[[\"Thanks.\" ->WaterDrink]]\n\n[[\"Uhm, I meant a real drink.\" ->RealDrink]]",
+      "links": [
+        {
+          "name": "\"Thanks.\" ",
+          "link": "WaterDrink",
+          "pid": "53"
+        },
+        {
+          "name": "\"Uhm, I meant a real drink.\" ",
+          "link": "RealDrink",
+          "pid": "54"
+        }
+      ],
+      "name": "WeakDrink",
+      "pid": "52",
+      "position": {
+        "x": "1301",
+        "y": "804"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "//You drink some of the water. It's a little stale, but the bubbles are nice.//\n\n[[\"I'm a cowboy.\" ->I'mCowboy]] \n\n[[\"What's your name?\" ->WhatYourName]]",
+      "links": [
+        {
+          "name": "\"I'm a cowboy.\" ",
+          "link": "I'mCowboy",
+          "pid": "18"
+        },
+        {
+          "name": "\"What's your name?\" ",
+          "link": "WhatYourName",
+          "pid": "55"
+        }
+      ],
+      "name": "WaterDrink",
+      "pid": "53",
+      "position": {
+        "x": "1330",
+        "y": "960"
+      },
+      "tags": [
+        "Description",
+        "Berta+unimpressed"
+      ]
+    },
+    {
+      "text": "Uhm... I meant a real drink, not water.\n\n[[Continue. ->Beer]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "Beer",
+          "pid": "46"
+        }
+      ],
+      "name": "RealDrink",
+      "pid": "54",
+      "position": {
+        "x": "1543",
+        "y": "968"
+      },
+      "tags": [
+        "Jessie+fine",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "So, uhm... what's your name?\n\n[[Continue. ->Berta]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "Berta",
+          "pid": "56"
+        }
+      ],
+      "name": "WhatYourName",
+      "pid": "55",
+      "position": {
+        "x": "1330",
+        "y": "1110"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Berta.\n\n[[\"Ah. I'm Jessie\" ->I'm Jessie]]\n\n[[\"How are you?\" ->HowAreYou?]]",
+      "links": [
+        {
+          "name": "\"Ah. I'm Jessie\" ",
+          "link": "I'm Jessie",
+          "pid": "57"
+        },
+        {
+          "name": "\"How are you?\" ",
+          "link": "HowAreYou?",
+          "pid": "58"
+        }
+      ],
+      "name": "Berta",
+      "pid": "56",
+      "position": {
+        "x": "1330",
+        "y": "1260"
+      },
+      "tags": [
+        "Berta"
+      ]
+    },
+    {
+      "text": "Ah, I'm Jessie.\n\n[[Continue. ->AwkwardSilence]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "AwkwardSilence",
+          "pid": "60"
+        }
+      ],
+      "name": "I'm Jessie",
+      "pid": "57",
+      "position": {
+        "x": "1295",
+        "y": "1380"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "I'm Jessie. How are you?\n\n[[Continue.->Fine]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "Fine",
+          "pid": "59"
+        }
+      ],
+      "name": "HowAreYou?",
+      "pid": "58",
+      "position": {
+        "x": "1450",
+        "y": "1410"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Fine.\n\n[[\"I'm a cowboy.\" ->I'mCowboy]] \n\n[[Avoid further conversation. ->Avoid]] ",
+      "links": [
+        {
+          "name": "\"I'm a cowboy.\" ",
+          "link": "I'mCowboy",
+          "pid": "18"
+        },
+        {
+          "name": "Avoid further conversation. ",
+          "link": "Avoid",
+          "pid": "61"
+        }
+      ],
+      "name": "Fine",
+      "pid": "59",
+      "position": {
+        "x": "1450",
+        "y": "1560"
+      },
+      "tags": [
+        "Berta",
+        "Berta+unimpressed"
+      ]
+    },
+    {
+      "text": "//There is a long moment of silence, as neither of you says anything.//\n\n[[Try to change the topic. ->TopicSwitch]] \n\n[[Avoid further conversation. ->Avoid]] ",
+      "links": [
+        {
+          "name": "Try to change the topic. ",
+          "link": "TopicSwitch",
+          "pid": "34"
+        },
+        {
+          "name": "Avoid further conversation. ",
+          "link": "Avoid",
+          "pid": "61"
+        }
+      ],
+      "name": "AwkwardSilence",
+      "pid": "60",
+      "position": {
+        "x": "1308",
+        "y": "1518"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//You avoid eye contact and slowly move away from the bar.//\n\n[[Continue. ->EndOfConversation]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "EndOfConversation",
+          "pid": "43"
+        }
+      ],
+      "name": "Avoid",
+      "pid": "61",
+      "position": {
+        "x": "1291",
+        "y": "1692"
+      },
+      "tags": [
+        "Description",
+        "Berta+unimpressed",
+        "Sebastian+veryMisinformed"
+      ]
+    }
+  ],
+  "name": "SceneA2.2 Jessie x Berta",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.4",
+  "ifid": "614556F3-90B9-4270-B20B-946CD8686B2C"
+}
