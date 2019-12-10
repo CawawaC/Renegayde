@@ -2,6 +2,7 @@ extends CanvasLayer
 
 export (String) var dialogue_name
 export (PackedScene) var answer_template
+export (PackedScene) var exotic_answer_template
 export (PackedScene) var next_template
 export (PackedScene) var next_episode_template
 
@@ -40,12 +41,7 @@ func set_passage(passage_data):
 	var tags = passage_data.tags
 	var speaker = get_speaker(passage_data.tags)
 	
-#	var previous_passage = null
-#	if($passages.get_child_count() > 0):
-#		previous_passage = $passages.get_children()[$passages.get_child_count()-1]
-#		print(previous_passage.bbcode_text)
-	
-	var passage = Game.text_boxes[speaker].instance()
+	var passage = Game.get_textbox(speaker).instance()
 	passage.set_text(passage_data.text)
 	
 	passage.connect("passage_added", self, "on_passage_added")
@@ -72,12 +68,22 @@ func add_answers(passage, passage_data):
 			
 			var link = passage_data.links[i]
 			
+			if not link.has("pid"):
+				printerr("No pid on link: ", link, "in passage_data: ", passage_data.pid)
+				continue
+			
 			var target_passage = find_passage_data(link.pid)
 			var conditions = get_emotion_conditions(target_passage.tags)
 			var passage_available = is_passage_available(conditions)
 			
 			if passage_available:
-				var answer = answer_template.instance()
+				
+				var answer
+				if conditions.size() > 0:
+					answer = exotic_answer_template.instance()
+				else:
+					answer = answer_template.instance()
+				
 				answer.text = link.name
 				answer.link_id = link.pid
 				answer.connect("on_answer_pressed", self, "on_answer_pressed")
@@ -116,16 +122,19 @@ func extract_next_episode_name(text):
 func extract_destination(text):
 	return text
 
-func links_to_player(links):	
-	var passage_data = find_passage_data(links[0].pid)
-	print_debug(passage_data.tags)
+# If at least one of the links goes to a player answer, the player can choose between links.
+# This is done to temporarily fix the case where multiple links go to both player and NPC answers.
+# Which is bad and should not happen
+func links_to_player(links):
+	var value = false
+	for l in links:
+		if not l.has("pid"):
+			continue
+		var passage_data = find_passage_data(l.pid)
 	
-	if !passage_data.has("tags"):
-		return false
-	if get_speaker(passage_data.tags) == Game.player_name.to_lower() or get_speaker(passage_data.tags) == "radio" or get_speaker(passage_data.tags) == "description":
-		return true
-	else:
-		return false
+		if get_speaker(passage_data.tags) == Game.player_name.to_lower() or get_speaker(passage_data.tags) == "radio" or get_speaker(passage_data.tags) == "description":
+			value = true
+	return value
 
 func remove_answers():
 	for a in $answers.get_children():
@@ -145,7 +154,6 @@ func get_emotion_applications(tags):
 
 func is_passage_available(tags):
 	var available = true
-	print_debug("Checking passage availability")
 	for t in tags:
 		var ss = t.split(":")
 		
@@ -160,7 +168,6 @@ func is_passage_available(tags):
 		print_debug(str("Emotional check: ", character, " : ", emotion, " : "))
 		if Game.char_emotions[character] != emotion.to_lower():
 			available = false
-			print_debug("failed")
 			break
 		else:
 			print_debug("passed")
@@ -173,7 +180,7 @@ func get_emotion_conditions(tags):
 			es.push_back(t)
 	return es
 
-func apply_emotions(emotional_tags):
+func apply_emotions(emotional_tags):	
 	for t in emotional_tags:
 		var ss = t.split("+")
 		

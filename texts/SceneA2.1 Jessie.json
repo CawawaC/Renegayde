@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "//As you step into the Saloon, you are struck by how empty it is, compared to the street outside. The windows are dimmed and smoke and vapor cling to the low ceiling. Only one window is open, but not letting in much light. As you look around, you see Horace poke in his head through the window, looking around. \n\nA small humanoid dressed in fur and cloth sits at the bar, gazing deep into their drink. Behind the bar, a burly woman with a contraption providing mechanical hands strapped to her back is cleaning glasses and checking bottles. She looks at you briefly as you enter.\n\nAt a table with two holographic cowgirls sits an androgynous figure in plain clothing. They concentrating on the poker game and don't notice you.\n\n[[Approach the bar. ->ApproachBar]]\n\n[[Stride over to the bar. ->ApproachBarPumped]]\n\n[[Approach the table. ->ApproachNona]]\n\n[[Walk to the poker table and say hello. ->ApproachNonaPumped]]\n\n[[Approach Horace ->ApproachHorace]]\n\n[[Stand around, unsure of yourself. ->StillAshamed]]\n\n[[Wait around. ->SebastianEnters]]\n\n",
+      "text": "//You are struck by how empty it is, compared to the street outside. The windows are dimmed and smoke and vapor cling to the low ceiling. Only one window is open, but not letting in much light. As you look around, you see Horace poke in his head through the window, looking around. \n\nA small humanoid dressed in fur and cloth sits at the bar, gazing deep into their drink. Behind the bar, a surly woman with multiple arms is cleaning glasses. She looks at you briefly as you enter.\n\nAt a table with two holographic cowgirls sits an androgynous figure in plain clothing. They are concentrating on the poker game and don't notice you.//\n\n[[Approach the bar. ->ApproachBar]]\n\n[[Stride over to the bar. ->ApproachBarPumped]]\n\n[[Approach the table. ->ApproachNona]]\n\n[[Walk to the poker table.. ->ApproachNonaPumped]]\n\n[[Approach Horace ->ApproachHorace]]\n\n[[Stand around, unsure of yourself. ->StillAshamed]]\n",
       "links": [
         {
           "name": "Approach the bar. ",
@@ -19,7 +19,7 @@
           "pid": "3"
         },
         {
-          "name": "Walk to the poker table and say hello. ",
+          "name": "Walk to the poker table.. ",
           "link": "ApproachNonaPumped",
           "pid": "9"
         },
@@ -32,21 +32,18 @@
           "name": "Stand around, unsure of yourself. ",
           "link": "StillAshamed",
           "pid": "5"
-        },
-        {
-          "name": "Wait around. ",
-          "link": "SebastianEnters",
-          "pid": "12"
         }
       ],
       "name": "EnteringTheSaloon",
       "pid": "1",
       "position": {
-        "x": "589",
-        "y": "86"
+        "x": "623",
+        "y": "189"
       },
       "tags": [
-        "Description"
+        "Description",
+        "Berta:NotTalked",
+        "Nona:NotTalked"
       ]
     },
     {
@@ -54,8 +51,8 @@
       "name": "ApproachBar",
       "pid": "2",
       "position": {
-        "x": "818",
-        "y": "434"
+        "x": "852",
+        "y": "537"
       },
       "tags": [
         "Description",
@@ -67,8 +64,8 @@
       "name": "ApproachNona",
       "pid": "3",
       "position": {
-        "x": "989",
-        "y": "429"
+        "x": "1023",
+        "y": "532"
       },
       "tags": [
         ":fine",
@@ -89,8 +86,8 @@
       "name": "ApproachHorace",
       "pid": "4",
       "position": {
-        "x": "1152",
-        "y": "429"
+        "x": "1186",
+        "y": "532"
       },
       "tags": [
         ":fine",
@@ -120,8 +117,8 @@
       "name": "StillAshamed",
       "pid": "5",
       "position": {
-        "x": "265",
-        "y": "151"
+        "x": "299",
+        "y": "254"
       },
       "tags": [
         "Description",
@@ -133,8 +130,8 @@
       "name": "ApproachBarAshamed",
       "pid": "6",
       "position": {
-        "x": "103",
-        "y": "531"
+        "x": "215",
+        "y": "634"
       },
       "tags": [
         "Description",
@@ -147,8 +144,8 @@
       "name": "ApproachNonaAshamed",
       "pid": "7",
       "position": {
-        "x": "255",
-        "y": "533"
+        "x": "289",
+        "y": "636"
       },
       "tags": [
         "Description",
@@ -161,8 +158,8 @@
       "name": "ApproachBarPumped",
       "pid": "8",
       "position": {
-        "x": "480",
-        "y": "294"
+        "x": "514",
+        "y": "397"
       },
       "tags": [
         "Description",
@@ -175,8 +172,8 @@
       "name": "ApproachNonaPumped",
       "pid": "9",
       "position": {
-        "x": "610",
-        "y": "303"
+        "x": "644",
+        "y": "406"
       },
       "tags": [
         "Jessie:pumped",
@@ -196,8 +193,8 @@
       "name": "WhatAreYouDoing",
       "pid": "10",
       "position": {
-        "x": "1152",
-        "y": "579"
+        "x": "1186",
+        "y": "682"
       },
       "tags": [
         "Horace"
@@ -220,8 +217,8 @@
       "name": "OkayHorace",
       "pid": "11",
       "position": {
-        "x": "1116",
-        "y": "125"
+        "x": "1150",
+        "y": "228"
       },
       "tags": [
         "Jessie"
@@ -249,8 +246,8 @@
       "name": "SebastianEnters",
       "pid": "12",
       "position": {
-        "x": "590",
-        "y": "534"
+        "x": "624",
+        "y": "637"
       },
       "tags": [
         "Description"
@@ -273,8 +270,8 @@
       "name": "TipHatAtSeb",
       "pid": "13",
       "position": {
-        "x": "584",
-        "y": "678"
+        "x": "618",
+        "y": "781"
       },
       "tags": [
         "Jessie:pumped",
@@ -298,8 +295,8 @@
       "name": "AvoidSebEye",
       "pid": "14",
       "position": {
-        "x": "760",
-        "y": "684"
+        "x": "794",
+        "y": "787"
       },
       "tags": [
         "Jessie:ashamed",
@@ -324,8 +321,8 @@
       "name": "SmileAtSeb",
       "pid": "15",
       "position": {
-        "x": "417",
-        "y": "684"
+        "x": "451",
+        "y": "787"
       },
       "tags": [
         "Jessie:bruised",
@@ -345,8 +342,8 @@
       "name": "SebComesTrueInfo",
       "pid": "16",
       "position": {
-        "x": "392",
-        "y": "924"
+        "x": "426",
+        "y": "1027"
       },
       "tags": [
         "Description",
@@ -365,8 +362,8 @@
       "name": "SebAvoidTrueInfo",
       "pid": "17",
       "position": {
-        "x": "735",
-        "y": "907"
+        "x": "769",
+        "y": "1010"
       },
       "tags": [
         "Sebastian:trueInfo",
@@ -385,8 +382,8 @@
       "name": "SebAvoidbadInfo",
       "pid": "18",
       "position": {
-        "x": "881",
-        "y": "898"
+        "x": "915",
+        "y": "1001"
       },
       "tags": [
         "Sebastian:misinformed",
@@ -405,8 +402,8 @@
       "name": "SebComesBadInfo",
       "pid": "19",
       "position": {
-        "x": "558",
-        "y": "902"
+        "x": "592",
+        "y": "1005"
       },
       "tags": [
         "Sebastian:misinformed",
@@ -418,17 +415,131 @@
       "name": " Ending",
       "pid": "20",
       "position": {
-        "x": "616",
-        "y": "1189"
+        "x": "650",
+        "y": "1292"
       },
       "tags": [
         "Description",
         "Jessie:ending"
       ]
+    },
+    {
+      "text": "//You look around the Saloon.//\n\n[[Continue.->EnteringTheSaloon]]\n\n[[Continue. ->AfterTalkingNona]]\n\n[[Continue. ->AfterTalkingBerta]] \n\n[[Continue. ->TalkedToBoth]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "EnteringTheSaloon",
+          "pid": "1"
+        },
+        {
+          "name": "Continue. ",
+          "link": "AfterTalkingNona",
+          "pid": "22"
+        },
+        {
+          "name": "Continue. ",
+          "link": "AfterTalkingBerta",
+          "pid": "23"
+        },
+        {
+          "name": "Continue. ",
+          "link": "TalkedToBoth",
+          "pid": "24"
+        }
+      ],
+      "name": "You Look Around",
+      "pid": "21",
+      "position": {
+        "x": "831",
+        "y": "51"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "//The Saloon is still pretty empty. The windows are dimmed and smoke and vapor cling to the low ceiling. Only one window is open, but not letting in much light. Horace frame is still standing there, his eyes displaying the cross-lingual sign \"AFK\". \n\nA small humanoid dressed in fur and cloth sits at the bar, gazing deep into their drink. Behind the bar, a surly woman with multiple arms is cleaning glasses. She looks at you briefly as you enter.\n\nNona and Horace are deep into their card game. At one point, you are pretty sure you hear Nona laugh out loud.//\n\n[[Approach the bar. ->ApproachBar]]\n\n[[Stride over to the bar. ->ApproachBarPumped]]\n\n[[Stand around, unsure of yourself. ->StillAshamed]]\n\n",
+      "links": [
+        {
+          "name": "Approach the bar. ",
+          "link": "ApproachBar",
+          "pid": "2"
+        },
+        {
+          "name": "Stride over to the bar. ",
+          "link": "ApproachBarPumped",
+          "pid": "8"
+        },
+        {
+          "name": "Stand around, unsure of yourself. ",
+          "link": "StillAshamed",
+          "pid": "5"
+        }
+      ],
+      "name": "AfterTalkingNona",
+      "pid": "22",
+      "position": {
+        "x": "780",
+        "y": "205"
+      },
+      "tags": [
+        "Berta:NotTalked",
+        "Horace:flirting",
+        "Description"
+      ]
+    },
+    {
+      "text": "//The Saloon is still pretty empty. The windows are dimmed and smoke and vapor cling to the low ceiling. Only one window is open, but not letting in much light. Horace is peeking inside. He's watching the poker game.\n\nA small humanoid dressed in fur and cloth sits at the bar, gazing deep into their drink. Behind the bar, the bartender is still cleaning glasses.\n\nAt a table with two holographic cowgirls sits an androgynous figure in plain clothing. They are concentrating on the poker game and don't notice you.//\n\n[[Walk to the poker table. ->ApproachNonaPumped]]\n\n[[Stand around, unsure of yourself. ->StillAshamed]]\n",
+      "links": [
+        {
+          "name": "Walk to the poker table. ",
+          "link": "ApproachNonaPumped",
+          "pid": "9"
+        },
+        {
+          "name": "Stand around, unsure of yourself. ",
+          "link": "StillAshamed",
+          "pid": "5"
+        }
+      ],
+      "name": "AfterTalkingBerta",
+      "pid": "23",
+      "position": {
+        "x": "979",
+        "y": "173"
+      },
+      "tags": [
+        "Description",
+        "Nona:NotTalked"
+      ]
+    },
+    {
+      "text": "//You look around. Not much is happening. The bartender is getting some bottles from the cellar. Nona and Horace are deep into their game. At one point, you are pretty sure you hear Nona laugh out loud.//\n\n\n[[Stand around, unsure of yourself. ->StillAshamed]]\n\n[[Wait around. ->SebastianEnters]]\n",
+      "links": [
+        {
+          "name": "Stand around, unsure of yourself. ",
+          "link": "StillAshamed",
+          "pid": "5"
+        },
+        {
+          "name": "Wait around. ",
+          "link": "SebastianEnters",
+          "pid": "12"
+        }
+      ],
+      "name": "TalkedToBoth",
+      "pid": "24",
+      "position": {
+        "x": "789",
+        "y": "376"
+      },
+      "tags": [
+        "Description"
+      ]
     }
   ],
   "name": "SceneA2.1 Jessie",
-  "startnode": "1",
+  "startnode": "21",
   "creator": "Twine",
   "creator-version": "2.3.4",
   "ifid": "CD67666F-1275-4A0C-B22D-D21A55F071FD"

@@ -13,12 +13,17 @@ export (Texture) var unimpressed
 export (Texture) var foolish
 export (Texture) var interested
 export (Texture) var annoyed
+export (Texture) var bored
+export (Texture) var flirting
+export (Texture) var happy
 
-func _ready():
+
+func init():
 	var e = Game.char_emotions[name]
 	apply_emotion(e)
 
 func apply_emotion(emotion):
+	print("Apply emotion")
 	var e_pic = get(emotion)
 	if e_pic == null:
 		e_pic = default

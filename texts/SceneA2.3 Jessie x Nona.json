@@ -1,0 +1,987 @@
+{
+  "passages": [
+    {
+      "text": "//The human looks up as you near the table. Their eyes manage to convey both vague interest, and complete indifference. At first, it looks like their right arm is encased in a metal gauntlet, but as you get a closer look you realize that it's actually completly robotic.//\n\n[[\"Hey there, name's Jessie.\" ->IntroNorm]]\n\n[[\"Howdy partner, place for one more?\" ->IntroPumped]]\n\n[[\"Uh, hi.\" ->IntroShame]]",
+      "links": [
+        {
+          "name": "\"Hey there, name's Jessie.\" ",
+          "link": "IntroNorm",
+          "pid": "2"
+        },
+        {
+          "name": "\"Howdy partner, place for one more?\" ",
+          "link": "IntroPumped",
+          "pid": "3"
+        },
+        {
+          "name": "\"Uh, hi.\" ",
+          "link": "IntroShame",
+          "pid": "4"
+        }
+      ],
+      "name": "Nona",
+      "pid": "1",
+      "position": {
+        "x": "1378",
+        "y": "382"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "Hey there, my name's Jessie.\n\n[[Continue. ->HeyWantTo]]\n\n[[\"And I'm a cowboy.\" ->LookWork]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HeyWantTo",
+          "pid": "5"
+        },
+        {
+          "name": "\"And I'm a cowboy.\" ",
+          "link": "LookWork",
+          "pid": "6"
+        }
+      ],
+      "name": "IntroNorm",
+      "pid": "2",
+      "position": {
+        "x": "1038",
+        "y": "438"
+      },
+      "tags": [
+        "Jessie",
+        "Jessie:fine",
+        "Jessie:bruised"
+      ]
+    },
+    {
+      "text": "Howdy partner, is there place for one more?\n\n[[Continue. ->I'mNona]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "I'mNona",
+          "pid": "15"
+        }
+      ],
+      "name": "IntroPumped",
+      "pid": "3",
+      "position": {
+        "x": "1303",
+        "y": "532"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Uhm. Hi.... I'm Jessie.\n\n[[Continue. ->HiJessie]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HiJessie",
+          "pid": "23"
+        }
+      ],
+      "name": "IntroShame",
+      "pid": "4",
+      "position": {
+        "x": "1453",
+        "y": "532"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Hi. Want to play?\n\n[[\"Sure.\" ->Sure]]\n\n[[\"Maybe just sit for a spell?\" ->JustSit]]",
+      "links": [
+        {
+          "name": "\"Sure.\" ",
+          "link": "Sure",
+          "pid": "8"
+        },
+        {
+          "name": "\"Maybe just sit for a spell?\" ",
+          "link": "JustSit",
+          "pid": "29"
+        }
+      ],
+      "name": "HeyWantTo",
+      "pid": "5",
+      "position": {
+        "x": "981",
+        "y": "738"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "I'm looking for work.\n\n[[Continue. ->HeyWantTo]]\n\n[[\"I'm a cowboy.\" ->I'mACowboy]]\n\n",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HeyWantTo",
+          "pid": "5"
+        },
+        {
+          "name": "\"I'm a cowboy.\" ",
+          "link": "I'mACowboy",
+          "pid": "7"
+        }
+      ],
+      "name": "LookWork",
+      "pid": "6",
+      "position": {
+        "x": "750",
+        "y": "815"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "I'm a cowboy.\n\n[[Continue. ->ISee]] \n\n[[\"And I'm from Goldbeak Ranch.\" ->I'mform]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "ISee",
+          "pid": "13"
+        },
+        {
+          "name": "\"And I'm from Goldbeak Ranch.\" ",
+          "link": "I'mform",
+          "pid": "9"
+        }
+      ],
+      "name": "I'mACowboy",
+      "pid": "7",
+      "position": {
+        "x": "726",
+        "y": "978"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Sure!\n\n[[Continue. ->I'mNona]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "I'mNona",
+          "pid": "15"
+        }
+      ],
+      "name": "Sure",
+      "pid": "8",
+      "position": {
+        "x": "1179",
+        "y": "698"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//They interrupt you.// \n\nI'm Nona.\n\n[[\"Ah, ehm. Hi.\"  ->AhEhmHi]]",
+      "links": [
+        {
+          "name": "\"Ah, ehm. Hi.\"  ",
+          "link": "AhEhmHi",
+          "pid": "12"
+        }
+      ],
+      "name": "I'mform",
+      "pid": "9",
+      "position": {
+        "x": "650",
+        "y": "1158"
+      },
+      "tags": [
+        "Nona",
+        "Nona+annoyed"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "DontKnowRules",
+      "pid": "10",
+      "position": {
+        "x": "2454",
+        "y": "1227"
+      }
+    },
+    {
+      "text": "What are we playing?\n\n[[Continue. ->TombTownPoker]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "TombTownPoker",
+          "pid": "20"
+        }
+      ],
+      "name": "WhatAreWe",
+      "pid": "11",
+      "position": {
+        "x": "1765",
+        "y": "776"
+      },
+      "tags": [
+        "Jessie",
+        "Jessie:fine",
+        "Jessie:bruised",
+        "Jessie:pumped",
+        "Jessie:ashamed"
+      ]
+    },
+    {
+      "text": "Ah, ehm sorry. Hi.\n\n[[Mind if I sit down? -> MindIfI]]\n\n[[Say nothing. ->AshamedJessie]]",
+      "links": [
+        {
+          "name": "Mind if I sit down? ",
+          "link": " MindIfI",
+          "pid": "16"
+        },
+        {
+          "name": "Say nothing. ",
+          "link": "AshamedJessie",
+          "pid": "17"
+        }
+      ],
+      "name": "AhEhmHi",
+      "pid": "12",
+      "position": {
+        "x": "798",
+        "y": "1126"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "I see. I'm Nona. Take a Seat.\n\n[[Continue. ->FreeSeat]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "FreeSeat",
+          "pid": "14"
+        }
+      ],
+      "name": "ISee",
+      "pid": "13",
+      "position": {
+        "x": "895",
+        "y": "941"
+      },
+      "tags": [
+        "Nona",
+        "Nona+interested"
+      ]
+    },
+    {
+      "text": "//They gesture towards the nearest seat, currently taken by a holographic cowgirl. It flickers and vanishes, and you sit down.//\n\n[[\"What are we playing?\" ->WhatAreWe]] \n\n[[Continue. ->SoACowboy]]",
+      "links": [
+        {
+          "name": "\"What are we playing?\" ",
+          "link": "WhatAreWe",
+          "pid": "11"
+        },
+        {
+          "name": "Continue. ",
+          "link": "SoACowboy",
+          "pid": "26"
+        }
+      ],
+      "name": "FreeSeat",
+      "pid": "14",
+      "position": {
+        "x": "1438",
+        "y": "1050"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "I'm Nona.\n\n[[Continue. ->FreeSeat]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "FreeSeat",
+          "pid": "14"
+        }
+      ],
+      "name": "I'mNona",
+      "pid": "15",
+      "position": {
+        "x": "1338",
+        "y": "736"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "Mind if I join you for a round?\n\n[[Continue. ->FreeSeat]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "FreeSeat",
+          "pid": "14"
+        }
+      ],
+      "name": " MindIfI",
+      "pid": "16",
+      "position": {
+        "x": "970",
+        "y": "1095"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You'r not sure what to say next and feel your cheeks getting hot. Nona is looking at you silently.//\n\n[[\"Could I... sit down?\"->CouldIJoin]]\n\n[[Move away from the table.->LEAVING]]",
+      "links": [
+        {
+          "name": "\"Could I... sit down?\"",
+          "link": "CouldIJoin",
+          "pid": "18"
+        },
+        {
+          "name": "Move away from the table.",
+          "link": "LEAVING",
+          "pid": "19"
+        }
+      ],
+      "name": "AshamedJessie",
+      "pid": "17",
+      "position": {
+        "x": "848",
+        "y": "1274"
+      },
+      "tags": [
+        "Jessie+ashamed",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Uhm, do you mind if I sit down?\n\n[[Continue. ->FreeSeat]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "FreeSeat",
+          "pid": "14"
+        }
+      ],
+      "name": "CouldIJoin",
+      "pid": "18",
+      "position": {
+        "x": "1096",
+        "y": "1216"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "{SceneA2.1 Jessie}",
+      "name": "LEAVING",
+      "pid": "19",
+      "position": {
+        "x": "838",
+        "y": "1969"
+      },
+      "tags": [
+        "SceneChange"
+      ]
+    },
+    {
+      "text": "Tombtown Poker. //They give you a long look and start to shuffle the cards.//\n\n[[\"I'll pick it up as we play.\"->PickUp]]\n\n",
+      "links": [
+        {
+          "name": "\"I'll pick it up as we play.\"",
+          "link": "PickUp",
+          "pid": "21"
+        }
+      ],
+      "name": "TombTownPoker",
+      "pid": "20",
+      "position": {
+        "x": "1886",
+        "y": "955"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "Ah well, I know poker, guess I'll pick up the rest as we play.\n\n[[\"So, Tomb-Towns. Are you from one?\" ->FromTomb?]]\n",
+      "links": [
+        {
+          "name": "\"So, Tomb-Towns. Are you from one?\" ",
+          "link": "FromTomb?",
+          "pid": "24"
+        }
+      ],
+      "name": "PickUp",
+      "pid": "21",
+      "position": {
+        "x": "1909",
+        "y": "1276"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "AhOkay",
+      "pid": "22",
+      "position": {
+        "x": "2067",
+        "y": "954"
+      }
+    },
+    {
+      "text": "Hi Jessie. I'm Nona. //There is a hint of a smile on their face.//\n\n[[\"Mind if I sit down?\" ->CouldIJoin]] ",
+      "links": [
+        {
+          "name": "\"Mind if I sit down?\" ",
+          "link": "CouldIJoin",
+          "pid": "18"
+        }
+      ],
+      "name": "HiJessie",
+      "pid": "23",
+      "position": {
+        "x": "1506",
+        "y": "699"
+      },
+      "tags": [
+        "Nona",
+        "Nona+pity"
+      ]
+    },
+    {
+      "text": "So, are you from a tomb town?\n\n[[Continue. ->NoneOfYour]] ",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "NoneOfYour",
+          "pid": "36"
+        }
+      ],
+      "name": "FromTomb?",
+      "pid": "24",
+      "position": {
+        "x": "2006",
+        "y": "1412"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "CoolHolo",
+      "pid": "25",
+      "position": {
+        "x": "2385",
+        "y": "1347"
+      }
+    },
+    {
+      "text": "So, a cowboy. Haven't heard that one before.\n\n[[\"It's what I want.\" ->WhatIWant]]\n\n[[\"Is that a problem?\" ->ThatAProblem?]]\n\n",
+      "links": [
+        {
+          "name": "\"It's what I want.\" ",
+          "link": "WhatIWant",
+          "pid": "27"
+        },
+        {
+          "name": "\"Is that a problem?\" ",
+          "link": "ThatAProblem?",
+          "pid": "28"
+        }
+      ],
+      "name": "SoACowboy",
+      "pid": "26",
+      "position": {
+        "x": "1711",
+        "y": "1434"
+      },
+      "tags": [
+        "Nona:interested",
+        "Nona"
+      ]
+    },
+    {
+      "text": "Yeah, I know. But it's what I want and who I am.\n\n[[Continue. ->LookIntoDistance]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "LookIntoDistance",
+          "pid": "30"
+        }
+      ],
+      "name": "WhatIWant",
+      "pid": "27",
+      "position": {
+        "x": "1502",
+        "y": "1629"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Is that a problem for you?\n\n[[Continue.->NoDontWorry]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "NoDontWorry",
+          "pid": "34"
+        }
+      ],
+      "name": "ThatAProblem?",
+      "pid": "28",
+      "position": {
+        "x": "1786",
+        "y": "1584"
+      },
+      "tags": [
+        "Jessie:pumped",
+        "Jessie:bruised",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Mind if I just sit for a bit?\n\n[[Continue. ->FreeSeat]] \n",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "FreeSeat",
+          "pid": "14"
+        }
+      ],
+      "name": "JustSit",
+      "pid": "29",
+      "position": {
+        "x": "1040",
+        "y": "874"
+      },
+      "tags": [
+        "Nona+bored",
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//Nona looks into a distance for a little bit before giving you a little nod.//\n\n[[Continue. ->RespectThat]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "RespectThat",
+          "pid": "31"
+        }
+      ],
+      "name": "LookIntoDistance",
+      "pid": "30",
+      "position": {
+        "x": "1417",
+        "y": "1764"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "I can respect that.\n\n[[\"What's your story?\"->WhatStory?]]\n\n[[\"What are you playing?\" ->TombTownPoker]] ",
+      "links": [
+        {
+          "name": "\"What's your story?\"",
+          "link": "WhatStory?",
+          "pid": "32"
+        },
+        {
+          "name": "\"What are you playing?\" ",
+          "link": "TombTownPoker",
+          "pid": "20"
+        }
+      ],
+      "name": "RespectThat",
+      "pid": "31",
+      "position": {
+        "x": "1565",
+        "y": "1775"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "So what's your story?\n\n[[Continue. ->NoneOfYour]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "NoneOfYour",
+          "pid": "36"
+        }
+      ],
+      "name": "WhatStory?",
+      "pid": "32",
+      "position": {
+        "x": "1299",
+        "y": "1804"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Because if it is... I've had enough of that for one day.\n\n[[Continue. ->Iheard]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "Iheard",
+          "pid": "35"
+        }
+      ],
+      "name": "BecauseIf",
+      "pid": "33",
+      "position": {
+        "x": "2508",
+        "y": "1497"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "No, don't worry.\n\n\n[[\"So, waht's your story?\" ->WhatStory?]] ",
+      "links": [
+        {
+          "name": "\"So, waht's your story?\" ",
+          "link": "WhatStory?",
+          "pid": "32"
+        }
+      ],
+      "name": "NoDontWorry",
+      "pid": "34",
+      "position": {
+        "x": "1800",
+        "y": "1804"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "Double-click this passage to edit it.",
+      "name": "Iheard",
+      "pid": "35",
+      "position": {
+        "x": "2549",
+        "y": "1647"
+      }
+    },
+    {
+      "text": "None of your business.\n\n[[Say nothing. ->MomentofSilence]]\n\n",
+      "links": [
+        {
+          "name": "Say nothing. ",
+          "link": "MomentofSilence",
+          "pid": "37"
+        }
+      ],
+      "name": "NoneOfYour",
+      "pid": "36",
+      "position": {
+        "x": "1414",
+        "y": "2048"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "//Neither of you speaks for half a minute. Then Nona rolls their eyes and waves their right arm in your face.//\n\n[[Continue.->Obviously]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "Obviously",
+          "pid": "38"
+        }
+      ],
+      "name": "MomentofSilence",
+      "pid": "37",
+      "position": {
+        "x": "1573",
+        "y": "2086"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "Look, I'm obviously from a tomb town, okay? And I don't want to talk about it. I'm not welcome there anymore, so whatever you have in mind, you can forget it. Now, do you want to play?\n\n[[\"Sorry, I know almost nothing about that all.\" ->Don't]]\n\n[[\"What are we playing?\" ->WhatAreWe]] ",
+      "links": [
+        {
+          "name": "\"Sorry, I know almost nothing about that all.\" ",
+          "link": "Don't",
+          "pid": "39"
+        },
+        {
+          "name": "\"What are we playing?\" ",
+          "link": "WhatAreWe",
+          "pid": "11"
+        }
+      ],
+      "name": "Obviously",
+      "pid": "38",
+      "position": {
+        "x": "1614",
+        "y": "1924"
+      },
+      "tags": [
+        "Nona+annoyed",
+        "Nona"
+      ]
+    },
+    {
+      "text": "Sorry, I didn't mean to... I know almost nothing about that stuff. Horace mentioned it once or twice, and there's the radio, but other than that...\n\n[[Continue.->WhoseHorace?]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "WhoseHorace?",
+          "pid": "40"
+        }
+      ],
+      "name": "Don't",
+      "pid": "39",
+      "position": {
+        "x": "1761",
+        "y": "1991"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Who is Horace?\n\n[[\"My best friend\" ->BestFriend]]\n",
+      "links": [
+        {
+          "name": "\"My best friend\" ",
+          "link": "BestFriend",
+          "pid": "41"
+        }
+      ],
+      "name": "WhoseHorace?",
+      "pid": "40",
+      "position": {
+        "x": "1883",
+        "y": "2093"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "My best friend. He carried me here, has been all over the Reaches and knows everyone and everything. He's over there. \n\n[[You wave at Horace.->WaveAtHorace]]",
+      "links": [
+        {
+          "name": "You wave at Horace.",
+          "link": "WaveAtHorace",
+          "pid": "42"
+        }
+      ],
+      "name": "BestFriend",
+      "pid": "41",
+      "position": {
+        "x": "1808",
+        "y": "2243"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You wave at Horace, and he gives you a nod. Nona turns in her seat to look at him. Neither of them moves for a a few seconds. Then the remaining cow-girl flickers, and is replaced by a holographic Horace. Adequatly shrunk to fit the seat, of course. Nona smiles at him.//\n\n[[Continue. ->HeyTherrreee]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "HeyTherrreee",
+          "pid": "43"
+        }
+      ],
+      "name": "WaveAtHorace",
+      "pid": "42",
+      "position": {
+        "x": "1808",
+        "y": "2393"
+      },
+      "tags": [
+        "Description"
+      ]
+    },
+    {
+      "text": "Hey there. //You've never seen Horace wink before.//\n\n[[Continue. ->NiceTech]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "NiceTech",
+          "pid": "44"
+        }
+      ],
+      "name": "HeyTherrreee",
+      "pid": "43",
+      "position": {
+        "x": "1808",
+        "y": "2543"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Nice Tech. Bit old though. \n\n[[Continue. ->IPrefer]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "IPrefer",
+          "pid": "45"
+        }
+      ],
+      "name": "NiceTech",
+      "pid": "44",
+      "position": {
+        "x": "1808",
+        "y": "2693"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "I prefer... experienced. So, what are we playing? \n\n[[Continue. ->TombTownPokerButYourFriend]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "TombTownPokerButYourFriend",
+          "pid": "46"
+        }
+      ],
+      "name": "IPrefer",
+      "pid": "45",
+      "position": {
+        "x": "1808",
+        "y": "2843"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Well, I'm always playing Tombtown Poker, but since your friend here doesn't seem to have a clue about it, I assume neither do you?\n\n[[Continue. ->He'sJust]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "He'sJust",
+          "pid": "47"
+        }
+      ],
+      "name": "TombTownPokerButYourFriend",
+      "pid": "46",
+      "position": {
+        "x": "1808",
+        "y": "2993"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "Quite the opposite, just never thought to bother teach someone only half the ruleset. But since you have all the necessary... parts, I'd love to have a go at you.\n\n[[Continue. ->YourOn]]",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "YourOn",
+          "pid": "48"
+        }
+      ],
+      "name": "He'sJust",
+      "pid": "47",
+      "position": {
+        "x": "1808",
+        "y": "3143"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "//Nona raises an eyebrow at horace before turning to you.// Sorry Cowboy, but it looks like I need to teach your Horse a lesson. And we need your spot for the third Player.//\n\n[[\"Oh, uh. Okay.\" ->What'sHappening]]",
+      "links": [
+        {
+          "name": "\"Oh, uh. Okay.\" ",
+          "link": "What'sHappening",
+          "pid": "49"
+        }
+      ],
+      "name": "YourOn",
+      "pid": "48",
+      "position": {
+        "x": "1808",
+        "y": "3293"
+      },
+      "tags": [
+        "Nona"
+      ]
+    },
+    {
+      "text": "Oh, uhm. Okay.\n\n[[Get up. ->GettingUp]]",
+      "links": [
+        {
+          "name": "Get up. ",
+          "link": "GettingUp",
+          "pid": "50"
+        }
+      ],
+      "name": "What'sHappening",
+      "pid": "49",
+      "position": {
+        "x": "1808",
+        "y": "3443"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "//You get up, and immediatly a holographic Cowgirl takes your place. The game begins in silence, and while you've played various forms of Poker and other card games before, you have a hard time following the game. It seems as if it has almost nothing in common with regular poker. Both of them gesture towards the thin air, throw their cards away, smile, roll their eyes, and generally seem to have an itneresting, if silent, conversation.\n\n\nYou'r not sure what exactly is happening, but they seem to be having a good time.//\n\n[[LEAVING]] ",
+      "links": [
+        {
+          "name": "LEAVING",
+          "link": "LEAVING",
+          "pid": "19"
+        }
+      ],
+      "name": "GettingUp",
+      "pid": "50",
+      "position": {
+        "x": "1808",
+        "y": "3593"
+      },
+      "tags": [
+        "Description"
+      ]
+    }
+  ],
+  "name": "SceneA2.3 Jessie x Nona",
+  "startnode": "1",
+  "creator": "Twine",
+  "creator-version": "2.3.4",
+  "ifid": "E3360702-E0B6-4929-85AD-507E8C8AA5D4"
+}

@@ -8,4 +8,8 @@
 [node name="text" parent="." index="0"]
 dialogue_name = "Epilogue"
 
+[node name="background" parent="." index="1"]
+texture = null
+
 [node name="jessie" parent="characters" index="0" instance=ExtResource( 2 )]
+visible = false

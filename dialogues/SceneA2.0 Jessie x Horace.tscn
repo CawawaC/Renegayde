@@ -10,7 +10,6 @@
 dialogue_name = "SceneA2.0 Jessie x Horace"
 
 [node name="horace" parent="characters" index="0" instance=ExtResource( 2 )]
-script = null
 
 [node name="jessie" parent="characters" index="1" instance=ExtResource( 3 )]
-script = null
+[connection signal="emotion_change" from="text" to="." method="_on_text_emotion_change"]

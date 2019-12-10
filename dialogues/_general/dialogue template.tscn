@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://dialogues/_general/dialogue main.gd" type="Script" id=1]
 [ext_resource path="res://dialogues/_general/dialogue texts.gd" type="Script" id=2]
 [ext_resource path="res://dialogues/_general/answer.tscn" type="PackedScene" id=3]
-[ext_resource path="res://dialogues/_general/next.tscn" type="PackedScene" id=4]
-[ext_resource path="res://dialogues/_general/next episode.tscn" type="PackedScene" id=5]
+[ext_resource path="res://dialogues/_general/exotic answer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://dialogues/_general/next.tscn" type="PackedScene" id=5]
+[ext_resource path="res://dialogues/_general/next episode.tscn" type="PackedScene" id=6]
+[ext_resource path="res://environments/purple_town.png" type="Texture" id=7]
 
 [node name="dialogue" type="Node2D"]
 script = ExtResource( 1 )
@@ -13,8 +15,9 @@ script = ExtResource( 1 )
 script = ExtResource( 2 )
 dialogue_name = "sceneA1"
 answer_template = ExtResource( 3 )
-next_template = ExtResource( 4 )
-next_episode_template = ExtResource( 5 )
+exotic_answer_template = ExtResource( 4 )
+next_template = ExtResource( 5 )
+next_episode_template = ExtResource( 6 )
 passages_v_padding = 1
 anchor_offset = 0.2
 
@@ -32,6 +35,12 @@ anchor_left = 0.1
 anchor_top = 0.9
 anchor_right = 0.9
 anchor_bottom = 1.0
+
+[node name="background" type="Sprite" parent="."]
+modulate = Color( 0.439216, 0.439216, 0.439216, 1 )
+position = Vector2( 640, 180 )
+scale = Vector2( 0.666667, 0.666667 )
+texture = ExtResource( 7 )
 
 [node name="characters" type="Node2D" parent="."]
 [connection signal="emotion_change" from="text" to="." method="_on_text_emotion_change"]
