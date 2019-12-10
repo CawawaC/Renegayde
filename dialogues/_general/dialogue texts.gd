@@ -41,7 +41,7 @@ func set_passage(passage_data):
 	var tags = passage_data.tags
 	var speaker = get_speaker(passage_data.tags)
 	
-	var passage = Game.get_textbox(speaker).instance()
+	var passage = Game.get_textbox(speaker)
 	passage.set_text(passage_data.text)
 	
 	passage.connect("passage_added", self, "on_passage_added")

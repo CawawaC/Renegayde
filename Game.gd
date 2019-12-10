@@ -2,6 +2,12 @@ extends Node
 
 var player_name = "jessie"
 
+onready var text_box_factory = load("res://dialogues/text boxes/factory.tscn").instance()
+
+func _ready():
+	print("svf")
+	
+
 var characters = [
 	"jessie",
 	"bar-man",
@@ -44,10 +50,11 @@ func init_missing_characters():
 			char_emotions[c] = "fine"
 
 func get_textbox(speaker):
-	if text_boxes.has(speaker):
-		return text_boxes[speaker]
+	var t = text_box_factory.get_node(speaker)
+	if t:
+		return t.duplicate()
 	else:
-		return text_boxes["description"]
+		return text_box_factory.get_node("description").duplicate()
 
 var text_boxes = {
 	"jessie": load("res://dialogues/text boxes/jessie.tscn"),

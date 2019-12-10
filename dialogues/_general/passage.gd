@@ -10,6 +10,10 @@ var resized = false
 
 signal passage_added
 
+#enum ALIGN { linear,square,none }
+#export(DROPOFF) var dropoff = DROPOFF.linear
+
+
 func _ready():
 	yield(get_tree(), "idle_frame")
 	rect_size.y = get_v_scroll().max_value

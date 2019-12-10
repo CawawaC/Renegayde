@@ -1,0 +1,249 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://dialogues/fonts/default italic.tres" type="DynamicFont" id=1]
+[ext_resource path="res://dialogues/fonts/jessie.tres" type="DynamicFont" id=2]
+[ext_resource path="res://dialogues/_general/passage.gd" type="Script" id=3]
+[ext_resource path="res://dialogues/fonts/horace.tres" type="DynamicFont" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 15.0
+content_margin_right = 5.0
+content_margin_top = 6.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.392157, 0.211765, 0.211765, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.0789986, 0.059906, 0.101563, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=2]
+content_margin_left = 15.0
+content_margin_right = 5.0
+content_margin_top = 6.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.184314, 0.145098, 0.113725, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.0789986, 0.059906, 0.101563, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=8]
+content_margin_left = 15.0
+content_margin_right = 5.0
+content_margin_top = 6.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.113725, 0.184314, 0.113725, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.0789986, 0.059906, 0.101563, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=3]
+content_margin_left = 15.0
+content_margin_right = 5.0
+content_margin_top = 6.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.184314, 0.145098, 0.113725, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.0789986, 0.059906, 0.101563, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=4]
+content_margin_left = 15.0
+content_margin_right = 5.0
+content_margin_top = 6.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.160784, 0.192157, 0.364706, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.0789986, 0.059906, 0.101563, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=5]
+content_margin_left = 15.0
+content_margin_right = 5.0
+content_margin_top = 6.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.176471, 0.133333, 0.227451, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.0789986, 0.059906, 0.101563, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=6]
+content_margin_left = 15.0
+content_margin_right = 5.0
+content_margin_top = 6.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.133333, 0.207843, 0.227451, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.0789986, 0.059906, 0.101563, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=7]
+content_margin_left = 15.0
+content_margin_right = 5.0
+content_margin_top = 6.0
+content_margin_bottom = 5.0
+bg_color = Color( 0.160784, 0.207843, 0.172549, 1 )
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color( 0.0789986, 0.059906, 0.101563, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="factory" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="berta" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 1, 0 )
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/normal = SubResource( 1 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+text = "The quick brown fox jumps over the lazy dog but stumbles and falls into a ravine"
+script = ExtResource( 3 )
+
+[node name="npc" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 90.0
+rect_pivot_offset = Vector2( 1, 0 )
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/normal = SubResource( 2 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+text = "The quick brown fox jumps over the lazy dog but stumbles and falls into a ravine"
+script = ExtResource( 3 )
+
+[node name="cowgirl-npc" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 180.0
+rect_pivot_offset = Vector2( 1, 0 )
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/normal = SubResource( 8 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+text = "The quick brown fox jumps over the lazy dog but stumbles and falls into a ravine"
+script = ExtResource( 3 )
+
+[node name="description" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 270.0
+rect_pivot_offset = Vector2( 1, 0 )
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/normal = SubResource( 3 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+text = "The quick brown fox jumps over the lazy dog but stumbles and falls into a ravine"
+script = ExtResource( 3 )
+
+[node name="horace" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 360.0
+rect_pivot_offset = Vector2( 1, 0 )
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/normal = SubResource( 4 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 4 )
+bbcode_enabled = true
+text = "The quick brown fox jumps over the lazy dog but stumbles and falls into a ravine"
+script = ExtResource( 3 )
+
+[node name="jessie" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 450.0
+rect_pivot_offset = Vector2( 1, 0 )
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/normal = SubResource( 5 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+text = "The quick brown fox jumps over the lazy dog but stumbles and falls into a ravine"
+script = ExtResource( 3 )
+
+[node name="nona" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 540.0
+rect_pivot_offset = Vector2( 1, 0 )
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/normal = SubResource( 6 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+text = "The quick brown fox jumps over the lazy dog but stumbles and falls into a ravine"
+script = ExtResource( 3 )
+
+[node name="radio" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 630.0
+rect_pivot_offset = Vector2( 1, 0 )
+size_flags_horizontal = 15
+size_flags_vertical = 15
+custom_styles/normal = SubResource( 7 )
+custom_fonts/italics_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+text = "The quick brown fox jumps over the lazy dog but stumbles and falls into a ravine"
+script = ExtResource( 3 )

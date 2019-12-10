@@ -9,4 +9,3 @@
 dialogue_name = "SceneA2.1 Jessie"
 
 [node name="jessie" parent="characters" index="0" instance=ExtResource( 2 )]
-script = null
