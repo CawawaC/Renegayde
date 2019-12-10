@@ -12,3 +12,4 @@ dialogue_name = "SceneA1 Jessie x Horace"
 [node name="horace" parent="characters" index="0" instance=ExtResource( 2 )]
 
 [node name="jessie" parent="characters" index="1" instance=ExtResource( 3 )]
+scale = Vector2( 0.454082, 0.454082 )

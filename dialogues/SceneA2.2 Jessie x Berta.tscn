@@ -10,6 +10,7 @@
 dialogue_name = "SceneA2.2 Jessie x Berta"
 
 [node name="berta" parent="characters" index="0" instance=ExtResource( 2 )]
-position = Vector2( 110, 210 )
+position = Vector2( 95.375, 179.976 )
+scale = Vector2( 0.426322, 0.426322 )
 
 [node name="jessie" parent="characters" index="1" instance=ExtResource( 3 )]

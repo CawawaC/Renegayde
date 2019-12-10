@@ -9,12 +9,21 @@
 [node name="text" parent="." index="0"]
 dialogue_name = "SceneA2.2 Jessie x Berta"
 
+[node name="passages" parent="text" index="0"]
+margin_top = 10.0
+
+[node name="answers" parent="text" index="1"]
+margin_left = 22.0
+margin_top = -58.0
+margin_right = -22.0
+margin_bottom = -10.0
+
 [node name="background" parent="." index="1"]
 position = Vector2( 647.778, 185 )
 scale = Vector2( 0.685185, 0.685185 )
 
 [node name="nona" parent="characters" index="0" instance=ExtResource( 2 )]
-position = Vector2( 120, 210 )
-scale = Vector2( -0.5, 0.5 )
+position = Vector2( 112.048, 190.857 )
+scale = Vector2( -0.452382, 0.452382 )
 
 [node name="jessie" parent="characters" index="1" instance=ExtResource( 3 )]

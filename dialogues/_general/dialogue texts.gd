@@ -36,6 +36,9 @@ func get_starting_passage():
 	var start_id = dialogue.startnode
 	return find_passage_data(start_id)
 	
+func remove_passages():
+	for p in $passages.get_children():
+		p.queue_free()
 
 func set_passage(passage_data):
 	var tags = passage_data.tags
@@ -45,8 +48,9 @@ func set_passage(passage_data):
 	passage.set_text(passage_data.text)
 	
 	passage.connect("passage_added", self, "on_passage_added")
-	position_passage(passage, speaker)
+#	position_passage(passage, speaker)
 	
+	remove_passages()
 	$passages.add_child(passage)
 	
 	emit_signal("line_speaker", [speaker])
@@ -230,12 +234,14 @@ func position_passage(passage, speaker):
 	passage.rect_position.y = 280
 #	passage.rect_global_position.y = $answers.rect_global_position.y - passage.rect_size.y
 
-	match speaker:
-		"jessie":
-			passage.anchor_left = anchor_offset
-		"radio":
-			passage.anchor_left = passage.anchor_left
-		"description":
-			passage.anchor_left = passage.anchor_left
-		_:
-			passage.anchor_right = 1 - anchor_offset
+#	match speaker:
+#		"jessie":
+#			passage.anchor_left = anchor_offset
+#		"radio":
+#			passage.anchor_left = passage.anchor_left
+#		"description":
+#			passage.anchor_left = passage.anchor_left
+#		_:
+#			passage.anchor_right = 1 - anchor_offset
+	
+#	passage.rect_size.y = get_viewport().size.y - passage.rect_global_position.y

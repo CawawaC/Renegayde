@@ -1,11 +1,11 @@
 extends RichTextLabel
 
 export (float) var revelation_speed = 75 # characters per second
+export (int) var font_size = 24
 
 var time_elapsed = 0
 var auto_reveal = true
 
-var resized = false
 #var height setget ,get_height
 
 signal passage_added
@@ -15,14 +15,12 @@ signal passage_added
 
 
 func _ready():
-	yield(get_tree(), "idle_frame")
-	rect_size.y = get_v_scroll().max_value
-	if rect_size.y > get_parent().rect_size.y:
-		rect_size.y = get_parent().rect_size.y - 100
+#	yield(get_tree(), "idle_frame")
+#	rect_size.y = get_v_scroll().max_value
+#	if rect_size.y > get_parent().rect_size.y:
+#		rect_size.y = get_parent().rect_size.y - 100
 	
-#	rect_size.y = get_content_height()
 	emit_signal("passage_added", self)
-	resized = false
 
 func _process(delta):	
 	if auto_reveal and percent_visible < 100:
