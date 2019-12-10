@@ -5,7 +5,7 @@
 [ext_resource path="res://characters/assets/jessie_03.png" type="Texture" id=3]
 [ext_resource path="res://characters/assets/jessie_04.png" type="Texture" id=4]
 
-[node name="jessie" instance=ExtResource( 1 )]
+[node name="jessie" index="0" instance=ExtResource( 1 )]
 position = Vector2( 1270, 7.25 )
 scale = Vector2( 0.45, 0.45 )
 offset = Vector2( -180, 385.5 )

@@ -4,7 +4,7 @@
 [ext_resource path="res://characters/berta.tscn" type="PackedScene" id=2]
 [ext_resource path="res://characters/jessie.tscn" type="PackedScene" id=3]
 
-[node name="dialogue" instance=ExtResource( 1 )]
+[node name="dialogue" index="0" instance=ExtResource( 1 )]
 
 [node name="text" parent="." index="0"]
 dialogue_name = "SceneA2.2 Jessie x Berta"
