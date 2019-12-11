@@ -45,13 +45,11 @@ func set_passage(passage_data):
 	var speaker = get_speaker(passage_data.tags)
 	
 	var passage = Game.get_textbox(speaker)
-	passage.set_text(passage_data.text)
 	
 	passage.connect("passage_added", self, "on_passage_added")
 #	position_passage(passage, speaker)
 	
 	remove_passages()
-	$passages.add_child(passage)
 	
 	emit_signal("line_speaker", [speaker])
 	
@@ -64,6 +62,8 @@ func set_passage(passage_data):
 	else:
 		add_button_to_next_episode(passage_data)
 	
+	passage.set_text(passage_data.text)
+	$passages.add_child(passage)
 	passage.start_revelating()
 
 func add_answers(passage, passage_data):
@@ -107,11 +107,18 @@ func add_button_to_next_episode(data):
 	var instance = next_episode_template.instance()
 	
 	var next_episode = extract_next_episode_name(data.text)
+	data.text = clear_next_episode_instruction(data.text)
 	print_debug(next_episode)
 	
 	instance.next_episode = next_episode
 	instance.connect("episode_pressed", self, "on_episode_pressed")
 	$answers.add_child(instance)
+
+func clear_next_episode_instruction(text):
+	var i = text.find("{")
+	var j = text.find("}")
+	text.erase(i, j-i+1)
+	return text
 
 func on_episode_pressed(episode):
 	print_debug("next episode")
