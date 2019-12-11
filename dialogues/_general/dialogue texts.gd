@@ -121,7 +121,6 @@ func clear_next_episode_instruction(text):
 	return text
 
 func on_episode_pressed(episode):
-	print_debug("next episode")
 	emit_signal("new_episode", episode)
 
 func extract_next_episode_name(text):
