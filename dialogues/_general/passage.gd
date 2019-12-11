@@ -2,6 +2,8 @@ extends RichTextLabel
 
 export (float) var revelation_speed = 75 # characters per second
 export (int) var font_size = 24
+export (int) var content_margin_left = 25
+export (int) var content_margin_top = 15
 
 var time_elapsed = 0
 var auto_reveal = true
@@ -42,6 +44,15 @@ func start_revelating():
 
 func set_text(data):
 	bbcode_text = strip_passage_text(data)
+	
+	set_style()
+
+func set_style():
+	var sb = get_stylebox("normal")
+	sb.content_margin_left = content_margin_left
+	sb.content_margin_top = content_margin_top
+	sb.content_margin_right = content_margin_left
+	sb.content_margin_bottom = content_margin_top
 
 func strip_passage_text(data):
 	var i = data.find("[[")
