@@ -1,23 +1,22 @@
 {
   "passages": [
     {
-      "text": "//You listen to the near imperceptible hum of his steeds electric engine for a bit, before turning on the solar-powered radio to tune into everyones favourite evening show.\n\nAn upbeat jingle plays before the cheery voice of the famous host and cowgirl Sally the Smoker breaks through the ether://\n\n“Howdy friends, and welcome to Sallys Smoke-Signals! I hope you’r all doin’ fine in the outland. Girls, I tell ya' I've been having a blast makin' my way through the eastern reaches. Few days ago I stumbled upon an ol' holo-theater and that's been something! The Holo that got me got me thinkin' the most was \"The infinite Lover\" by a lady called Grega E. Weird name, sure, but what a story! A hot flick about two sweet boys trying to find love, and each of their actions affecting not just their, but all the other possible dimensions. So in some worlds, they got together, and while they didn't get together in all, there still was a sort of ripple effect spreadin' love out through infinity.\n\nSure as hell, we know other dimensions exist, but what I never thought about: What if we affect them, eh? Every choice we make, every thing we do, every Mouse we squash and every Woman we shoot affects a neighborin' dimension. What a thought. Before I leave you to our evenings first song: If we all affect not just us and those around us, but those in neighborin' dimensions, we better take care and make sure we try our best, so all our possible us-es do too, and we end up in the best of possible worlds, and make every other a bit better along the way!\n\nAnd now it's my pleasure to present the beautiful and talented singster Tommy! More than a pretty face and a nice ass, this boy has got the voice of an angel too!\"\n\n//Tommys voice fills the air, singing a beautiful and haunting song about waiting for his lover to return to him.\"//\n\n[[Interesting thought.->TalkAtHoraceA0]]",
+      "text": "//You listen to the near imperceptible hum of your steeds electric engine for a bit, before turning on the solar-powered radio to tune into everyones favourite evening show.\n\nAn upbeat jingle plays before the cheery voice of the famous host and cowgirl Sally the Smoker breaks through the ether:.//\n\n[[Continue..->SmokeSignal1]]",
       "links": [
         {
-          "name": "Interesting thought.",
-          "link": "TalkAtHoraceA0",
-          "pid": "2"
+          "name": "Continue..",
+          "link": "SmokeSignal1",
+          "pid": "70"
         }
       ],
-      "name": "Radio",
+      "name": "GetOutRadio",
       "pid": "1",
       "position": {
-        "x": "779",
-        "y": "99"
+        "x": "389",
+        "y": "203"
       },
       "tags": [
-        "radio",
-        "jessie"
+        "Description"
       ]
     },
     {
@@ -36,11 +35,11 @@
         "y": "0"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "I tell ya, we're definitly in the best possible dimension. The farm was nice and Mam' was always good to me, but it’s time for me to really strike out on my own, ya know?\n\n[[Continue. ->SilentHorace02]]\n\n",
+      "text": "I tell you, we're definitly in the best possible dimension. The farm was nice and Mam' was always good to me, but it’s time for me to really strike out on my own, you know?\n\n[[Continue. ->SilentHorace02]]\n\n",
       "links": [
         {
           "name": "Continue. ",
@@ -55,30 +54,30 @@
         "y": "3"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "//After a long, silent ride through the outland praerie, Jessie \"Hellrider\" Allen makes camp. \n\nJust a days ride away from his goal, you are anxious to finally reach Purple Town. Eating a salvaged Can-O-Everything you found in a chromed ruin nearby, you watch the solar panels of your electric steed, Horace, fold back into the robots frame. //\n\n[[Get out your radio. ->Radio]]",
+      "text": "//After a long, silent ride through the outland praerie, Jessie \"Hellrider\" Allen makes camp. \n\nJust a days ride away from his goal, you are anxious to finally reach Purple Town. Eating a salvaged Can-O-Everything you found in a rust-speckled ruin nearby, you watch the solar panels of your electric steed, Horace, fold back into the robotic frame. //\n\n[[Get out your radio. ->GetOutRadio]]",
       "links": [
         {
           "name": "Get out your radio. ",
-          "link": "Radio",
+          "link": "GetOutRadio",
           "pid": "1"
         }
       ],
       "name": "Start",
       "pid": "4",
       "position": {
-        "x": "646",
-        "y": "215"
+        "x": "204",
+        "y": "206"
       },
       "tags": [
-        "radio"
+        "Description"
       ]
     },
     {
-      "text": "Not sure if I can sleep tonight. I’ve heard so much about Purple Town… Barmans Bar & Shag, the Noon-Street.. it’s where all the big movers and shakers made their mark ya know?\n\n[[Continue. ->SilentHorace03]]",
+      "text": "Not sure if I can sleep tonight. I’ve heard so much about Purple Town… Barmans Bar & Shag, the Low-Noon street.. it’s where all the big movers and shakers made their mark, you know?\n\n[[Continue. ->SilentHorace03]]",
       "links": [
         {
           "name": "Continue. ",
@@ -93,14 +92,14 @@
         "y": "157"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "Can you stop your prattling for one second Jessie? I'm trying to listen here.\n\n[[Sorry!->ObjectionA1]]\n",
+      "text": "Can you stop your prattling for one second Jessie? I'm trying to listen to the song.\n\n[[\"Sorry!\"->ObjectionA1]]\n",
       "links": [
         {
-          "name": "Sorry!",
+          "name": "\"Sorry!\"",
           "link": "ObjectionA1",
           "pid": "26"
         }
@@ -116,10 +115,10 @@
       ]
     },
     {
-      "text": "Oi! I'm listening to that!\n\n[[Sorry Horace!->ObjectionBA]]\n",
+      "text": "Hey! I'm listening to that!\n\n[[\"Sorry Horace!\"->ObjectionBA]]\n",
       "links": [
         {
-          "name": "Sorry Horace!",
+          "name": "\"Sorry Horace!\"",
           "link": "ObjectionBA",
           "pid": "28"
         }
@@ -135,7 +134,7 @@
       ]
     },
     {
-      "text": "//Horace stays silent for a long moment before answering.//\n\"It's nothing. I just haven't been to Purple Town in ages.\"\n\n[[\"You rarely talk about it. Ever meet someone famous?\" ->RarelyTalk]]\n\n\n\n\n\n\n",
+      "text": "[i]Horace stays silent for a long moment before answering.[/i]\nIt's nothing. I just haven't been to Purple Town in ages.\n\n[[\"You rarely talk about it. Ever meet someone famous?\" ->RarelyTalk]]\n\n\n\n\n\n\n",
       "links": [
         {
           "name": "\"You rarely talk about it. Ever meet someone famous?\" ",
@@ -150,11 +149,11 @@
         "y": "105"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "//Horace lets out a puff of air and stamps his hoof once, before turning to look at you.//\n\nHorace: \"Sometimes I forgot how young you are.\"\n\n[[Be insulted -> What'sThat?]]",
+      "text": "[i]Horace lets out a puff of air and stamps his hoof once, before turning to look at you.[i/]\nSometimes I forgot how young you are.\n\n[[Be insulted -> What'sThat?]]",
       "links": [
         {
           "name": "Be insulted ",
@@ -169,11 +168,11 @@
         "y": "447"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "\"Small, pretty, a hell of a gunslinger. I'm not surprised she turned to raiding Tombie Caravans and general banditry though. Even back then she had a vicious streak.\"\n\n[[\"I'd still like to meet her!\" ->MeetHer]]",
+      "text": "Small, angry, a hell of a gunslinger. I'm not surprised she turned to raiding Tombie Caravans and general banditry though. Even back then she had a vicious streak.\n\n[[\"I'd still like to meet her!\" ->MeetHer]]",
       "links": [
         {
           "name": "\"I'd still like to meet her!\" ",
@@ -188,24 +187,24 @@
         "y": "320"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
       "text": "//After Horaces gets in a few more jokes on your expense, his mood has picked up a little and you say goodnight to each other. You turn of the camp-heater and lie down to sleep. Purple Town awaits!//\n\n{SceneA2.0 Jessie x Horace}\n\n",
-      "name": " FinishBitMiffed",
+      "name": " FinishHoraceTeasing",
       "pid": "11",
       "position": {
         "x": "2755",
         "y": "501"
       },
       "tags": [
-        "description",
-        "Horace+Happy"
+        "Horace+Happy",
+        "Description"
       ]
     },
     {
-      "text": "\"Look, it's not just that. If you think people at the farm gave you a hard time for wanting to be a Cowgirl, you are in for shock when we get to Purple Town.\"\n\n[[\"I know.\" ->IKnow]]",
+      "text": "Look, it's not just that. If you think people at the farm gave you a hard time for wanting to be a Cowgirl, you are in for shock when we get to Purple Town.\n\n[[\"I know.\" ->IKnow]]",
       "links": [
         {
           "name": "\"I know.\" ",
@@ -220,11 +219,11 @@
         "y": "600"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "//Horace lets out a loud whinny that you recognize as a laugh.\"//\n\nHorace: \"I think whatever happens, if you keep that attitude up, you'll do fine.\n\n[[Continue. ->Finish2]] ",
+      "text": "I think whatever happens, if you keep that attitude up you'll do fine.\n\n[[Continue. ->Finish2]] ",
       "links": [
         {
           "name": "Continue. ",
@@ -239,48 +238,48 @@
         "y": "1172"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "//Horace whinies irritatedly and kneels down to sleep.//\n\nHorace: \"All I'm saying is there's no reason to brood.\"\n\n[[And that you want to bottle it up. ->BottleUp]]",
+      "text": "//Horace whinies irritated and kneels down to sleep.//\n\n[[COntinue. ->NoReason]]",
       "links": [
         {
-          "name": "And that you want to bottle it up. ",
-          "link": "BottleUp",
-          "pid": "52"
+          "name": "COntinue. ",
+          "link": "NoReason",
+          "pid": "77"
         }
       ],
-      "name": "NoReasonToBrood",
+      "name": "IrritatedHorace",
       "pid": "14",
       "position": {
         "x": "1999",
         "y": "1631"
       },
       "tags": [
-        "horace"
+        "Description"
       ]
     },
     {
-      "text": "//You leave Horace to his thoughts and mull over what he said. It's true that you haven't ever really been anywhere, or with anyone, but your confident things will turn out alright.\n\nYou turn off the Camp-Heater and lie down to sleep. Tomorrow Purple Town awaits!//\n\n{SceneA2.0 Jessie x Horace}",
+      "text": "//You leave Horace to his thoughts and mull over what he said. It's true that you haven't ever really been anywhere, or with anyone, but your confident things will turn out alright. AFter turning off the Heater, you lie down to sleep. Tomorrow, Purple Town awaits!//\n\n{SceneA2.0 Jessie x Horace}",
       "name": "FinishSilent",
       "pid": "15",
       "position": {
-        "x": "1359",
-        "y": "1630"
+        "x": "1106",
+        "y": "1642"
       },
       "tags": [
-        "description",
-        "Horace+Thoughtful"
+        "Horace+thoughtful",
+        "Description"
       ]
     },
     {
-      "text": "//You'r certain Horace knows you'r trying to distract him from his gloomy mood. He seems grateful for it, and starts talking to you about possible routes and dangers, what to look out for on the road. It doesn't take long before he sidetracked into one of his war stories about exploring the eastern reaches you already know inside out. With Horace voice in your ear and thoughts of adventure on your mind, you fall asleep.\"//\n\n{SceneA2.0 Jessie x Horace}",
+      "text": "//You are certain Horace knows you are trying to distract him from his gloomy mood. He seems grateful for it, and starts talking to you about possible routes and dangers, what to look out for on the road. It doesn't take long before he sidetracked into one of his war stories about exploring the eastern reaches you already know inside out. With Horace voice in your ear and thoughts of adventure on your mind, you fall asleep.\"//\n\n{SceneA2.0 Jessie x Horace}",
       "name": "FinishDistraction",
       "pid": "16",
       "position": {
-        "x": "1552",
-        "y": "1657"
+        "x": "1299",
+        "y": "1669"
       },
       "tags": [
         "description",
@@ -288,15 +287,15 @@
       ]
     },
     {
-      "text": "...\n\n[[We're in the best dimension already. ->TalkAtHoraceA1A]]\n\n[[Excited about tomorrow.”->TalkAtHoraceA1B]]",
+      "text": "...\n\n[[\"We're in the best dimension already.\" ->TalkAtHoraceA1A]]\n\n[[\"I'm excited about tomorrow.”->TalkAtHoraceA1B]]",
       "links": [
         {
-          "name": "We're in the best dimension already. ",
+          "name": "\"We're in the best dimension already.\" ",
           "link": "TalkAtHoraceA1A",
           "pid": "3"
         },
         {
-          "name": "Excited about tomorrow.”",
+          "name": "\"I'm excited about tomorrow.”",
           "link": "TalkAtHoraceA1B",
           "pid": "5"
         }
@@ -308,14 +307,14 @@
         "y": "4"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "...\n\n[[I have a dream, Horace->TalkAtHoraceA2A]]",
+      "text": "...\n\n[[\"I have a dream, Horace.\"->TalkAtHoraceA2A]]",
       "links": [
         {
-          "name": "I have a dream, Horace",
+          "name": "\"I have a dream, Horace.\"",
           "link": "TalkAtHoraceA2A",
           "pid": "19"
         }
@@ -327,11 +326,11 @@
         "y": "15"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "I know everyones thinkin' i'm a bit daft to try, but I just have to. Sure as heck, everyone says there are no Cowboys, but I can lasso a buggalo just as well as Mam' could, she even said so herself.\n\n[[Continue. ->silence01]]\n",
+      "text": "I know everyone's thinking i'm daft to try, but I just have to. Sure as heck, everyone says there are no cowboys, but I can wrangle a buggalo just as well as Mam could, she said so herself.\n\n[[Continue. ->silence01]]\n",
       "links": [
         {
           "name": "Continue. ",
@@ -346,19 +345,19 @@
         "y": "14"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "// Horace hum and the Tommies haunting song fill the silence. //\n\n[[There must be something else for me out there.->WishA1]]\n[[Goodnight.->Goodnight Horace]]",
+      "text": "//The singers haunting voice fills the silence.//\n\n[[\"There must be more for me out there.\"->WishA1]]\n[[\"Well, goodnight.\".->Goodnight Horace]]",
       "links": [
         {
-          "name": "There must be something else for me out there.",
+          "name": "\"There must be more for me out there.\"",
           "link": "WishA1",
           "pid": "21"
         },
         {
-          "name": "Goodnight.",
+          "name": "\"Well, goodnight.\".",
           "link": "Goodnight Horace",
           "pid": "31"
         }
@@ -370,14 +369,14 @@
         "y": "21"
       },
       "tags": [
-        "horace"
+        "Description"
       ]
     },
     {
-      "text": "Washing dishes, doing laundry, raisin' kids. That's just not me, you know? Not to mention... Ah, maybe it's too much to hope. But there must be someone out there for me too, you know?\n\n[[Continue ->ObjectionA]]",
+      "text": "Washing dishes, doing laundry, raising kids. That's just not me, you know? Not to mention... Ah, maybe it's too much to hope. But there must be [i]someone[/i] out there for me too, you know?\n\n[[Continue. ->ObjectionA]]",
       "links": [
         {
-          "name": "Continue ",
+          "name": "Continue. ",
           "link": "ObjectionA",
           "pid": "6"
         }
@@ -389,14 +388,14 @@
         "y": "64"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "...\n\n[[Maybe we should have kept going.]->TalkAtHoraceA3A]]",
+      "text": "...\n\n[[\"Maybe we could have gotten there today.\"->TalkAtHoraceA3A]]",
       "links": [
         {
-          "name": "Maybe we should have kept going.]",
+          "name": "\"Maybe we could have gotten there today.\"",
           "link": "TalkAtHoraceA3A",
           "pid": "23"
         }
@@ -408,11 +407,11 @@
         "y": "163"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "Maybe we should have gone on. Wouldn't have been there before nightfall, but it wouldn't have been //that// late.\n\n[[Continue. ->silence02]]",
+      "text": "Maybe we should have kept going. Wouldn't have been there before nightfall, but it wouldn't have been [i]that[/i] late.\n\n[[Continue. ->silence02]]",
       "links": [
         {
           "name": "Continue. ",
@@ -427,11 +426,11 @@
         "y": "166"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "// Horaces hum and radio fill the silence. //\n\n\n[[You're right, the night is dangerous.->TalkAtHoraceA4A]]",
+      "text": "//The song fills the silence.//\n\n\n[[You're right, the night is dangerous.->TalkAtHoraceA4A]]",
       "links": [
         {
           "name": "You're right, the night is dangerous.",
@@ -442,23 +441,23 @@
       "name": "silence02",
       "pid": "24",
       "position": {
-        "x": "1337",
-        "y": "170"
+        "x": "1331",
+        "y": "173"
       },
       "tags": [
-        "horace"
+        "Description"
       ]
     },
     {
-      "text": "I guess you'r right tho, travelin' by night's to dangerous.\n\n[[ \"I can't wait.\" ->Can'tWait]]\n[[ \"Goodnight\" ->Goodnight Horace]] ",
+      "text": "I guess you'r right though, traveling by night's too dangerous.\n\n[[ \"I just can't wait.\" ->Can'tWait]]\n[[ \"Well, Goodnight Horace.\" ->Goodnight Horace]] ",
       "links": [
         {
-          "name": " \"I can't wait.\" ",
+          "name": " \"I just can't wait.\" ",
           "link": "Can'tWait",
           "pid": "30"
         },
         {
-          "name": " \"Goodnight\" ",
+          "name": " \"Well, Goodnight Horace.\" ",
           "link": "Goodnight Horace",
           "pid": "31"
         }
@@ -470,7 +469,7 @@
         "y": "173"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -493,7 +492,7 @@
       ]
     },
     {
-      "text": "[i]The song ends with the singer decades after his love has left, still waiting and hoping for her to return. Horace stares into the distance and the well-crafted face of the robotic horse-frame conveys that he is deep in thought and memory.[/i]\n\n\nA: [[\"Are you okay?\" -> AreYouOkay]]\n\nB: [[\"Nice song, but a bit too sad for my tastes.\" ->DialogueA1b]]",
+      "text": "//The song ends with the singer decades after his love has left, still waiting and hoping for her to return. Horace stares into the distance and the well-crafted face of the robotic horse-frame conveys that he is deep in thought and memory.//\n\n\n[[\"Are you okay?\" -> AreYouOkay]]\n\n[[\"Nice song, but a bit too sad for my tastes.\" ->DialogueA1b]]",
       "links": [
         {
           "name": "\"Are you okay?\" ",
@@ -513,7 +512,7 @@
         "y": "255"
       },
       "tags": [
-        "horace"
+        "Description"
       ]
     },
     {
@@ -532,14 +531,14 @@
         "y": "462"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "Yes. Because I. Was. Listening.\n\n[i]Horace wirelessly turns the radio on again.[/i]\n\n\n[[[i]Finish listening to the song together with Horace.[/i]->Silence03]]",
+      "text": "Yes. Because I. Was. Listening.\n\n[i]Horace wirelessly turns the radio on again.[/i]\n\n\n[[Finish listening to the song together with Horace.->Silence03]]",
       "links": [
         {
-          "name": "[i]Finish listening to the song together with Horace.[/i]",
+          "name": "Finish listening to the song together with Horace.",
           "link": "Silence03",
           "pid": "27"
         }
@@ -551,11 +550,11 @@
         "y": "400"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "\"I just can't wait, ya know?\"\n\n[[Continue. ->ObjectionA]]",
+      "text": "I just can't wait. I wanted to do this for so long, and now that we are so close...\n\n[[Continue. ->ObjectionA]]",
       "links": [
         {
           "name": "Continue. ",
@@ -570,14 +569,14 @@
         "y": "335"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "Well... Goodnight Horace. //Turn off the radio.//\n\n[[Continue. ->ObjectionB]]",
+      "text": "Well... Goodnight Horace. \n\n[[You turn off the radio. ->ObjectionB]]",
       "links": [
         {
-          "name": "Continue. ",
+          "name": "You turn off the radio. ",
           "link": "ObjectionB",
           "pid": "7"
         }
@@ -589,7 +588,7 @@
         "y": "355"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -608,11 +607,11 @@
         "y": "113"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "\"Sure, I met an awful lot of folk. Even Billy the Tit once, wayback before she became a Highwaylady.\"\n\n[[\"Oh wow, she's a legend!\" ->OhWow!]]\n\n[[\"What were you doing to meet so many people?\" ->That'sCrazy]]\n",
+      "text": "Sure, I met an awful lot of folk. Even met Billy the Tit once, way back before she became a Highwaylady.\n\n[[\"Oh wow, she's a legend!\" ->OhWow!]]\n\n[[\"What were you doing to meet so many people?\" ->That'sCrazy]]\n",
       "links": [
         {
           "name": "\"Oh wow, she's a legend!\" ",
@@ -632,7 +631,7 @@
         "y": "249"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
@@ -651,7 +650,7 @@
         "y": "134"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -670,19 +669,19 @@
         "y": "219"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "\"If you do meet her, or any other Cowgirl you heard of... try not to be just so much -you-, okay? Play it cool.\"\n\n[[\"I'm cool! -> FinishBitMiffed]]\n\n[[\"I'll try. ->Fanboy]]",
+      "text": "If you do meet her, or any other Cowgirl you heard of... try not to be just so much [i]you[/i], okay? Play it cool.\n\n[[\"I'm cool!\" -> FinishHoraceTeasing]]\n\n[[\"I'll try.\" ->Fanboy]]",
       "links": [
         {
-          "name": "\"I'm cool! ",
-          "link": " FinishBitMiffed",
+          "name": "\"I'm cool!\" ",
+          "link": " FinishHoraceTeasing",
           "pid": "11"
         },
         {
-          "name": "\"I'll try. ",
+          "name": "\"I'll try.\" ",
           "link": "Fanboy",
           "pid": "37"
         }
@@ -694,11 +693,11 @@
         "y": "148"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "\"Heh, okay. I know I can be a bit of a fanboy, I'll keep it in mind.\n\n[[Continue.->NotJustThat]]",
+      "text": "Heh, okay. I know I can be a bit of a fanboy, I'll keep it in mind.\n\n[[Continue.->NotJustThat]]",
       "links": [
         {
           "name": "Continue.",
@@ -713,7 +712,7 @@
         "y": "313"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -732,14 +731,14 @@
         "y": "750"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "\"If you aren't careful, they'll do more than laugh.\"\n\n[[That's disheartening. ->Disheartening]]",
+      "text": "If you aren't careful, they'll do more than laugh.\n\n[[\"That's disheartening.\" ->Disheartening]]",
       "links": [
         {
-          "name": "That's disheartening. ",
+          "name": "\"That's disheartening.\" ",
           "link": "Disheartening",
           "pid": "40"
         }
@@ -751,11 +750,11 @@
         "y": "900"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "Well, that's disheartening.\n\n[[Continue. -> Don'tMeanTo]]",
+      "text": "That's pretty disheartening.\n\n[[Continue. -> Don'tMeanTo]]",
       "links": [
         {
           "name": "Continue. ",
@@ -770,14 +769,14 @@
         "y": "1050"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "Don't mean to discourage you. Just keep your wits about you.\n\n[[Thanks. ->Thanks]]",
+      "text": "Don't mean to discourage you. Just keep your wits about you.\n\n[[\"Thanks.\" ->Thanks]]",
       "links": [
         {
-          "name": "Thanks. ",
+          "name": "\"Thanks.\" ",
           "link": "Thanks",
           "pid": "42"
         }
@@ -789,11 +788,11 @@
         "y": "1200"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "Thank you, Horace.\n\n[[Go to sleep. ->Sleep]]",
+      "text": "Thanks, you'r a good friend, Horace.\n\n[[Go to sleep. ->Sleep]]",
       "links": [
         {
           "name": "Go to sleep. ",
@@ -808,7 +807,7 @@
         "y": "1350"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -820,7 +819,7 @@
         "y": "1500"
       },
       "tags": [
-        "description"
+        "Description"
       ]
     },
     {
@@ -839,11 +838,11 @@
         "y": "598"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "Just that. Life and love are a sad affair Jessie, you'll learn.\n\n\n[[\"You'r grumpy. Why?\" ->YourGrumpy]]\n\n[[\"Pretty condescending.\" ->PrettyCondescending]]",
+      "text": "Just that. Life and love are a sad affair Jessie, it's best to just have some fun. You'll learn.\n\n\n[[\"You'r grumpy. Why?\" ->YourGrumpy]]\n\n[[\"Pretty condescending.\" ->PrettyCondescending]]",
       "links": [
         {
           "name": "\"You'r grumpy. Why?\" ",
@@ -863,7 +862,7 @@
         "y": "742"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
@@ -882,7 +881,7 @@
         "y": "892"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -901,7 +900,7 @@
         "y": "892"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -943,10 +942,10 @@
       ]
     },
     {
-      "text": "\"Not really. It was a long time ago, and what's done is done\".\n\n[[\"Doesn't the past affect the present?\" ->PastAffectPresent]]\n\n[[\"Right, what matters is the present.\" ->PresentMatters]]",
+      "text": "Not really. It was a long time ago, and what's done is done.\n\n[[\"But doesn't the past affect the present?\" ->PastAffectPresent]]\n\n[[\"Right, what matters is the present.\" ->PresentMatters]]",
       "links": [
         {
-          "name": "\"Doesn't the past affect the present?\" ",
+          "name": "\"But doesn't the past affect the present?\" ",
           "link": "PastAffectPresent",
           "pid": "51"
         },
@@ -963,15 +962,15 @@
         "y": "1342"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "I'm not sure. If different dimensions have an effect on each other, sure as heck the past has on the present, right?\n\n[[Continue. ->NoReasonToBrood]]",
+      "text": "I'm not sure. If different dimensions have an effect on each other, sure as heck the past has on the present, right?\n\n[[Continue. ->IrritatedHorace]]",
       "links": [
         {
           "name": "Continue. ",
-          "link": "NoReasonToBrood",
+          "link": "IrritatedHorace",
           "pid": "14"
         }
       ],
@@ -982,7 +981,7 @@
         "y": "1468"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -997,15 +996,15 @@
       "name": "BottleUp",
       "pid": "52",
       "position": {
-        "x": "1999",
-        "y": "1781"
+        "x": "1897",
+        "y": "1907"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "Goodnight Jessie.\n\n[[Continue. ->SleepandThink]]",
+      "text": "Goodnight, Jessie.\n\n[[Continue. ->SleepandThink]]",
       "links": [
         {
           "name": "Continue. ",
@@ -1016,11 +1015,11 @@
       "name": "GoodnightJessie",
       "pid": "53",
       "position": {
-        "x": "1999",
-        "y": "1931"
+        "x": "1897",
+        "y": "2057"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
@@ -1028,11 +1027,11 @@
       "name": "SleepandThink",
       "pid": "54",
       "position": {
-        "x": "1999",
-        "y": "2081"
+        "x": "1897",
+        "y": "2207"
       },
       "tags": [
-        "description"
+        "Description"
       ]
     },
     {
@@ -1068,26 +1067,31 @@
       ]
     },
     {
-      "text": "//Horace stays silent for a long time before answering.//\n\n\"Look, Jessie... I'm sorry. You are a good kid. That song, just now before we reach Purple Town, it just was a bit much.\"\n\n[[Apology accepted. ->ApologyAccepted]]",
+      "text": "//Horace stays silent.//\n\n[[Wait for him to say something. ->LookJessie]]\n\n[[\"Sorry I asked.\" ->SorryIAsked]]\n\n",
       "links": [
         {
-          "name": "Apology accepted. ",
-          "link": "ApologyAccepted",
-          "pid": "58"
+          "name": "Wait for him to say something. ",
+          "link": "LookJessie",
+          "pid": "73"
+        },
+        {
+          "name": "\"Sorry I asked.\" ",
+          "link": "SorryIAsked",
+          "pid": "74"
         }
       ],
       "name": "SilentHorace",
       "pid": "57",
       "position": {
-        "x": "1651",
-        "y": "1045"
+        "x": "1642",
+        "y": "968"
       },
       "tags": [
-        "horace"
+        "Description"
       ]
     },
     {
-      "text": "\"Apology accepted. You know you can talk to me about whatever happened right?\"\n\n[[Continue. ->NotRightNow]]",
+      "text": "Apology accepted. You know you can talk to me about whatever happened right?\n\n[[Continue. ->NotRightNow]]",
       "links": [
         {
           "name": "Continue. ",
@@ -1098,15 +1102,15 @@
       "name": "ApologyAccepted",
       "pid": "58",
       "position": {
-        "x": "1633",
-        "y": "1189"
+        "x": "1502",
+        "y": "1242"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
-      "text": "Horace: \"Yeah, just... not right now, okay?\"\n\nA: [[\"Okay.\" ->Okay]]\n\nB: [[\"Sure. When do we get there tomorrow?\" ->Distraction]]",
+      "text": "Yeah, just... not right now, okay?\n\n[[\"Okay.\" ->Okay]]\n\n[[\"Sure. Soooo... when will we get there tomorrow?\" ->Distraction]]",
       "links": [
         {
           "name": "\"Okay.\" ",
@@ -1114,7 +1118,7 @@
           "pid": "61"
         },
         {
-          "name": "\"Sure. When do we get there tomorrow?\" ",
+          "name": "\"Sure. Soooo... when will we get there tomorrow?\" ",
           "link": "Distraction",
           "pid": "60"
         }
@@ -1122,15 +1126,15 @@
       "name": "NotRightNow",
       "pid": "59",
       "position": {
-        "x": "1633",
-        "y": "1339"
+        "x": "1370",
+        "y": "1360"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "So, when do you think we'll arrive in Purple Town tomorrow?\n\n[[Continue. ->FinishDistraction]] ",
+      "text": "Sure. Sooo... when do you think we'll arrive in Purple Town tomorrow?\n\n[[Continue. ->FinishDistraction]] ",
       "links": [
         {
           "name": "Continue. ",
@@ -1141,11 +1145,11 @@
       "name": "Distraction",
       "pid": "60",
       "position": {
-        "x": "1633",
-        "y": "1489"
+        "x": "1380",
+        "y": "1501"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -1160,11 +1164,11 @@
       "name": "Okay",
       "pid": "61",
       "position": {
-        "x": "1444",
-        "y": "1457"
+        "x": "1191",
+        "y": "1469"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -1221,7 +1225,7 @@
         "y": "105"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -1244,7 +1248,7 @@
       ]
     },
     {
-      "text": "\"Sometimes I forget just how little you've seen of the world.\"\n\n[[\"Feel Insulted\" -> NotThatNaive]]\n\n[[\"So much left to see!\" -> MoreToSee]]",
+      "text": "Sometimes I forget just how little you've seen of the world.\n\n[[\"Feel Insulted\" -> NotThatNaive]]\n\n[[\"So much left to see!\" -> MoreToSee]]",
       "links": [
         {
           "name": "\"Feel Insulted\" ",
@@ -1264,15 +1268,15 @@
         "y": "891"
       },
       "tags": [
-        "horace"
+        "Horace"
       ]
     },
     {
-      "text": "Hey, I'm not #that# naive!\n\n[[Continue. -> FinishBitMiffed]] ",
+      "text": "Hey, I'm not [b]that[/b] naive!\n\n[[Continue. -> FinishHoraceTeasing]] ",
       "links": [
         {
           "name": "Continue. ",
-          "link": " FinishBitMiffed",
+          "link": " FinishHoraceTeasing",
           "pid": "11"
         }
       ],
@@ -1283,7 +1287,7 @@
         "y": "963"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -1302,7 +1306,7 @@
         "y": "977"
       },
       "tags": [
-        "jessie"
+        "Jessie"
       ]
     },
     {
@@ -1316,11 +1320,158 @@
       "tags": [
         "description"
       ]
+    },
+    {
+      "text": "Howdy friends, and welcome to Sallys Smoke-Signals! I hope you’r all doin’ fine in the outland. Girls, I tell ya' I've been having a blast makin' my way through the eastern reaches. Few days ago I stumbled upon an ol' holo-theater and that's been something! The Holo that got me got me thinkin' the most was \"The infinite Lover\" by a lady called Grega E. Weird name, sure, but what a story! A hot flick about two sweet boys trying to find love, and each of their actions affecting not just their, but all the other possible dimensions. So in some worlds, they got together, and while they didn't get together in all, there still was a sort of ripple effect spreadin' love out through infinity.\n\n[[Continue. ->SmokeSignal2]]\n\n",
+      "links": [
+        {
+          "name": "Continue. ",
+          "link": "SmokeSignal2",
+          "pid": "71"
+        }
+      ],
+      "name": "SmokeSignal1",
+      "pid": "70",
+      "position": {
+        "x": "574",
+        "y": "195"
+      },
+      "tags": [
+        "Radio"
+      ]
+    },
+    {
+      "text": "Sure as hell, we know other dimensions exist, but what I never thought about: What if we affect them, eh? Every choice we make, every thing we do, every Mouse we squash and every Woman we shoot affects a neighborin' dimension. What a thought. Before I leave you to our evenings first song: If we all affect not just us and those around us, but those in neighborin' dimensions, we better take care and make sure we try our best, so all our possible us-es do too, and we end up in the best of possible worlds, and make every other a bit better along the way!\n\n[[Continue.->Song]]\n\n",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "Song",
+          "pid": "72"
+        }
+      ],
+      "name": "SmokeSignal2",
+      "pid": "71",
+      "position": {
+        "x": "707",
+        "y": "194"
+      },
+      "tags": [
+        "Radio"
+      ]
+    },
+    {
+      "text": "And now it's my pleasure to present the beautiful and talented singster Tommy! More than a pretty face and a nice ass, this boy has got the voice of an angel!\n\n//Tommys voice fills the air, singing a beautiful and haunting song about waiting for his lover to return to him.\"//\n\n[[\"Interesting idea.\" ->TalkAtHoraceA0]] ",
+      "links": [
+        {
+          "name": "\"Interesting idea.\" ",
+          "link": "TalkAtHoraceA0",
+          "pid": "2"
+        }
+      ],
+      "name": "Song",
+      "pid": "72",
+      "position": {
+        "x": "710",
+        "y": "42"
+      },
+      "tags": [
+        "Radio"
+      ]
+    },
+    {
+      "text": "Look, Jessie... I'm sorry. You are a good kid. That song, just now before we reach Purple Town, it just was a bit much.\n\n[[\"Apology accepted.\" ->ApologyAccepted]]",
+      "links": [
+        {
+          "name": "\"Apology accepted.\" ",
+          "link": "ApologyAccepted",
+          "pid": "58"
+        }
+      ],
+      "name": "LookJessie",
+      "pid": "73",
+      "position": {
+        "x": "1517",
+        "y": "1118"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "Sorry I asked. \n\n[[Continue.->LetsJustSLeep]]",
+      "links": [
+        {
+          "name": "Continue.",
+          "link": "LetsJustSLeep",
+          "pid": "75"
+        }
+      ],
+      "name": "SorryIAsked",
+      "pid": "74",
+      "position": {
+        "x": "1757",
+        "y": "1118"
+      },
+      "tags": [
+        "Jessie"
+      ]
+    },
+    {
+      "text": "Let's just sleep.\n\n[[Go to sleep. ->FinishMiffed]]",
+      "links": [
+        {
+          "name": "Go to sleep. ",
+          "link": "FinishMiffed",
+          "pid": "76"
+        }
+      ],
+      "name": "LetsJustSLeep",
+      "pid": "75",
+      "position": {
+        "x": "1757",
+        "y": "1268"
+      },
+      "tags": [
+        "Horace"
+      ]
+    },
+    {
+      "text": "//You go to sleep feeling frustrated with Horace. He notices, but doesn't say anything, which only makes you more annoyed. At some point during the night you manage to let go a little and focus on the coming adventure. After all, tomorrow you'll reach Purple Town!//\n\n{SceneA2.0 Jessie x Horace}",
+      "name": "FinishMiffed",
+      "pid": "76",
+      "position": {
+        "x": "1603",
+        "y": "1488"
+      },
+      "tags": [
+        "Jessie+badMood",
+        "Horace+annoyed",
+        "Description"
+      ]
+    },
+    {
+      "text": "All I'm saying is there's no reason to brood.\n\n[[\"And that you want to bottle it up.\" ->BottleUp]]",
+      "links": [
+        {
+          "name": "\"And that you want to bottle it up.\" ",
+          "link": "BottleUp",
+          "pid": "52"
+        }
+      ],
+      "name": "NoReason",
+      "pid": "77",
+      "position": {
+        "x": "1943",
+        "y": "1775"
+      },
+      "tags": [
+        "Horace"
+      ]
     }
   ],
   "name": "SceneA1 Jessie x Horace",
   "startnode": "4",
   "creator": "Twine",
-  "creator-version": "2.3.4",
+  "creator-version": "2.3.5",
   "ifid": "A268B0DD-9565-4C4C-859A-CD70586ABFCF"
 }
