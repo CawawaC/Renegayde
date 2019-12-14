@@ -1,23 +1,35 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://characters/assets/jessie_01.png" type="Texture" id=1]
-[ext_resource path="res://characters/_general/character.gd" type="Script" id=2]
+[ext_resource path="res://characters/_general/character.gd" type="Script" id=1]
+[ext_resource path="res://characters/assets/jessie_01.png" type="Texture" id=2]
 [ext_resource path="res://characters/assets/jessie_02.png" type="Texture" id=3]
-[ext_resource path="res://characters/assets/jessie_04.png" type="Texture" id=4]
-[ext_resource path="res://characters/assets/jessie_03.png" type="Texture" id=5]
+[ext_resource path="res://characters/assets/jessie_03.png" type="Texture" id=4]
+[ext_resource path="res://characters/assets/jessie_04.png" type="Texture" id=5]
 
-[node name="jessie" type="Sprite"]
+[node name="character" type="Node2D"]
 position = Vector2( 1180, 200 )
 scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 1 )
-script = ExtResource( 2 )
-default = ExtResource( 1 )
-ashamed = ExtResource( 3 )
-pumped = ExtResource( 1 )
-bruised = ExtResource( 3 )
-fine = ExtResource( 1 )
-misinformed = ExtResource( 1 )
-trueInfo = ExtResource( 1 )
-impressed = ExtResource( 4 )
-unimpressed = ExtResource( 5 )
-foolish = ExtResource( 4 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="default" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 2 )
+
+[node name="happy" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 2 )
+
+[node name="sad" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 3 )
+
+[node name="angry" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 4 )
+
+[node name="excited" type="Sprite" parent="."]
+visible = false
+texture = ExtResource( 5 )

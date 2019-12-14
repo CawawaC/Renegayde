@@ -2,27 +2,25 @@
 
 [ext_resource path="res://characters/_general/character template.tscn" type="PackedScene" id=1]
 [ext_resource path="res://characters/assets/horace_03.png" type="Texture" id=2]
-[ext_resource path="res://characters/assets/horace_02.png" type="Texture" id=3]
-[ext_resource path="res://characters/assets/horace_04.png" type="Texture" id=4]
-[ext_resource path="res://characters/assets/horace_01.png" type="Texture" id=5]
+[ext_resource path="res://characters/assets/horace_01.png" type="Texture" id=3]
+[ext_resource path="res://characters/assets/horace_02.png" type="Texture" id=4]
+[ext_resource path="res://characters/assets/horace_04.png" type="Texture" id=5]
 
 [node name="horace" index="0" instance=ExtResource( 1 )]
-position = Vector2( 10, 360 )
+position = Vector2( 190, 270 )
 scale = Vector2( -0.6, 0.6 )
+
+[node name="default" parent="." index="0"]
 texture = ExtResource( 2 )
-offset = Vector2( -287, -196.5 )
-default = ExtResource( 2 )
-ashamed = ExtResource( 3 )
-pumped = ExtResource( 4 )
-bruised = ExtResource( 3 )
-fine = ExtResource( 5 )
-misinformed = ExtResource( 4 )
-trueInfo = ExtResource( 5 )
-impressed = ExtResource( 4 )
-unimpressed = ExtResource( 2 )
-foolish = ExtResource( 4 )
-interested = ExtResource( 4 )
-annoyed = ExtResource( 2 )
-bored = ExtResource( 2 )
-flirting = ExtResource( 4 )
-happy = ExtResource( 5 )
+
+[node name="happy" parent="." index="1"]
+texture = ExtResource( 3 )
+
+[node name="sad" parent="." index="2"]
+texture = ExtResource( 4 )
+
+[node name="angry" parent="." index="3"]
+texture = ExtResource( 2 )
+
+[node name="excited" parent="." index="4"]
+texture = ExtResource( 5 )
