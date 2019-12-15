@@ -4,14 +4,20 @@
 [ext_resource path="res://characters/assets/Nona.png" type="Texture" id=2]
 
 [node name="nona" index="0" instance=ExtResource( 1 )]
+position = Vector2( 90, 210 )
+scale = Vector2( -0.5, 0.5 )
+
+[node name="default" parent="." index="0"]
 texture = ExtResource( 2 )
-default = ExtResource( 2 )
-ashamed = ExtResource( 2 )
-pumped = ExtResource( 2 )
-bruised = ExtResource( 2 )
-fine = ExtResource( 2 )
-misinformed = ExtResource( 2 )
-trueInfo = ExtResource( 2 )
-impressed = ExtResource( 2 )
-unimpressed = ExtResource( 2 )
-foolish = ExtResource( 2 )
+
+[node name="happy" parent="." index="1"]
+texture = ExtResource( 2 )
+
+[node name="sad" parent="." index="2"]
+texture = ExtResource( 2 )
+
+[node name="angry" parent="." index="3"]
+texture = ExtResource( 2 )
+
+[node name="excited" parent="." index="4"]
+texture = ExtResource( 2 )

@@ -10,7 +10,6 @@ func _ready():
 func hide_main_menu():
 	$"main menu".hide()
 
-
 func _on_start_pressed():
 	hide_main_menu()
 	var scene = starting_scene.instance()
