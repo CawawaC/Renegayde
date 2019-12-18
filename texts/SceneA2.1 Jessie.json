@@ -38,7 +38,7 @@
       "pid": "1",
       "position": {
         "x": "623",
-        "y": "189"
+        "y": "189.5"
       },
       "tags": [
         "Description",
@@ -52,7 +52,7 @@
       "pid": "2",
       "position": {
         "x": "852",
-        "y": "537"
+        "y": "537.5"
       },
       "tags": [
         "Description",
@@ -65,7 +65,7 @@
       "pid": "3",
       "position": {
         "x": "1023",
-        "y": "532"
+        "y": "532.5"
       },
       "tags": [
         ":fine",
@@ -86,8 +86,8 @@
       "name": "ApproachHorace",
       "pid": "4",
       "position": {
-        "x": "1186",
-        "y": "532"
+        "x": "1127",
+        "y": "411.5"
       },
       "tags": [
         ":fine",
@@ -118,7 +118,7 @@
       "pid": "5",
       "position": {
         "x": "299",
-        "y": "254"
+        "y": "254.5"
       },
       "tags": [
         "Description",
@@ -131,7 +131,7 @@
       "pid": "6",
       "position": {
         "x": "215",
-        "y": "634"
+        "y": "634.5"
       },
       "tags": [
         "Description",
@@ -144,8 +144,8 @@
       "name": "ApproachNonaAshamed",
       "pid": "7",
       "position": {
-        "x": "289",
-        "y": "636"
+        "x": "404",
+        "y": "634.5"
       },
       "tags": [
         "Description",
@@ -159,7 +159,7 @@
       "pid": "8",
       "position": {
         "x": "514",
-        "y": "397"
+        "y": "397.5"
       },
       "tags": [
         "Description",
@@ -173,7 +173,7 @@
       "pid": "9",
       "position": {
         "x": "644",
-        "y": "406"
+        "y": "406.5"
       },
       "tags": [
         "Jessie:pumped",
@@ -194,7 +194,7 @@
       "pid": "10",
       "position": {
         "x": "1186",
-        "y": "682"
+        "y": "682.5"
       },
       "tags": [
         "Horace"
@@ -218,7 +218,7 @@
       "pid": "11",
       "position": {
         "x": "1150",
-        "y": "228"
+        "y": "228.5"
       },
       "tags": [
         "Jessie"
@@ -247,7 +247,7 @@
       "pid": "12",
       "position": {
         "x": "624",
-        "y": "637"
+        "y": "637.5"
       },
       "tags": [
         "Description"
@@ -271,7 +271,7 @@
       "pid": "13",
       "position": {
         "x": "618",
-        "y": "781"
+        "y": "781.5"
       },
       "tags": [
         "Jessie:pumped",
@@ -296,7 +296,7 @@
       "pid": "14",
       "position": {
         "x": "794",
-        "y": "787"
+        "y": "787.5"
       },
       "tags": [
         "Jessie:ashamed",
@@ -322,7 +322,7 @@
       "pid": "15",
       "position": {
         "x": "451",
-        "y": "787"
+        "y": "787.5"
       },
       "tags": [
         "Jessie:bruised",
@@ -343,7 +343,7 @@
       "pid": "16",
       "position": {
         "x": "426",
-        "y": "1027"
+        "y": "1027.5"
       },
       "tags": [
         "Description",
@@ -363,7 +363,7 @@
       "pid": "17",
       "position": {
         "x": "769",
-        "y": "1010"
+        "y": "1010.5"
       },
       "tags": [
         "Sebastian:trueInfo",
@@ -383,7 +383,7 @@
       "pid": "18",
       "position": {
         "x": "915",
-        "y": "1001"
+        "y": "1001.5"
       },
       "tags": [
         "Sebastian:misinformed",
@@ -403,7 +403,7 @@
       "pid": "19",
       "position": {
         "x": "592",
-        "y": "1005"
+        "y": "1005.5"
       },
       "tags": [
         "Sebastian:misinformed",
@@ -411,12 +411,12 @@
       ]
     },
     {
-      "text": "{Epilogue}",
+      "text": "{SceneA2.4 Jessie x Sebastian}",
       "name": " Ending",
       "pid": "20",
       "position": {
         "x": "650",
-        "y": "1292"
+        "y": "1292.5"
       },
       "tags": [
         "Description",
@@ -480,7 +480,7 @@
       "pid": "22",
       "position": {
         "x": "780",
-        "y": "205"
+        "y": "205.5"
       },
       "tags": [
         "Berta:NotTalked",
@@ -506,7 +506,7 @@
       "pid": "23",
       "position": {
         "x": "979",
-        "y": "173"
+        "y": "173.5"
       },
       "tags": [
         "Description",
@@ -531,7 +531,7 @@
       "pid": "24",
       "position": {
         "x": "789",
-        "y": "376"
+        "y": "376.5"
       },
       "tags": [
         "Description"
@@ -541,6 +541,6 @@
   "name": "SceneA2.1 Jessie",
   "startnode": "21",
   "creator": "Twine",
-  "creator-version": "2.3.4",
+  "creator-version": "2.3.5",
   "ifid": "CD67666F-1275-4A0C-B22D-D21A55F071FD"
 }
