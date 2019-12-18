@@ -1,7 +1,7 @@
 {
   "passages": [
     {
-      "text": "//The human looks up as you near the table. Their eyes manage to convey both vague interest, and complete indifference. At first, it looks like their right arm is encased in a metal gauntlet, but as you get a closer look you realize that it's actually completly robotic.//\n\n[[\"Hey there, name's Jessie.\" ->IntroNorm]]\n\n[[\"Howdy partner, place for one more?\" ->IntroPumped]]\n\n[[\"Uh, hi.\" ->IntroShame]]",
+      "text": "//The human looks up as you near the table. Their eyes manage to convey both vague interest, and complete indifference. At first, it looks like their right arm is encased in a metal gauntlet, but as you get a closer look you realize that it's actually completly made of metal.//\n\n[[\"Hey there, name's Jessie.\" ->IntroNorm]]\n\n[[\"Howdy partner, place for one more?\" ->IntroPumped]]\n\n[[\"Uh, hi.\" ->IntroShame]]",
       "links": [
         {
           "name": "\"Hey there, name's Jessie.\" ",
@@ -22,8 +22,8 @@
       "name": "Nona",
       "pid": "1",
       "position": {
-        "x": "1378",
-        "y": "382"
+        "x": "1378.3333333333335",
+        "y": "382.8333333333333"
       },
       "tags": [
         "Description"
@@ -46,8 +46,8 @@
       "name": "IntroNorm",
       "pid": "2",
       "position": {
-        "x": "1038",
-        "y": "438"
+        "x": "1038.3333333333335",
+        "y": "438.8333333333333"
       },
       "tags": [
         "Jessie",
@@ -67,8 +67,8 @@
       "name": "IntroPumped",
       "pid": "3",
       "position": {
-        "x": "1303",
-        "y": "532"
+        "x": "1303.3333333333335",
+        "y": "532.8333333333333"
       },
       "tags": [
         "Jessie"
@@ -86,8 +86,8 @@
       "name": "IntroShame",
       "pid": "4",
       "position": {
-        "x": "1453",
-        "y": "532"
+        "x": "1453.3333333333335",
+        "y": "532.8333333333333"
       },
       "tags": [
         "Jessie"
@@ -110,8 +110,8 @@
       "name": "HeyWantTo",
       "pid": "5",
       "position": {
-        "x": "981",
-        "y": "738"
+        "x": "981.3333333333335",
+        "y": "738.8333333333334"
       },
       "tags": [
         "Nona"
@@ -134,8 +134,8 @@
       "name": "LookWork",
       "pid": "6",
       "position": {
-        "x": "750",
-        "y": "815"
+        "x": "750.3333333333334",
+        "y": "815.8333333333334"
       },
       "tags": [
         "Jessie"
@@ -158,8 +158,8 @@
       "name": "I'mACowboy",
       "pid": "7",
       "position": {
-        "x": "726",
-        "y": "978"
+        "x": "726.3333333333334",
+        "y": "978.8333333333334"
       },
       "tags": [
         "Jessie"
@@ -177,8 +177,8 @@
       "name": "Sure",
       "pid": "8",
       "position": {
-        "x": "1179",
-        "y": "698"
+        "x": "1179.3333333333335",
+        "y": "698.8333333333335"
       },
       "tags": [
         "Jessie"
@@ -196,8 +196,8 @@
       "name": "I'mform",
       "pid": "9",
       "position": {
-        "x": "650",
-        "y": "1158"
+        "x": "650.3333333333334",
+        "y": "1158.8333333333333"
       },
       "tags": [
         "Nona",
@@ -209,8 +209,8 @@
       "name": "DontKnowRules",
       "pid": "10",
       "position": {
-        "x": "2454",
-        "y": "1227"
+        "x": "2454.3333333333335",
+        "y": "1227.8333333333335"
       }
     },
     {
@@ -225,8 +225,8 @@
       "name": "WhatAreWe",
       "pid": "11",
       "position": {
-        "x": "1765",
-        "y": "776"
+        "x": "1765.3333333333335",
+        "y": "776.8333333333334"
       },
       "tags": [
         "Jessie",
@@ -253,8 +253,8 @@
       "name": "AhEhmHi",
       "pid": "12",
       "position": {
-        "x": "798",
-        "y": "1126"
+        "x": "798.3333333333334",
+        "y": "1126.8333333333333"
       },
       "tags": [
         "Jessie"
@@ -272,8 +272,8 @@
       "name": "ISee",
       "pid": "13",
       "position": {
-        "x": "895",
-        "y": "941"
+        "x": "895.3333333333335",
+        "y": "941.5"
       },
       "tags": [
         "Nona",
@@ -297,8 +297,8 @@
       "name": "FreeSeat",
       "pid": "14",
       "position": {
-        "x": "1438",
-        "y": "1050"
+        "x": "1438.3333333333335",
+        "y": "1050.8333333333333"
       },
       "tags": [
         "Description"
@@ -317,7 +317,7 @@
       "pid": "15",
       "position": {
         "x": "1338",
-        "y": "736"
+        "y": "736.8333333333334"
       },
       "tags": [
         "Nona"
@@ -335,8 +335,8 @@
       "name": " MindIfI",
       "pid": "16",
       "position": {
-        "x": "970",
-        "y": "1095"
+        "x": "970.3333333333334",
+        "y": "1095.8333333333333"
       },
       "tags": [
         "Jessie"
@@ -359,8 +359,8 @@
       "name": "AshamedJessie",
       "pid": "17",
       "position": {
-        "x": "848",
-        "y": "1274"
+        "x": "848.3333333333334",
+        "y": "1274.8333333333333"
       },
       "tags": [
         "Jessie+ashamed",
@@ -379,8 +379,8 @@
       "name": "CouldIJoin",
       "pid": "18",
       "position": {
-        "x": "1096",
-        "y": "1216"
+        "x": "1096.3333333333335",
+        "y": "1216.8333333333333"
       },
       "tags": [
         "Jessie"
@@ -391,15 +391,15 @@
       "name": "LEAVING",
       "pid": "19",
       "position": {
-        "x": "838",
-        "y": "1969"
+        "x": "838.3333333333335",
+        "y": "1969.8333333333333"
       },
       "tags": [
         "SceneChange"
       ]
     },
     {
-      "text": "Tombtown Poker. //They give you a long look and start to shuffle the cards.//\n\n[[\"I'll pick it up as we play.\"->PickUp]]\n\n",
+      "text": "Tombtown Poker. //They give you a long look and start shuffling the cards.//\n\n[[\"I'll pick it up as we play.\"->PickUp]]\n\n",
       "links": [
         {
           "name": "\"I'll pick it up as we play.\"",
@@ -410,8 +410,8 @@
       "name": "TombTownPoker",
       "pid": "20",
       "position": {
-        "x": "1886",
-        "y": "955"
+        "x": "1886.3333333333335",
+        "y": "955.8333333333334"
       },
       "tags": [
         "Nona"
@@ -429,8 +429,8 @@
       "name": "PickUp",
       "pid": "21",
       "position": {
-        "x": "1909",
-        "y": "1276"
+        "x": "1909.3333333333335",
+        "y": "1276.8333333333335"
       },
       "tags": [
         "Jessie"
@@ -441,8 +441,8 @@
       "name": "AhOkay",
       "pid": "22",
       "position": {
-        "x": "2067",
-        "y": "954"
+        "x": "2067.3333333333335",
+        "y": "954.8333333333335"
       }
     },
     {
@@ -457,8 +457,8 @@
       "name": "HiJessie",
       "pid": "23",
       "position": {
-        "x": "1506",
-        "y": "699"
+        "x": "1506.3333333333335",
+        "y": "699.8333333333333"
       },
       "tags": [
         "Nona",
@@ -477,8 +477,8 @@
       "name": "FromTomb?",
       "pid": "24",
       "position": {
-        "x": "2006",
-        "y": "1412"
+        "x": "2006.3333333333335",
+        "y": "1412.8333333333335"
       },
       "tags": [
         "Jessie"
@@ -489,8 +489,8 @@
       "name": "CoolHolo",
       "pid": "25",
       "position": {
-        "x": "2385",
-        "y": "1347"
+        "x": "2385.3333333333335",
+        "y": "1347.8333333333335"
       }
     },
     {
@@ -510,8 +510,8 @@
       "name": "SoACowboy",
       "pid": "26",
       "position": {
-        "x": "1711",
-        "y": "1434"
+        "x": "1711.3333333333335",
+        "y": "1434.8333333333333"
       },
       "tags": [
         "Nona:interested",
@@ -530,8 +530,8 @@
       "name": "WhatIWant",
       "pid": "27",
       "position": {
-        "x": "1502",
-        "y": "1629"
+        "x": "1502.3333333333335",
+        "y": "1629.8333333333333"
       },
       "tags": [
         "Jessie"
@@ -549,8 +549,8 @@
       "name": "ThatAProblem?",
       "pid": "28",
       "position": {
-        "x": "1786",
-        "y": "1584"
+        "x": "1786.3333333333335",
+        "y": "1584.8333333333333"
       },
       "tags": [
         "Jessie:pumped",
@@ -570,8 +570,8 @@
       "name": "JustSit",
       "pid": "29",
       "position": {
-        "x": "1040",
-        "y": "874"
+        "x": "1040.3333333333335",
+        "y": "874.8333333333334"
       },
       "tags": [
         "Nona+bored",
@@ -590,8 +590,8 @@
       "name": "LookIntoDistance",
       "pid": "30",
       "position": {
-        "x": "1417",
-        "y": "1764"
+        "x": "1417.3333333333335",
+        "y": "1764.8333333333333"
       },
       "tags": [
         "Nona"
@@ -614,8 +614,8 @@
       "name": "RespectThat",
       "pid": "31",
       "position": {
-        "x": "1565",
-        "y": "1775"
+        "x": "1565.3333333333335",
+        "y": "1775.8333333333333"
       },
       "tags": [
         "Nona"
@@ -633,8 +633,8 @@
       "name": "WhatStory?",
       "pid": "32",
       "position": {
-        "x": "1299",
-        "y": "1804"
+        "x": "1299.3333333333335",
+        "y": "1804.8333333333333"
       },
       "tags": [
         "Jessie"
@@ -652,18 +652,18 @@
       "name": "BecauseIf",
       "pid": "33",
       "position": {
-        "x": "2508",
-        "y": "1497"
+        "x": "2508.3333333333335",
+        "y": "1497.8333333333333"
       },
       "tags": [
         "Jessie"
       ]
     },
     {
-      "text": "No, don't worry.\n\n\n[[\"So, waht's your story?\" ->WhatStory?]] ",
+      "text": "No, don't worry.\n\n\n[[\"So, what's your story?\" ->WhatStory?]] ",
       "links": [
         {
-          "name": "\"So, waht's your story?\" ",
+          "name": "\"So, what's your story?\" ",
           "link": "WhatStory?",
           "pid": "32"
         }
@@ -671,8 +671,8 @@
       "name": "NoDontWorry",
       "pid": "34",
       "position": {
-        "x": "1800",
-        "y": "1804"
+        "x": "1800.3333333333335",
+        "y": "1804.8333333333333"
       },
       "tags": [
         "Nona"
@@ -683,8 +683,8 @@
       "name": "Iheard",
       "pid": "35",
       "position": {
-        "x": "2549",
-        "y": "1647"
+        "x": "2549.3333333333335",
+        "y": "1647.8333333333333"
       }
     },
     {
@@ -699,15 +699,15 @@
       "name": "NoneOfYour",
       "pid": "36",
       "position": {
-        "x": "1414",
-        "y": "2048"
+        "x": "1414.3333333333335",
+        "y": "2048.833333333333"
       },
       "tags": [
         "Nona"
       ]
     },
     {
-      "text": "//Neither of you speaks for half a minute. Then Nona rolls their eyes and waves their right arm in your face.//\n\n[[Continue.->Obviously]]",
+      "text": "//Neither of you speaks for half a minute. Then Nona roll their eyes and wave their right arm in your face.//\n\n[[Continue.->Obviously]]",
       "links": [
         {
           "name": "Continue.",
@@ -718,8 +718,8 @@
       "name": "MomentofSilence",
       "pid": "37",
       "position": {
-        "x": "1573",
-        "y": "2086"
+        "x": "1573.3333333333335",
+        "y": "2086.833333333333"
       },
       "tags": [
         "Nona"
@@ -742,8 +742,8 @@
       "name": "Obviously",
       "pid": "38",
       "position": {
-        "x": "1614",
-        "y": "1924"
+        "x": "1614.3333333333335",
+        "y": "1924.833333333333"
       },
       "tags": [
         "Nona+annoyed",
@@ -762,8 +762,8 @@
       "name": "Don't",
       "pid": "39",
       "position": {
-        "x": "1761",
-        "y": "1991"
+        "x": "1761.3333333333335",
+        "y": "1991.833333333333"
       },
       "tags": [
         "Jessie"
@@ -781,8 +781,8 @@
       "name": "WhoseHorace?",
       "pid": "40",
       "position": {
-        "x": "1883",
-        "y": "2093"
+        "x": "1883.3333333333335",
+        "y": "2093.833333333333"
       },
       "tags": [
         "Nona"
@@ -800,15 +800,15 @@
       "name": "BestFriend",
       "pid": "41",
       "position": {
-        "x": "1808",
-        "y": "2243"
+        "x": "1808.3333333333335",
+        "y": "2243.833333333333"
       },
       "tags": [
         "Jessie"
       ]
     },
     {
-      "text": "//You wave at Horace, and he gives you a nod. Nona turns in her seat to look at him. Neither of them moves for a a few seconds. Then the remaining cow-girl flickers, and is replaced by a holographic Horace. Adequatly shrunk to fit the seat, of course. Nona smiles at him.//\n\n[[Continue. ->HeyTherrreee]]",
+      "text": "//You wave at Horace, and he gives you a nod. Nona turns in their seat to look at him. Neither of them moves for a a few seconds. Then the remaining cow-girl flickers, and is replaced by a holographic Horace. Adequatly shrunk to fit the seat, of course. Nona smiles at him.//\n\n[[Continue. ->HeyTherrreee]]",
       "links": [
         {
           "name": "Continue. ",
@@ -819,8 +819,8 @@
       "name": "WaveAtHorace",
       "pid": "42",
       "position": {
-        "x": "1808",
-        "y": "2393"
+        "x": "1808.3333333333335",
+        "y": "2393.833333333333"
       },
       "tags": [
         "Description"
@@ -838,8 +838,8 @@
       "name": "HeyTherrreee",
       "pid": "43",
       "position": {
-        "x": "1808",
-        "y": "2543"
+        "x": "1808.3333333333335",
+        "y": "2543.833333333333"
       },
       "tags": [
         "Horace"
@@ -857,15 +857,15 @@
       "name": "NiceTech",
       "pid": "44",
       "position": {
-        "x": "1808",
-        "y": "2693"
+        "x": "1808.3333333333335",
+        "y": "2693.833333333333"
       },
       "tags": [
         "Nona"
       ]
     },
     {
-      "text": "I prefer... experienced. So, what are we playing? \n\n[[Continue. ->TombTownPokerButYourFriend]]",
+      "text": "Old doesn't mean bad though. So, what are we playing? \n\n[[Continue. ->TombTownPokerButYourFriend]]",
       "links": [
         {
           "name": "Continue. ",
@@ -876,8 +876,8 @@
       "name": "IPrefer",
       "pid": "45",
       "position": {
-        "x": "1808",
-        "y": "2843"
+        "x": "1808.3333333333335",
+        "y": "2843.833333333333"
       },
       "tags": [
         "Horace"
@@ -895,8 +895,8 @@
       "name": "TombTownPokerButYourFriend",
       "pid": "46",
       "position": {
-        "x": "1808",
-        "y": "2993"
+        "x": "1808.3333333333335",
+        "y": "2993.833333333333"
       },
       "tags": [
         "Nona"
@@ -914,15 +914,15 @@
       "name": "He'sJust",
       "pid": "47",
       "position": {
-        "x": "1808",
-        "y": "3143"
+        "x": "1808.3333333333335",
+        "y": "3143.833333333333"
       },
       "tags": [
         "Horace"
       ]
     },
     {
-      "text": "//Nona raises an eyebrow at horace before turning to you.// Sorry Cowboy, but it looks like I need to teach your Horse a lesson. And we need your spot for the third Player.//\n\n[[\"Oh, uh. Okay.\" ->What'sHappening]]",
+      "text": "//Nona raises an eyebrow at horace before turning to you.// \n\nSorry Cowboy, but it looks like I need to teach your Horse a lesson. And we need your spot for the third Player.\n\n[[\"Oh, uh. Okay.\" ->What'sHappening]]",
       "links": [
         {
           "name": "\"Oh, uh. Okay.\" ",
@@ -933,8 +933,8 @@
       "name": "YourOn",
       "pid": "48",
       "position": {
-        "x": "1808",
-        "y": "3293"
+        "x": "1808.3333333333335",
+        "y": "3293.833333333333"
       },
       "tags": [
         "Nona"
@@ -952,15 +952,15 @@
       "name": "What'sHappening",
       "pid": "49",
       "position": {
-        "x": "1808",
-        "y": "3443"
+        "x": "1808.3333333333335",
+        "y": "3443.833333333333"
       },
       "tags": [
         "Jessie"
       ]
     },
     {
-      "text": "//You get up, and immediatly a holographic Cowgirl takes your place. The game begins in silence, and while you've played various forms of Poker and other card games before, you have a hard time following the game. It seems as if it has almost nothing in common with regular poker. Both of them gesture towards the thin air, throw their cards away, smile, roll their eyes, and generally seem to have an itneresting, if silent, conversation.\n\n\nYou'r not sure what exactly is happening, but they seem to be having a good time.//\n\n[[LEAVING]] ",
+      "text": "//You get up, and immediatly a holographic Cowgirl takes your place. The game begins in silence, and while you've played various forms of Poker and other card games before, you have a hard time following the game. It seems as if it has almost nothing in common with regular poker. Both of them gesture towards the thin air, throw their cards away, smile, roll their eyes, and generally seem to have an interesting, if silent, conversation.\n\n\nYou'r not sure what exactly is happening, but they seem to be having a good time.//\n\n[[LEAVING]] ",
       "links": [
         {
           "name": "LEAVING",
@@ -971,8 +971,8 @@
       "name": "GettingUp",
       "pid": "50",
       "position": {
-        "x": "1808",
-        "y": "3593"
+        "x": "1808.3333333333335",
+        "y": "3593.833333333333"
       },
       "tags": [
         "Description"
@@ -982,6 +982,6 @@
   "name": "SceneA2.3 Jessie x Nona",
   "startnode": "1",
   "creator": "Twine",
-  "creator-version": "2.3.4",
+  "creator-version": "2.3.5",
   "ifid": "E3360702-E0B6-4929-85AD-507E8C8AA5D4"
 }
